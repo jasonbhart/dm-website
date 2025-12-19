@@ -2,7 +2,7 @@
 title: "Book a Discovery Call"
 meta_title: "Book a Discovery Call | Domain Methods"
 description: "Schedule a 30-minute discovery call to get clarity on your next step with your data. No pitch, no obligation."
-layout: "contact"
+layout: "booking"
 draft: false
 ---
 
