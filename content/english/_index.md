@@ -1,6 +1,7 @@
 ---
 # Banner
 banner:
+  tagline: "Marketing Data & Analytics for SaaS"
   title: "Turn messy data into decisions that drive revenue"
   content: "We help growth, data, and RevOps teams build trusted analytics that actually get used."
   image: "/images/banner.png"
@@ -8,6 +9,10 @@ banner:
     enable: true
     label: "Book a Discovery Call"
     link: "/contact-us"
+  secondary_link:
+    enable: true
+    label: "See how we help"
+    link: "#features"
 
 # Features (Pillars)
 features:
