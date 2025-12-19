@@ -1,7 +1,7 @@
 {{ define "main" }}
   <!-- Banner -->
   {{ with .Params.banner }}
-    <section class="pt-14 pb-0">
+    <section class="section pt-14">
       <div class="container">
         <div class="row justify-center">
           <div class="lg:col-7 md:col-9 mb-8 text-center">
@@ -42,11 +42,11 @@
               {{ end }}
             </div>
           </div>
+          <div class="col-12">
+            {{/* image modules comes from https://github.com/gethugothemes/hugo-modules/tree/master/images */}}
+            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto w-full" "DisplayXL" "1200x" ) }}
+          </div>
         </div>
-      </div>
-      <!-- Full-width banner image -->
-      <div class="w-full mt-8">
-        {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "w-full" "DisplayXL" "1920x" ) }}
       </div>
     </section>
   {{ end }}
