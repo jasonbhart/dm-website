@@ -18,5 +18,5 @@ No pitch, no obligation. We will discuss your current challenges and explore wha
 **Video or phone. Free.**
 
 <!-- Google Calendar Appointment Scheduling begin -->
-<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2wFL1wjvOWwuAPgQEZuJ_0-USR8gaJaYxOL_bLGYFvM1MrseM0t7pTjU6yVgWVyHROGBFJQdae?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2wFL1wjvOWwuAPgQEZuJ_0-USR8gaJaYxOL_bLGYFvM1MrseM0t7pTjU6yVgWVyHROGBFJQdae?gv=true" style="border: 0; overflow: hidden;" width="100%" height="1000" frameborder="0" scrolling="no"></iframe>
 <!-- end Google Calendar Appointment Scheduling -->
