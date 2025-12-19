@@ -17,9 +17,6 @@ No pitch, no obligation. We will discuss your current challenges and explore wha
 
 **Video or phone. Free.**
 
-<!-- Calendar embed will go here -->
-<!-- Replace the comment below with your Calendly/Cal.com embed code -->
-
-<div class="calendly-embed" style="min-width:320px;height:700px;">
-  <p>Calendar booking will be embedded here. Replace this with your Calendly or Cal.com embed code.</p>
-</div>
+<!-- Google Calendar Appointment Scheduling begin -->
+<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2wFL1wjvOWwuAPgQEZuJ_0-USR8gaJaYxOL_bLGYFvM1MrseM0t7pTjU6yVgWVyHROGBFJQdae?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+<!-- end Google Calendar Appointment Scheduling -->
