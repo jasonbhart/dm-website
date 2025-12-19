@@ -40,7 +40,6 @@ projects:
 cta:
   title: "Ready to get clarity on your revenue drivers?"
   description: "Book a discovery call to discuss your specific challenges."
-  button:
-    label: "Book a Discovery Call"
-    link: "/contact-us"
+  button: "Book a Discovery Call"
+  link: "/contact-us"
 ---
