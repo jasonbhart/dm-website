@@ -9,6 +9,9 @@ Redesign of the Hugoplate template homepage to reflect Domain Methods' positioni
 - Low detail on homepage, funneling to pillar pages for depth
 - Professional tone, no contractions
 - Matter-of-fact, not salesy
+- Human-to-human approach (warm but professional, not corporate)
+
+**Brand colors:** Blue, Red, White (to be defined in `data/theme.json`)
 
 ---
 
@@ -35,8 +38,13 @@ Redesign of the Hugoplate template homepage to reflect Domain Methods' positioni
 
 **Elements:**
 - Logo (left)
-- Navigation: Services (dropdown to 3 pillar pages) | About | Blog
+- Navigation: Services (dropdown) | About | Blog
 - CTA button: "Book a Call" → links to /contact-us
+
+**Services dropdown items:**
+- "Revenue Analytics" → /services/revenue-analytics
+- "Data Foundation" → /services/data-foundation
+- "Data Activation" → /services/data-activation
 
 ---
 
@@ -66,6 +74,11 @@ Redesign of the Hugoplate template homepage to reflect Domain Methods' positioni
 - Headline is outcome-first, uses "revenue" to signal business impact
 - Subhead names the ICP roles so visitors self-identify
 - "Trusted analytics that actually get used" nods to UX obsession and single-source-of-truth positioning
+
+**Hero visual:**
+- Visual storytelling element (specific treatment TBD)
+- Should reinforce the "messy data → clarity" transformation theme
+- Options to explore: abstract data visualization, before/after metaphor, or illustrative graphic
 
 ---
 
@@ -277,17 +290,55 @@ Each pillar page expands on:
 
 ### New Content to Create
 
-- `content/english/contact-us/_index.md` — Booking page
-- `content/english/services/revenue-analytics.md` — Pillar 1
-- `content/english/services/data-foundation.md` — Pillar 2
-- `content/english/services/data-activation.md` — Pillar 3
+- `content/english/contact-us/_index.md` — Booking page with calendar embed
+- `content/english/services/_index.md` — Services landing (optional, for /services URL)
+- `content/english/services/revenue-analytics.md` — Pillar 1 (placeholder)
+- `content/english/services/data-foundation.md` — Pillar 2 (placeholder)
+- `content/english/services/data-activation.md` — Pillar 3 (placeholder)
+- `content/english/about/_index.md` — Update existing with new content
 - `static/images/clients/` — Client logos directory
+- `data/theme.json` — Update with blue/red/white brand colors
 
 ---
 
-## Open Questions
+## SEO Considerations
 
-1. **Hero image/graphic** — What visual treatment for the hero? Abstract data visualization, illustration, or no image?
-2. **Brand colors** — Current theme.json colors or new palette for Domain Methods?
-3. **Case study content** — Which clients/projects are ready to feature?
-4. **Pillar page depth** — How detailed should each pillar page be at launch?
+Per business notes, the website has a 60/40 SEO focus. Key SEO elements:
+
+- **Page titles:** Follow "[Page] | Domain Methods" pattern
+- **Meta descriptions:** Outcome-focused, include target keywords
+- **Pillar pages:** Designed to be SEO authority pages for key terms
+- **Blog:** Primary content engine for organic traffic (detailed in separate design)
+
+**Target keywords to inform copy:**
+- Marketing analytics
+- Revenue operations analytics
+- Data strategy consulting
+- dbt consulting
+- Marketing attribution
+
+---
+
+## About Page (Brief)
+
+The About page handles the "Jason ≠ Agency" positioning:
+
+- Jason's story and expertise
+- The Domain Methods approach (methodology, 80/20 rule)
+- Partner/team model (flat org, trusted collaborators)
+- "Obsessed with Truth and UX" philosophy
+
+*(Full About page design to be detailed separately)*
+
+---
+
+## Decisions Log
+
+| Question | Decision |
+|----------|----------|
+| Hero visual | Visual storytelling element (specific treatment TBD) |
+| Brand colors | Blue, Red, White |
+| Case studies | To be written; section designed for iterative addition |
+| Pillar pages | Placeholder pages at launch; detailed designs later |
+| Calendar placement | Separate /contact-us page, not embedded on homepage |
+| Contractions | No contractions site-wide for professional tone |
