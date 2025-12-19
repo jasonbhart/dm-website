@@ -1,0 +1,277 @@
+{{ define "main" }}
+  <!-- Hero Section -->
+  {{ with .Params.hero }}
+    <section class="section pt-14">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="lg:col-7 md:col-9 mb-8 text-center">
+            {{ with .tagline }}
+              <p class="mb-4 text-sm font-semibold uppercase tracking-wider text-primary">
+                {{ . | markdownify }}
+              </p>
+            {{ end }}
+            <h1 class="mb-4 text-h3 lg:text-h1">
+              {{ .title | markdownify }}
+            </h1>
+            {{ with .content }}
+              <p class="mb-8">
+                {{ . | markdownify }}
+              </p>
+            {{ end }}
+            {{ with .button }}
+              {{ if .enable }}
+                <a
+                  class="btn btn-primary"
+                  href="{{ .link | absURL }}"
+                  {{ if strings.HasPrefix .link `http` }}
+                    target="_blank" rel="noopener"
+                  {{ end }}>
+                  {{ .label }}
+                  <i class="fa fa-arrow-right pl-2"></i>
+                </a>
+              {{ end }}
+            {{ end }}
+          </div>
+          {{ with .image }}
+            <div class="col-12">
+              {{ partial "image" (dict "Src" . "Alt" "Hero image" "Loading" "eager" "Class" "mx-auto w-full max-h-[350px] object-cover object-center rounded-lg" "DisplayXL" "1200x" ) }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+  <!-- /Hero -->
+
+  <!-- Major Outcome Section -->
+  {{ with .Params.outcome }}
+    <section class="section-sm">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="lg:col-8 md:col-10">
+            {{ with .headline }}
+              <h2 class="mb-8 text-center">
+                {{ . | markdownify }}
+              </h2>
+            {{ end }}
+            {{ with .points }}
+              <ul class="max-w-2xl mx-auto">
+                {{ range . }}
+                  <li class="relative mb-4 pl-6">
+                    <i class="fa fa-check absolute left-0 top-1.5 text-primary"></i>
+                    {{ . | markdownify }}
+                  </li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+  <!-- /Major Outcome -->
+
+  <!-- Types of Projects Section -->
+  {{ with .Params.projects }}
+    {{ if .items }}
+      <section class="section-sm bg-gradient">
+        <div class="container">
+          <div class="row justify-center">
+            <div class="col-12">
+              {{ with .title }}
+                <h2 class="mb-12 text-center">
+                  {{ . | markdownify }}
+                </h2>
+              {{ end }}
+              <div class="row">
+                {{ range .items }}
+                  <div class="md:col-6 lg:col-4 xl:col-3 mb-6">
+                    <div class="bg-light dark:bg-darkmode-light rounded-lg p-6 h-full shadow-sm hover:shadow-md transition-shadow">
+                      <h4 class="h5 mb-3">
+                        {{ .name | markdownify }}
+                      </h4>
+                      <p class="text-text-light dark:text-darkmode-text-light">
+                        {{ .description | markdownify }}
+                      </p>
+                    </div>
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+  <!-- /Types of Projects -->
+
+  <!-- Client Outcomes Section -->
+  {{ with .Params.clients }}
+    {{ if or .logos .case_studies }}
+      <section class="section-sm">
+        <div class="container">
+          <div class="row justify-center">
+            <div class="col-12">
+              {{ with .title }}
+                <h2 class="mb-12 text-center">
+                  {{ . | markdownify }}
+                </h2>
+              {{ else }}
+                <h2 class="mb-12 text-center">Trusted By</h2>
+              {{ end }}
+
+              <!-- Client Logos -->
+              {{ with .logos }}
+                <div class="flex flex-wrap items-center justify-center gap-8 mb-12">
+                  {{ range . }}
+                    <div class="grayscale hover:grayscale-0 transition-all duration-300">
+                      {{ partial "image" (dict "Src" .src "Alt" .alt "Class" "max-h-12 w-auto" "Size" "150x") }}
+                    </div>
+                  {{ end }}
+                </div>
+              {{ end }}
+
+              <!-- Case Studies -->
+              {{ with .case_studies }}
+                <div class="row mt-12">
+                  {{ range . }}
+                    <div class="md:col-6 lg:col-4 mb-8">
+                      <div class="bg-light dark:bg-darkmode-light rounded-lg p-6 h-full">
+                        {{ with .logo }}
+                          <div class="mb-4">
+                            {{ partial "image" (dict "Src" . "Alt" $.client "Class" "max-h-8 w-auto" "Size" "120x") }}
+                          </div>
+                        {{ end }}
+                        {{ with .client }}
+                          <h3 class="h5 mb-2">{{ . }}</h3>
+                        {{ end }}
+                        {{ with .outcome }}
+                          <h4 class="h6 mb-3 text-primary">{{ . | markdownify }}</h4>
+                        {{ end }}
+                        {{ with .summary }}
+                          <p class="text-text-light dark:text-darkmode-text-light mb-4">
+                            {{ . | markdownify }}
+                          </p>
+                        {{ end }}
+                        {{ with .link }}
+                          <a href="{{ . }}" class="text-primary hover:underline font-medium">
+                            Read case study
+                            <i class="fa fa-arrow-right pl-1"></i>
+                          </a>
+                        {{ end }}
+                      </div>
+                    </div>
+                  {{ end }}
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+  <!-- /Client Outcomes -->
+
+  <!-- Industries Section -->
+  {{ with .Params.industries }}
+    {{ if .items }}
+      <section class="section-sm bg-gradient">
+        <div class="container">
+          <div class="row justify-center">
+            <div class="col-12">
+              {{ with .title }}
+                <h2 class="mb-12 text-center">
+                  {{ . | markdownify }}
+                </h2>
+              {{ else }}
+                <h2 class="mb-12 text-center">Industries We Serve</h2>
+              {{ end }}
+              <div class="row">
+                {{ range .items }}
+                  <div class="md:col-6 lg:col-3 mb-8">
+                    {{ $content := (dict "icon" .icon "name" .name) }}
+                    {{ if .link }}
+                      <a href="{{ .link }}" class="block text-center hover:text-primary transition-colors group">
+                        {{ with .icon }}
+                          <div class="mb-4 text-primary">
+                            <i class="fa {{ . }} text-4xl"></i>
+                          </div>
+                        {{ end }}
+                        <h3 class="h5 group-hover:text-primary">{{ .name }}</h3>
+                      </a>
+                    {{ else }}
+                      <div class="text-center">
+                        {{ with .icon }}
+                          <div class="mb-4 text-primary">
+                            <i class="fa {{ . }} text-4xl"></i>
+                          </div>
+                        {{ end }}
+                        <h3 class="h5">{{ .name }}</h3>
+                      </div>
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+  <!-- /Industries -->
+
+  <!-- Pricing Section -->
+  {{ with .Params.pricing }}
+    <section class="section-sm">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="lg:col-8 text-center">
+            {{ with .headline }}
+              <h2 class="mb-4">
+                {{ . | markdownify }}
+              </h2>
+            {{ end }}
+            {{ with .description }}
+              <p class="mb-8 text-lg text-text-light dark:text-darkmode-text-light">
+                {{ . | markdownify }}
+              </p>
+            {{ end }}
+            {{ with .button }}
+              {{ if .enable }}
+                <a
+                  class="btn btn-primary"
+                  href="{{ .link | absURL }}"
+                  {{ if strings.HasPrefix .link `http` }}
+                    target="_blank" rel="noopener"
+                  {{ end }}>
+                  {{ .label }}
+                  <i class="fa fa-arrow-right pl-2"></i>
+                </a>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+  <!-- /Pricing -->
+
+  <!-- Final CTA Section -->
+  <section class="section-sm bg-gradient">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-8 text-center">
+          <h2 class="mb-4">{{ .Params.cta.title | default "Ready to get started?" }}</h2>
+          <p class="mb-8 text-lg text-text-light dark:text-darkmode-text-light">
+            {{ .Params.cta.description | default "Let's talk about your specific challenges." }}
+          </p>
+          <a href="{{ .Params.cta.link | default "/contact-us" }}" class="btn btn-primary">
+            {{ .Params.cta.button | default "Book a Discovery Call" }}
+            <i class="fa fa-arrow-right pl-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Final CTA -->
+{{ end }}
