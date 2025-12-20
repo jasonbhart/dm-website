@@ -19,17 +19,15 @@
               </p>
             {{ end }}
             {{ with .button }}
-              {{ if .enable }}
-                <a
-                  class="btn btn-primary"
-                  href="{{ .link | absURL }}"
-                  {{ if strings.HasPrefix .link `http` }}
-                    target="_blank" rel="noopener"
-                  {{ end }}>
-                  {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
-                </a>
-              {{ end }}
+              <a
+                class="btn btn-primary"
+                href="{{ .link | absURL }}"
+                {{ if strings.HasPrefix .link `http` }}
+                  target="_blank" rel="noopener"
+                {{ end }}>
+                {{ .label }}
+                <i class="fa fa-arrow-right pl-2"></i>
+              </a>
             {{ end }}
           </div>
           {{ with .image }}
@@ -125,7 +123,7 @@
                 <div class="flex flex-wrap items-center justify-center gap-8 mb-12">
                   {{ range . }}
                     <div class="grayscale hover:grayscale-0 transition-all duration-300">
-                      {{ partial "image" (dict "Src" .src "Alt" .alt "Class" "max-h-12 w-auto" "Size" "150x") }}
+                      {{ partial "image" (dict "Src" . "Alt" "Client logo" "Class" "max-h-12 w-auto" "Size" "150x") }}
                     </div>
                   {{ end }}
                 </div>
@@ -139,7 +137,7 @@
                       <div class="bg-light dark:bg-darkmode-light rounded-lg p-6 h-full">
                         {{ with .logo }}
                           <div class="mb-4">
-                            {{ partial "image" (dict "Src" . "Alt" $.client "Class" "max-h-8 w-auto" "Size" "120x") }}
+                            {{ partial "image" (dict "Src" . "Alt" "Client logo" "Class" "max-h-8 w-auto" "Size" "120x") }}
                           </div>
                         {{ end }}
                         {{ with .client }}
@@ -235,19 +233,10 @@
                 {{ . | markdownify }}
               </p>
             {{ end }}
-            {{ with .button }}
-              {{ if .enable }}
-                <a
-                  class="btn btn-primary"
-                  href="{{ .link | absURL }}"
-                  {{ if strings.HasPrefix .link `http` }}
-                    target="_blank" rel="noopener"
-                  {{ end }}>
-                  {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
-                </a>
-              {{ end }}
-            {{ end }}
+            <a href="{{ .link | default "/contact-us" | absURL }}" class="btn btn-primary">
+              {{ .button | default "Book a Discovery Call" }}
+              <i class="fa fa-arrow-right pl-2"></i>
+            </a>
           </div>
         </div>
       </div>
