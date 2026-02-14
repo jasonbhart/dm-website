@@ -20,6 +20,12 @@ A discovery call is a focused 30-minute conversation where we learn about your d
 
 We don't do hourly billing. All engagements are scoped and priced upfront so you know exactly what you're getting.
 
+**Before you book, it helps to have in mind:**
+
+- Your company size and stage (ARR or funding status)
+- The primary data or analytics challenge you're facing
+- Your timeline — is this urgent or exploratory?
+
 <!-- Google Calendar Appointment Scheduling begin -->
 <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2wFL1wjvOWwuAPgQEZuJ_0-USR8gaJaYxOL_bLGYFvM1MrseM0t7pTjU6yVgWVyHROGBFJQdae?gv=true" style="border: 0; overflow: hidden;" width="100%" height="1250" frameborder="0" scrolling="no"></iframe>
 <!-- end Google Calendar Appointment Scheduling -->
