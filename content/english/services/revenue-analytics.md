@@ -79,7 +79,7 @@ industries:
 pricing:
   headline: "Engagements start at $5,000"
   description: "Scope and pricing confirmed after discovery call. Most projects range from $5,000-$25,000 depending on complexity."
-  button: "Get a Quote"
+  button: "Book a Discovery Call"
   link: "/contact-us"
 
 # Final CTA (optional - has defaults)

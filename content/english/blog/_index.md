@@ -1,5 +1,5 @@
 ---
-title: "Blog Posts"
-meta_title: ""
-description: "this is meta description"
+title: "Blog"
+meta_title: "Blog | Domain Methods"
+description: "Insights on marketing analytics, data strategy, and revenue operations for SaaS teams."
 ---

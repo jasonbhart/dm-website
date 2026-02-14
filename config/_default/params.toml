@@ -62,10 +62,10 @@ content = ""
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-meta_author = "Domain Methods"
-meta_image = "images/og-image.png"
-meta_description = "Domain Methods helps mid-size SaaS companies build trusted marketing analytics, data foundations, and activation pipelines that drive revenue. Obsessed with truth and UX."
-meta_keywords = ["Marketing Attribution", "Revenue Analytics", "dbt Consulting", "Data Strategy for SaaS", "Reverse ETL", "Data Activation", "Marketing Analytics Audit", "Databricks Consulting", "SaaS Analytics", "Revenue Operations"]
+author = "Domain Methods"
+image = "images/og-image.png"
+description = "Domain Methods helps mid-size SaaS companies build trusted marketing analytics, data foundations, and activation pipelines that drive revenue. Obsessed with truth and UX."
+keywords = ["Marketing Attribution", "Revenue Analytics", "dbt Consulting", "Data Strategy for SaaS", "Reverse ETL", "Data Activation", "Marketing Analytics Audit", "Databricks Consulting", "SaaS Analytics", "Revenue Operations"]
 
 
 # site verifications
