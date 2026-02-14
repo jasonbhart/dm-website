@@ -44,7 +44,7 @@ process:
     - title: "Recommend"
       description: "You get a clear, prioritized action plan — not a 50-page report. Specific fixes with expected impact."
     - title: "Debrief"
-      description: "We walk through findings together, answer questions, and help you decide on next steps."
+      description: "We walk through findings together, answer questions, and help your team shift how they use data to make decisions — not just what tools they use."
 
 pricing:
   headline: "Engagements start at $2,500"

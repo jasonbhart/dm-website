@@ -49,7 +49,7 @@ process:
     - title: "Build"
       description: "We implement, test, and document. You see progress every week, not just at the end."
     - title: "Enablement"
-      description: "We train your team to own and maintain what we built. No consultant dependency."
+      description: "We train your team to own what we built and change how they make revenue decisions — not just hand over a dashboard. No consultant dependency."
 
 # Client Outcomes
 clients:

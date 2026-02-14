@@ -48,7 +48,7 @@ process:
     - title: "Implementation"
       description: "We build and deploy using dbt, your cloud warehouse, and open-source tools your team already knows."
     - title: "Handoff"
-      description: "We document everything, train your team, and ensure they can maintain and extend the foundation independently."
+      description: "We document everything, train your team, and ensure they can maintain and extend the foundation independently. The goal is changing how your organization trusts and uses data — not just delivering infrastructure."
 
 # Client Outcomes
 clients:

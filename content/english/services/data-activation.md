@@ -46,7 +46,7 @@ process:
     - title: "Connect"
       description: "We implement reverse ETL pipelines, configure destinations, and validate data accuracy end-to-end."
     - title: "Optimize"
-      description: "We monitor, tune, and hand off — ensuring your team can manage and expand activation workflows on their own."
+      description: "We monitor, tune, and hand off — ensuring your team can manage and expand activation workflows on their own. The win isn't the pipeline; it's your team making faster, data-driven decisions every day."
 
 # Client Outcomes
 clients:
