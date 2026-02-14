@@ -15,3 +15,14 @@ jsconfig.json
 hugo_stats.json
 go.sum
 yarn.lock
+
+# Source assets (processed versions are committed)
+assets/images/jason/
+assets/logo/
+
+# Auto-generated theme CSS
+themes/hugoplate/assets/css/generated-theme.css
+
+# Working documents
+docs/plans/
+reviews/
