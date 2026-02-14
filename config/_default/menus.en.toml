@@ -8,21 +8,27 @@ hasChildren = true
 
 [[main]]
 parent = "Services"
+name = "Audits & Quick Engagements"
+url = "/services/audits"
+weight = 1
+
+[[main]]
+parent = "Services"
 name = "Revenue Analytics"
 url = "/services/revenue-analytics"
-weight = 1
+weight = 2
 
 [[main]]
 parent = "Services"
 name = "Data Foundation"
 url = "/services/data-foundation"
-weight = 2
+weight = 3
 
 [[main]]
 parent = "Services"
 name = "Data Activation"
 url = "/services/data-activation"
-weight = 3
+weight = 4
 
 [[main]]
 name = "About"
