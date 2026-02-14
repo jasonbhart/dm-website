@@ -52,6 +52,13 @@ process:
     - title: "Handoff"
       description: "We document everything, train your team, and ensure they can maintain and extend the foundation independently."
 
+# Pricing (optional)
+pricing:
+  headline: "Project-based pricing. No hourly billing."
+  description: "Engagements are scoped and priced upfront based on complexity and business impact. Most projects range from $10,000-$50,000. Discovery engagements start at $5,000."
+  button: "Book a Discovery Call"
+  link: "/contact-us"
+
 # Final CTA (optional - has defaults)
 cta:
   title: "Ready to build a data foundation you can trust?"

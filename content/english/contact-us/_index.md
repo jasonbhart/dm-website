@@ -6,16 +6,19 @@ layout: "booking"
 draft: false
 ---
 
-### 30 minutes to get clarity on your next step
+## Book a Discovery Call
 
-No pitch, no obligation. We will discuss your current challenges and explore what is possible with your data.
+A discovery call is a focused 30-minute conversation where we learn about your data challenges and determine if we can help.
 
 **What to expect:**
-- A focused conversation about your data challenges
-- Honest assessment of whether we can help
-- Clear next steps, regardless of fit
 
-**Video or phone. Free.**
+- A focused conversation about your specific situation
+- An honest assessment of whether we're the right fit
+- If there's a match, we'll outline a **paid discovery engagement** — a scoped, short-term project where we dig deep into your data, diagnose the real issues, and deliver a clear action plan
+
+**No pitch. No obligation. Just clarity.**
+
+We don't do hourly billing. All engagements are scoped and priced upfront so you know exactly what you're getting.
 
 <!-- Google Calendar Appointment Scheduling begin -->
 <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2wFL1wjvOWwuAPgQEZuJ_0-USR8gaJaYxOL_bLGYFvM1MrseM0t7pTjU6yVgWVyHROGBFJQdae?gv=true" style="border: 0; overflow: hidden;" width="100%" height="1250" frameborder="0" scrolling="no"></iframe>

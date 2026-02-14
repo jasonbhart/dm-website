@@ -48,6 +48,13 @@ process:
     - title: "Optimize"
       description: "We monitor, tune, and hand off — ensuring your team can manage and expand activation workflows on their own."
 
+# Pricing (optional)
+pricing:
+  headline: "Project-based pricing. No hourly billing."
+  description: "Every engagement is scoped with clear deliverables and fixed pricing. Most activation projects range from $7,500-$30,000. Discovery engagements start at $5,000."
+  button: "Book a Discovery Call"
+  link: "/contact-us"
+
 # Final CTA (optional - has defaults)
 cta:
   title: "Ready to put your data to work?"

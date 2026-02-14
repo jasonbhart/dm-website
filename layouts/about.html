@@ -151,6 +151,45 @@
   {{ end }}
   {{ end }}
 
+  {{ with .Params.fit }}
+  {{ if .enable }}
+  <!-- Fit Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-10">{{ .title }}</h2>
+      <div class="row justify-center">
+        <div class="md:col-6 mb-8">
+          <div class="rounded-lg bg-theme-light p-6 h-full">
+            <h3 class="h4 mb-4 text-primary">{{ .good_fit.title }}</h3>
+            <ul class="space-y-3">
+              {{ range .good_fit.items }}
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mr-3 mt-1 shrink-0"></i>
+                <span>{{ . }}</span>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+        <div class="md:col-6 mb-8">
+          <div class="rounded-lg bg-theme-light p-6 h-full">
+            <h3 class="h4 mb-4 text-dark">{{ .bad_fit.title }}</h3>
+            <ul class="space-y-3">
+              {{ range .bad_fit.items }}
+              <li class="flex items-start">
+                <i class="fas fa-times text-secondary mr-3 mt-1 shrink-0"></i>
+                <span>{{ . }}</span>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
   <!-- CTA Section -->
   <section class="section-sm">
     <div class="container">

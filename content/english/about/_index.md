@@ -68,6 +68,25 @@ founder:
     My approach is simple — I solve the hard problems (architecture, strategy, proof-of-concept), then build systems that your team can actually own and run. I'm not here to create dependency. I'm here to create clarity.
   linkedin: "https://www.linkedin.com/in/jasonbhart/"
 
+fit:
+  enable: true
+  title: "Is This Right for You?"
+  good_fit:
+    title: "We're a great fit if..."
+    items:
+      - "You're a mid-size SaaS company ($10M+ ARR or venture-funded)"
+      - "Your analytics maturity is low to mid — you know the data isn't where it needs to be"
+      - "You have a data warehouse (or are ready to set one up)"
+      - "You want to own the solution long-term, not rent a consultant forever"
+      - "You value clarity over complexity and truth over comfort"
+  bad_fit:
+    title: "We're probably not the right fit if..."
+    items:
+      - "You need someone to manage your dashboards on an ongoing basis"
+      - "You're looking for full business system design and integration"
+      - "You need a large team embedded for 6+ months"
+      - "You're not ready to invest in your data infrastructure"
+
 cta:
   title: "Ready to talk?"
   description: "We start with understanding your specific challenges, not selling a pre-packaged solution. Discovery calls are about clarity, not pitches."
