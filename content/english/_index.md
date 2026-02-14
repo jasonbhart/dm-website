@@ -3,7 +3,7 @@
 banner:
   tagline: "Marketing Data & Analytics for SaaS"
   title: "Turn messy data into decisions that drive revenue"
-  content: "We help growth, data, and RevOps teams build trusted analytics that actually get used."
+  content: "You know your data should be driving decisions — but conflicting metrics, broken pipelines, and tools nobody trusts are getting in the way. We help growth, data, and RevOps teams at mid-size SaaS companies build analytics they can actually rely on."
   image: "/images/banner.png"
   button:
     enable: true
@@ -11,8 +11,8 @@ banner:
     link: "/contact-us"
   secondary_link:
     enable: true
-    label: "See how we help"
-    link: "#features"
+    label: "Or tell us about your challenge"
+    link: "/contact-us#lead-form"
 
 # Features (Pillars)
 features:
