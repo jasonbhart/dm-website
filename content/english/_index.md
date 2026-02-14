@@ -6,7 +6,7 @@ description: "Turn messy data into decisions that drive revenue. Marketing analy
 banner:
   tagline: "Marketing Data & Analytics for SaaS & Ecommerce"
   title: "Turn messy data into decisions that drive revenue"
-  content: "You know your data should be driving decisions — but conflicting metrics, broken pipelines, and tools nobody trusts are getting in the way. We help growth, data, and RevOps teams at mid-size SaaS and ecommerce companies ($10M+ ARR or venture-funded) build analytics they can actually rely on."
+  content: "You know your data should be driving decisions — but conflicting metrics, broken pipelines, and tools nobody trusts are getting in the way. We help growth, product, data, and RevOps teams at mid-size SaaS and ecommerce companies ($10M+ ARR or venture-funded) build trusted analytics and AI-powered workflows they can actually rely on."
   image: "/images/banner.png"
   button:
     enable: true
@@ -84,6 +84,9 @@ why:
     - icon: "fa-bolt"
       title: "Fast to Start"
       description: "Senior practitioners from day one. No ramp-up period, no junior staff learning on your dime."
+    - icon: "fa-phone"
+      title: "Just a Call Away"
+      description: "Senior practitioners who pick up the phone. No ticket queues, no layers of account management."
 
 # Newsletter
 newsletter:
