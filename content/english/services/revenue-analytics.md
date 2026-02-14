@@ -36,6 +36,18 @@ projects:
     - name: "Finance-Adjacent Reporting"
       description: "Connect marketing metrics to financial outcomes"
 
+process:
+  title: "How It Works"
+  steps:
+    - title: "Discovery"
+      description: "We assess your current analytics setup, identify gaps, and align on what success looks like for your marketing and revenue teams."
+    - title: "Design"
+      description: "We architect the solution — attribution models, data flows, reporting structure — and validate it with your team."
+    - title: "Build"
+      description: "We implement, test, and document. You see progress every week, not just at the end."
+    - title: "Enablement"
+      description: "We train your team to own and maintain what we built. No consultant dependency."
+
 # Client Outcomes (optional) - Add real case studies when available
 # clients:
 #   title: "Trusted By"

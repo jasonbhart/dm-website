@@ -103,6 +103,31 @@
   {{ end }}
   <!-- /Types of Projects -->
 
+  {{ with .Params.process }}
+  <!-- Process Section -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-10">
+        <h2>{{ .title | default "How It Works" }}</h2>
+      </div>
+      <div class="row justify-center">
+        {{ range $index, $step := .steps }}
+        <div class="md:col-6 lg:col-3 mb-8">
+          <div class="text-center">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white text-lg font-bold">
+              {{ add $index 1 }}
+            </div>
+            <h3 class="h5 mb-2">{{ $step.title }}</h3>
+            <p class="text-sm text-text">{{ $step.description }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  <!-- /Process -->
+
   <!-- Client Outcomes Section -->
   {{ with .Params.clients }}
     {{ if or .logos .case_studies }}

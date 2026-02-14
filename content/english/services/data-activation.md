@@ -36,6 +36,18 @@ projects:
     - name: "Operational Analytics"
       description: "Embed data into daily workflows and decisions"
 
+process:
+  title: "How It Works"
+  steps:
+    - title: "Map"
+      description: "We identify which data needs to flow where — from your warehouse to the operational tools your teams use daily."
+    - title: "Design"
+      description: "We architect activation workflows, audience definitions, and sync schedules that match your business logic."
+    - title: "Connect"
+      description: "We implement reverse ETL pipelines, configure destinations, and validate data accuracy end-to-end."
+    - title: "Optimize"
+      description: "We monitor, tune, and hand off — ensuring your team can manage and expand activation workflows on their own."
+
 # Final CTA (optional - has defaults)
 cta:
   title: "Ready to put your data to work?"

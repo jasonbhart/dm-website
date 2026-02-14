@@ -34,6 +34,18 @@ projects:
     - name: "Break-Fix & Pinch Hitting"
       description: "Something's broken and your team is stuck. We jump in, diagnose, and fix — whether it's a dbt model, a dashboard, or an attribution gap."
 
+process:
+  title: "How It Works"
+  steps:
+    - title: "Scope"
+      description: "A quick call to understand what you need. We define the audit boundaries and agree on deliverables before starting."
+    - title: "Diagnose"
+      description: "We dig into your data, tools, and processes. We document what's working, what's broken, and what's missing."
+    - title: "Recommend"
+      description: "You get a clear, prioritized action plan — not a 50-page report. Specific fixes with expected impact."
+    - title: "Debrief"
+      description: "We walk through findings together, answer questions, and help you decide on next steps."
+
 pricing:
   headline: "Engagements start at $2,500"
   description: "Most audits run $2,500-$7,500 depending on scope. Break-fix work is scoped on a per-issue basis. No hourly billing — you'll know the cost before we start."

@@ -36,6 +36,18 @@ projects:
     - name: "Data Governance"
       description: "Establish the processes that keep your data trustworthy"
 
+process:
+  title: "How It Works"
+  steps:
+    - title: "Assessment"
+      description: "We audit your current data infrastructure — sources, pipelines, models, and governance — to understand what's working and what's not."
+    - title: "Architecture"
+      description: "We design the target state: data models, pipeline architecture, transformation logic, and testing strategy."
+    - title: "Implementation"
+      description: "We build and deploy using dbt, your cloud warehouse, and open-source tools your team already knows."
+    - title: "Handoff"
+      description: "We document everything, train your team, and ensure they can maintain and extend the foundation independently."
+
 # Final CTA (optional - has defaults)
 cta:
   title: "Ready to build a data foundation you can trust?"
