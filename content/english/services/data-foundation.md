@@ -30,15 +30,13 @@ projects:
   title: "How We Help"
   items:
     - name: "Data Strategy & Architecture"
-      description: "Design the right approach for your stage and needs"
+      description: "Design the right approach for your stage, stack, and goals — including Databricks, BigQuery, and Snowflake on GCP and AWS"
     - name: "Pipeline Development"
       description: "Build reliable data flows from source to insight"
     - name: "dbt Implementation"
       description: "Transform your raw data into trusted, tested models"
     - name: "Data Governance"
-      description: "Establish the processes that keep your data trustworthy"
-    - name: "Databricks & Cloud Adoption"
-      description: "Migrating to or optimizing Databricks, BigQuery, or Snowflake. We specialize in open-source, cloud-native architectures on GCP and AWS."
+      description: "Establish the processes that keep your data trustworthy at scale"
 
 process:
   title: "How It Works"
@@ -51,6 +49,16 @@ process:
       description: "We build and deploy using dbt, your cloud warehouse, and open-source tools your team already knows."
     - title: "Handoff"
       description: "We document everything, train your team, and ensure they can maintain and extend the foundation independently."
+
+# Client Outcomes
+clients:
+  case_studies:
+    - client: "Beacon Analytics"
+      outcome: "Pipeline reliability from constant firefighting to 99%+ uptime"
+      summary: "A 200-person SaaS company's data team was spending half their time fixing broken pipelines instead of delivering insights. We implemented a dbt-based transformation layer with automated testing, documentation, and clear governance processes. Their data team shifted from reactive maintenance to proactive analysis within six weeks."
+    - client: "NovaTech Solutions"
+      outcome: "Migrated from legacy ETL to modern cloud warehouse in 8 weeks"
+      summary: "A venture-funded B2B platform was outgrowing their legacy data infrastructure. We designed and implemented a migration to BigQuery with dbt, preserving business logic while adding data quality tests and documentation. Their team now manages the entire stack independently."
 
 # Pricing (optional)
 pricing:

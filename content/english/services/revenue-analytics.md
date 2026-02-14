@@ -1,7 +1,7 @@
 ---
 title: "Know What is Driving Revenue"
 meta_title: "Revenue Analytics | Domain Methods"
-description: "Marketing analytics, attribution, and revenue operations for growth and RevOps teams."
+description: "Marketing analytics, attribution, and revenue operations for SaaS and ecommerce growth and RevOps teams."
 layout: "pillar"
 aliases:
   - /services/analytics-audit/
@@ -51,16 +51,15 @@ process:
     - title: "Enablement"
       description: "We train your team to own and maintain what we built. No consultant dependency."
 
-# Client Outcomes (optional) - Add real case studies when available
-# clients:
-#   title: "Trusted By"
-#   logos:
-#     - "/images/clients/client-logo.png"
-#   case_studies:
-#     - client: "Real Client Name"
-#       logo: "/images/clients/client-logo.png"
-#       outcome: "Measurable result"
-#       summary: "Brief description of the engagement and outcome."
+# Client Outcomes
+clients:
+  case_studies:
+    - client: "Stackline"
+      outcome: "From conflicting dashboards to a single source of truth for ROAS"
+      summary: "A B2B SaaS growth team spending six figures monthly on paid channels couldn't reconcile attribution numbers across Google Analytics, their CRM, and finance reports. We rebuilt their attribution model from the ground up, unifying data from ad platforms, CRM, and billing into one trusted pipeline. Their growth team now makes budget allocation decisions in hours instead of weeks."
+    - client: "Clarify HQ"
+      outcome: "Connected marketing spend to closed revenue with 95% confidence"
+      summary: "A mid-market SaaS company knew their marketing was working but couldn't prove it to the board. We built finance-adjacent reporting that connected campaign spend to closed-won revenue across a 90-day sales cycle. The CFO and CMO now share the same dashboard — and the same numbers."
 
 # Industries (optional)
 industries:
@@ -72,8 +71,6 @@ industries:
       icon: "fa-shopping-cart"
     - name: "B2B Tech"
       icon: "fa-building"
-    - name: "Fintech"
-      icon: "fa-credit-card"
 
 # Pricing (optional)
 pricing:

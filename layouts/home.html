@@ -96,6 +96,62 @@
   {{ end }}
   <!-- /Features -->
 
+  <!-- Founder Callout -->
+  {{ with .Params.founder }}
+  {{ if .enable }}
+  <section class="section-sm">
+    <div class="container">
+      <div class="row items-center justify-center">
+        <div class="md:col-2 lg:col-2 mb-6 md:mb-0 text-center">
+          {{ partial "image" (dict "Src" .image "Alt" .name "Class" "rounded-full mx-auto" "Size" "150x150") }}
+        </div>
+        <div class="md:col-6 lg:col-5">
+          <p class="text-lg mb-2">{{ .content }}</p>
+          <div class="flex items-center gap-4">
+            <strong>{{ .name }}</strong>
+            <span class="text-text-light">{{ .role }}</span>
+            {{ with .linkedin }}
+            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark">
+              <i class="fab fa-linkedin text-xl"></i>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+  <!-- /Founder Callout -->
+
+  <!-- Why Section -->
+  {{ with .Params.why }}
+  <section class="section bg-theme-light">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-8 text-center mb-12">
+          <h2 class="mb-4">{{ .title }}</h2>
+          <p class="text-lg text-text">{{ .subtitle }}</p>
+        </div>
+      </div>
+      <div class="row">
+        {{ range .points }}
+        <div class="md:col-6 lg:col-3 mb-8">
+          <div class="text-center">
+            <div class="mb-4 text-primary">
+              <i class="fa {{ .icon }} text-3xl"></i>
+            </div>
+            <h3 class="h5 mb-2">{{ .title }}</h3>
+            <p class="text-text">{{ .description }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  <!-- /Why Section -->
+
   <!-- Testimonials -->
   {{ with site.GetPage "sections/testimonial" }}
     {{ if .Params.enable }}
@@ -159,4 +215,34 @@
     {{ end }}
   {{ end }}
   <!-- /Testimonials -->
+
+  <!-- Newsletter -->
+  {{ with .Params.newsletter }}
+  {{ if .enable }}
+  <section class="section-sm bg-gradient">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-6 text-center">
+          <h2 class="mb-4">{{ .title }}</h2>
+          <p class="mb-6 text-text">{{ .description }}</p>
+          <form name="newsletter" method="POST" data-netlify="true" class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
+            <input type="hidden" name="form-name" value="newsletter" />
+            <input
+              type="email"
+              name="email"
+              placeholder="{{ .placeholder }}"
+              required
+              class="form-input flex-1 rounded-lg border border-border px-4 py-3 text-text focus:border-primary focus:ring-primary"
+            />
+            <button type="submit" class="btn btn-primary whitespace-nowrap">
+              {{ .button }}
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+  <!-- /Newsletter -->
 {{ end }}

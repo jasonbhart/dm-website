@@ -7,7 +7,7 @@ image: "/images/service-1.png"
 categories: ["Marketing Analytics"]
 author: "Jason B. Hart"
 tags: ["attribution", "marketing analytics", "SaaS"]
-draft: true
+draft: false
 ---
 
 Most SaaS companies don't have an attribution problem. They have a **trust** problem.

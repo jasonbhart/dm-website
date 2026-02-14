@@ -2,7 +2,6 @@
 title: "About Domain Methods"
 meta_title: "About | Domain Methods"
 description: "Marketing Data, Revenue, Analytics Engineering, and AI for SaaS and Ecommerce. Obsessed with truth and UX."
-image: "/images/avatar.png"
 layout: "about"
 draft: false
 
@@ -63,9 +62,11 @@ founder:
   role: "Founder & Principal Consultant"
   image: "/images/jason-hart.png"
   bio: |
-    I started Domain Methods because I kept seeing the same problem: smart teams with messy data making decisions on gut feel instead of evidence. After years leading analytics and data engineering for SaaS companies, I got tired of watching organizations drown in dashboards nobody trusts.
+    I started Domain Methods because I kept seeing the same problem: smart teams with messy data making decisions on gut feel instead of evidence. After years leading analytics and data engineering for SaaS and ecommerce companies, I got tired of watching organizations drown in dashboards nobody trusts.
 
-    My approach is simple — I solve the hard problems (architecture, strategy, proof-of-concept), then build systems that your team can actually own and run. I'm not here to create dependency. I'm here to create clarity.
+    My approach is simple — I solve the hard problems (architecture, strategy, proof-of-concept), then hand off to your team or our trusted network of specialists for execution and long-term support. You get senior-level thinking on day one, without paying for a full team when you don't need one.
+
+    Domain Methods isn't a traditional agency. We're a small, flat team of experienced practitioners who've worked together across multiple engagements. No junior staff learning on your dime. No layers of account management. Just direct access to people who know the stack and understand your business.
   linkedin: "https://www.linkedin.com/in/jasonbhart/"
 
 fit:

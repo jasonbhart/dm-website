@@ -1,7 +1,7 @@
 ---
 title: "Audits & Quick Engagements"
 meta_title: "Data & Analytics Audits | Domain Methods"
-description: "Fast, focused audits and consultations for marketing analytics, data pipelines, and revenue operations. Get clarity in days, not months."
+description: "Fast, focused audits and consultations for marketing analytics, data pipelines, and revenue operations. For SaaS and ecommerce teams. Get clarity in days, not months."
 layout: "pillar"
 draft: false
 

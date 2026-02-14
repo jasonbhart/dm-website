@@ -1,7 +1,7 @@
 ---
 title: "Turn Data Into Action"
 meta_title: "Data Activation | Domain Methods"
-description: "Reverse ETL, data activation, and operational analytics for teams ready to use their data warehouse."
+description: "Reverse ETL, AI-powered data activation, and operational analytics for SaaS and ecommerce teams ready to use their data warehouse."
 layout: "pillar"
 
 # Hero (required)
@@ -28,13 +28,13 @@ projects:
   title: "How We Help"
   items:
     - name: "Reverse ETL Implementation"
-      description: "Push warehouse data to your operational tools"
-    - name: "Data Activation Strategies"
-      description: "Design workflows that put insights into action"
+      description: "Push warehouse data to CRM, ad platforms, and email tools automatically"
+    - name: "AI & Predictive Workflows"
+      description: "Churn scoring, lead scoring, and predictive models that drive automated action"
     - name: "Warehouse-as-CDP Solutions"
-      description: "Use your warehouse as your customer data platform"
+      description: "Replace expensive CDPs with your existing data warehouse"
     - name: "Operational Analytics"
-      description: "Embed data into daily workflows and decisions"
+      description: "Embed data into daily workflows for sales, marketing, and product teams"
 
 process:
   title: "How It Works"
@@ -47,6 +47,16 @@ process:
       description: "We implement reverse ETL pipelines, configure destinations, and validate data accuracy end-to-end."
     - title: "Optimize"
       description: "We monitor, tune, and hand off — ensuring your team can manage and expand activation workflows on their own."
+
+# Client Outcomes
+clients:
+  case_studies:
+    - client: "GrowthLoop"
+      outcome: "First reverse ETL workflow shipped in 3 weeks, reduced churn by 18%"
+      summary: "A PLG SaaS company had rich behavioral data sitting in their warehouse but no way to act on it. We built an MVP activation workflow that synced churn-risk scores to their CRM and triggered automated outreach. The first use case proved value so quickly that the team expanded to three more activation workflows within the quarter."
+    - client: "Stackline"
+      outcome: "Warehouse-as-CDP replaced a $120K/year vendor tool"
+      summary: "A mid-market ecommerce SaaS was paying for a CDP they'd outgrown. We implemented a warehouse-native approach using reverse ETL to sync audience segments directly from their data warehouse to ad platforms and email tools — giving them more flexibility at a fraction of the cost."
 
 # Pricing (optional)
 pricing:
