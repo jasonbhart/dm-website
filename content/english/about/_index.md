@@ -25,6 +25,9 @@ values:
     - title: "Built to Be Used"
       description: "The best analytics are the ones people actually use"
       icon: "fa-users"
+    - title: "Accessible by Default"
+      description: "Just a call away — senior help without the red tape"
+      icon: "fa-phone"
 
 methodology:
   enable: true
@@ -80,6 +83,7 @@ fit:
       - "You have a data warehouse (or are ready to set one up)"
       - "You want to own the solution long-term, not rent a consultant forever"
       - "You value clarity over complexity and truth over comfort"
+      - "You prefer open-source tools and modern cloud platforms (GCP, AWS, Databricks)"
   bad_fit:
     title: "We're probably not the right fit if..."
     items:
@@ -90,7 +94,7 @@ fit:
 
 cta:
   title: "Ready to talk?"
-  description: "We start with understanding your specific challenges, not selling a pre-packaged solution. Discovery calls are about clarity, not pitches."
+  description: "Discovery calls are 30 minutes. We'll assess fit, scope the problem, and tell you honestly if we can help. If there's a match, we propose a paid discovery engagement with clear deliverables."
   button: "Book a Discovery Call"
   link: "/contact-us"
 ---
