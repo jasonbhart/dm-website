@@ -67,6 +67,53 @@
   </section>
   {{ end }}
 
+  {{ with .Params.methodology }}
+  {{ if .enable }}
+  <!-- Methodology Section -->
+  <section class="section bg-theme-light">
+    <div class="container">
+      <div class="text-center mb-12">
+        <h2 class="mb-4">{{ .title }}</h2>
+        <p class="lg:col-8 mx-auto text-text">{{ .description }}</p>
+      </div>
+
+      <!-- Four Ingredients -->
+      {{ with .ingredients }}
+      <h3 class="h4 text-center mb-8">{{ .title }}</h3>
+      <div class="row justify-center mb-12">
+        {{ range .items }}
+        <div class="md:col-6 lg:col-3 mb-8">
+          <div class="text-center">
+            <div class="mb-4">
+              <i class="{{ .icon }} text-3xl text-primary"></i>
+            </div>
+            <h4 class="h5 mb-2">{{ .title }}</h4>
+            <p class="text-sm text-text">{{ .description }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <!-- Three Focus Areas -->
+      {{ with .process }}
+      <h3 class="h4 text-center mb-8">{{ .title }}</h3>
+      <div class="row justify-center">
+        {{ range .items }}
+        <div class="md:col-4 mb-8">
+          <div class="rounded-lg bg-body p-6 shadow">
+            <h4 class="h5 mb-2">{{ .title }}</h4>
+            <p class="text-sm text-text">{{ .description }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
   {{ with .Params.founder }}
   {{ if .enable }}
   <!-- Founder Section -->

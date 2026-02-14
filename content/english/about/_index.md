@@ -27,6 +27,35 @@ values:
       description: "The best analytics are the ones people actually use"
       icon: "fa-users"
 
+methodology:
+  enable: true
+  title: "How We Work"
+  description: "Every engagement follows a structured approach designed to create lasting change — not just deliverables."
+  ingredients:
+    title: "The Four Ingredients"
+    items:
+      - title: "Purpose"
+        icon: "fas fa-compass"
+        description: "We start by defining the 'why.' If we can't articulate why this project matters to your business, we're not ready to start."
+      - title: "Audience Buy-In"
+        icon: "fas fa-users"
+        description: "Analytics that nobody uses are a waste. We ensure stakeholders are aligned and invested before we build anything."
+      - title: "Behavior Change"
+        icon: "fas fa-sync-alt"
+        description: "The goal isn't a dashboard — it's changing how your team makes decisions. We design for adoption, not just delivery."
+      - title: "Deliverables"
+        icon: "fas fa-check-circle"
+        description: "Clear, scoped outputs that your team can own and maintain. No black boxes. No consultant dependency."
+  process:
+    title: "Three Focus Areas"
+    items:
+      - title: "Outcomes"
+        description: "What will be achieved. We define success criteria upfront so there's no ambiguity about what 'done' looks like."
+      - title: "Preparation"
+        description: "Chemistry and fit. We invest in understanding your team, your tools, and your culture before writing a single line of SQL."
+      - title: "Execution"
+        description: "Solving for the unknown. We show, not tell — working alongside your team through interactive sessions rather than handing off slide decks."
+
 founder:
   enable: true
   title: "Meet the Founder"
