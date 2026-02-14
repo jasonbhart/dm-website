@@ -3,6 +3,9 @@ title: "Know What is Driving Revenue"
 meta_title: "Revenue Analytics | Domain Methods"
 description: "Marketing analytics, attribution, and revenue operations for growth and RevOps teams."
 layout: "pillar"
+aliases:
+  - /services/analytics-audit/
+  - /services/comprehensive-tracking/
 
 # Hero (required)
 hero:

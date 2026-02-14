@@ -1,0 +1,7 @@
+# Redirects from old WordPress site
+/services/analytics-audit/        /services/revenue-analytics/  301
+/services/comprehensive-tracking/  /services/revenue-analytics/  301
+/services/custom-integrations/     /services/data-foundation/    301
+
+# Legacy contact page
+/contact/                          /contact-us/                  301

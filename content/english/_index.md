@@ -1,4 +1,7 @@
 ---
+meta_title: "Domain Methods | Marketing Data & Analytics for SaaS"
+description: "Turn messy data into decisions that drive revenue. Marketing analytics, data foundations, and activation for mid-size SaaS companies."
+
 # Banner
 banner:
   tagline: "Marketing Data & Analytics for SaaS"
