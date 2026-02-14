@@ -14,8 +14,8 @@ banner:
     link: "/contact-us"
   secondary_link:
     enable: true
-    label: "Or tell us about your challenge"
-    link: "/contact-us#lead-form"
+    label: "See how we help"
+    link: "#features"
 
 # Features (Pillars)
 features:
