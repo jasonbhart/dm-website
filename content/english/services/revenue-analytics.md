@@ -36,46 +36,31 @@ projects:
     - name: "Finance-Adjacent Reporting"
       description: "Connect marketing metrics to financial outcomes"
 
-# Client Outcomes (optional) - DUMMY DATA FOR TESTING
-clients:
-  title: "Trusted By"
-  logos:
-    - "/images/avatar.png"
-    - "/images/avatar.png"
-    - "/images/avatar.png"
-    - "/images/avatar.png"
-    - "/images/avatar.png"
-  case_studies:
-    - client: "Acme SaaS"
-      logo: "/images/avatar.png"
-      outcome: "Reduced CAC by 30%"
-      summary: "Rebuilt attribution from scratch to finally understand which channels drove revenue."
-      link: "/contact-us"
-    - client: "TechCorp Inc"
-      logo: "/images/avatar.png"
-      outcome: "2x Marketing ROI"
-      summary: "Unified reporting across 12 marketing channels into a single trusted dashboard."
-    - client: "GrowthCo"
-      logo: "/images/avatar.png"
-      outcome: "50% faster reporting"
-      summary: "Automated weekly revenue reports that used to take a full day to compile."
+# Client Outcomes (optional) - Add real case studies when available
+# clients:
+#   title: "Trusted By"
+#   logos:
+#     - "/images/clients/client-logo.png"
+#   case_studies:
+#     - client: "Real Client Name"
+#       logo: "/images/clients/client-logo.png"
+#       outcome: "Measurable result"
+#       summary: "Brief description of the engagement and outcome."
 
-# Industries (optional) - DUMMY DATA FOR TESTING
+# Industries (optional)
 industries:
   title: "Industries We Serve"
   items:
     - name: "SaaS"
       icon: "fa-cloud"
-      link: "/contact-us"
     - name: "Ecommerce"
       icon: "fa-shopping-cart"
-      link: "/contact-us"
     - name: "B2B Tech"
       icon: "fa-building"
     - name: "Fintech"
       icon: "fa-credit-card"
 
-# Pricing (optional) - DUMMY DATA FOR TESTING
+# Pricing (optional)
 pricing:
   headline: "Engagements start at $5,000"
   description: "Scope and pricing confirmed after discovery call. Most projects range from $5,000-$25,000 depending on complexity."
