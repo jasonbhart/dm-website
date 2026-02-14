@@ -51,10 +51,10 @@ process:
 # Client Outcomes
 clients:
   case_studies:
-    - client: "GrowthLoop"
+    - client: "PLG SaaS Product Team"
       outcome: "First reverse ETL workflow shipped in 3 weeks, reduced churn by 18%"
       summary: "A PLG SaaS company had rich behavioral data sitting in their warehouse but no way to act on it. We built an MVP activation workflow that synced churn-risk scores to their CRM and triggered automated outreach. The first use case proved value so quickly that the team expanded to three more activation workflows within the quarter."
-    - client: "Stackline"
+    - client: "Mid-Market Ecommerce SaaS"
       outcome: "Warehouse-as-CDP replaced a $120K/year vendor tool"
       summary: "A mid-market ecommerce SaaS was paying for a CDP they'd outgrown. We implemented a warehouse-native approach using reverse ETL to sync audience segments directly from their data warehouse to ad platforms and email tools — giving them more flexibility at a fraction of the cost."
 

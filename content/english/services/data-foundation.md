@@ -55,10 +55,10 @@ process:
 # Client Outcomes
 clients:
   case_studies:
-    - client: "Beacon Analytics"
+    - client: "Mid-Market SaaS Data Team"
       outcome: "Pipeline reliability from constant firefighting to 99%+ uptime"
       summary: "A 200-person SaaS company's data team was spending half their time fixing broken pipelines instead of delivering insights. We implemented a dbt-based transformation layer with automated testing, documentation, and clear governance processes. Their data team shifted from reactive maintenance to proactive analysis within six weeks."
-    - client: "NovaTech Solutions"
+    - client: "Venture-Funded B2B Platform"
       outcome: "Migrated from legacy ETL to modern cloud warehouse in 8 weeks"
       summary: "A venture-funded B2B platform was outgrowing their legacy data infrastructure. We designed and implemented a migration to BigQuery with dbt, preserving business logic while adding data quality tests and documentation. Their team now manages the entire stack independently."
 
