@@ -27,6 +27,18 @@ values:
       description: "The best analytics are the ones people actually use"
       icon: "fa-users"
 
+founder:
+  enable: true
+  title: "Meet the Founder"
+  name: "Jason B. Hart"
+  role: "Founder & Principal Consultant"
+  image: "/images/jason-hart.png"
+  bio: |
+    I started Domain Methods because I kept seeing the same problem: smart teams with messy data making decisions on gut feel instead of evidence. After years leading analytics and data engineering for SaaS companies, I got tired of watching organizations drown in dashboards nobody trusts.
+
+    My approach is simple — I solve the hard problems (architecture, strategy, proof-of-concept), then build systems that your team can actually own and run. I'm not here to create dependency. I'm here to create clarity.
+  linkedin: "https://www.linkedin.com/in/jasonbhart/"
+
 cta:
   title: "Ready to talk?"
   description: "We start with understanding your specific challenges, not selling a pre-packaged solution. Discovery calls are about clarity, not pitches."

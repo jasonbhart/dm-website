@@ -67,6 +67,43 @@
   </section>
   {{ end }}
 
+  {{ with .Params.founder }}
+  {{ if .enable }}
+  <!-- Founder Section -->
+  <section class="section">
+    <div class="container">
+      <div class="row items-center justify-center">
+        <div class="lg:col-4 md:col-5 mb-8 md:mb-0">
+          {{ if .image }}
+          <!-- TODO: Replace with real photo of Jason B. Hart -->
+          <img
+            src="{{ .image }}"
+            alt="{{ .name }}"
+            class="rounded-lg w-full"
+            width="400"
+            height="400"
+          />
+          {{ end }}
+        </div>
+        <div class="lg:col-6 md:col-7">
+          <h2 class="mb-4">{{ .title }}</h2>
+          <h3 class="h5 text-primary mb-2">{{ .name }}</h3>
+          <p class="text-sm text-text mb-4">{{ .role }}</p>
+          <div class="content">
+            {{ .bio | markdownify }}
+          </div>
+          {{ with .linkedin }}
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark inline-flex items-center mt-4">
+            <i class="fab fa-linkedin mr-2"></i> Connect on LinkedIn
+          </a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
   <!-- CTA Section -->
   <section class="section-sm">
     <div class="container">
