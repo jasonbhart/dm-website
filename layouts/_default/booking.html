@@ -1,13 +1,110 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
-  <section class="py-8">
+  <section class="section pt-0">
     <div class="container">
-      <div class="row">
-        <div class="lg:col-10 mx-auto">
+      <div class="row justify-center">
+        <div class="lg:col-10">
+
+          <!-- Lead Capture Form -->
+          <div class="mb-12" id="lead-form">
+            <h2 class="h3 mb-4 text-center">Not ready for a call? Tell us about your challenge.</h2>
+            <p class="text-center text-text mb-8">We will review your situation and get back to you within one business day.</p>
+            <form
+              action="{{ site.Params.contact_form_action }}"
+              method="POST"
+              class="max-w-[600px] mx-auto"
+            >
+              <div class="mb-4">
+                <label for="name" class="block text-sm font-medium mb-1">Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full rounded-lg border border-border px-4 py-2 text-dark focus:border-primary focus:outline-none"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-sm font-medium mb-1">Work Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full rounded-lg border border-border px-4 py-2 text-dark focus:border-primary focus:outline-none"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="company" class="block text-sm font-medium mb-1">Company</label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  class="w-full rounded-lg border border-border px-4 py-2 text-dark focus:border-primary focus:outline-none"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="company_size" class="block text-sm font-medium mb-1">Company Size</label>
+                <select
+                  id="company_size"
+                  name="company_size"
+                  class="w-full rounded-lg border border-border px-4 py-2 text-dark focus:border-primary focus:outline-none"
+                >
+                  <option value="">Select...</option>
+                  <option value="1-50">1-50 employees</option>
+                  <option value="50-100">50-100 employees</option>
+                  <option value="100-500">100-500 employees</option>
+                  <option value="500-1000">500-1000 employees</option>
+                  <option value="1000+">1000+ employees</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="interest" class="block text-sm font-medium mb-1">What are you looking for?</label>
+                <select
+                  id="interest"
+                  name="interest"
+                  class="w-full rounded-lg border border-border px-4 py-2 text-dark focus:border-primary focus:outline-none"
+                >
+                  <option value="">Select...</option>
+                  <option value="audit">A quick audit or consultation</option>
+                  <option value="attribution">Marketing attribution &amp; analytics</option>
+                  <option value="data-foundation">Data strategy &amp; pipelines (dbt)</option>
+                  <option value="activation">Data activation &amp; reverse ETL</option>
+                  <option value="strategy">General data strategy</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+              <div class="mb-6">
+                <label for="challenge" class="block text-sm font-medium mb-1">What is your biggest data challenge right now?</label>
+                <textarea
+                  id="challenge"
+                  name="challenge"
+                  rows="3"
+                  class="w-full rounded-lg border border-border px-4 py-2 text-dark focus:border-primary focus:outline-none"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary w-full"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Divider -->
+          <div class="flex items-center mb-12">
+            <hr class="flex-grow border-border" />
+            <span class="px-4 text-text text-sm">or book a call directly</span>
+            <hr class="flex-grow border-border" />
+          </div>
+
+          <!-- Calendar Booking (existing content) -->
           <div class="content">
             {{ .Content }}
           </div>
+
         </div>
       </div>
     </div>
