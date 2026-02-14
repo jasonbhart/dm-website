@@ -8,7 +8,7 @@ layout: "pillar"
 hero:
   tagline: "Revenue Analytics"
   title: "Know What is Driving Revenue"
-  content: "For growth and RevOps teams tired of conflicting metrics and unclear attribution."
+  content: "For growth leaders who need predictable ROAS and RevOps teams tired of defending numbers that don't match. We build a single source of truth for revenue metrics — so you can stop second-guessing your data and start making confident decisions about where to invest."
   image: "/images/service-1.png"
   button:
     label: "Book a Discovery Call"

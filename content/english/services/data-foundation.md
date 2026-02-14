@@ -8,7 +8,7 @@ layout: "pillar"
 hero:
   tagline: "Data Foundation"
   title: "Build a Trusted Data Foundation"
-  content: "For data and RevOps leaders who need a single source of truth they can rely on."
+  content: "For data leaders who need more than technical capacity — you need a partner who understands your business context. We build trusted data foundations using dbt, open-source tools, and modern cloud warehouses like BigQuery, Snowflake, and Databricks on GCP and AWS. Fast to start, built to govern, and designed so your team owns it from day one."
   image: "/images/service-2.png"
   button:
     label: "Book a Discovery Call"
@@ -35,6 +35,8 @@ projects:
       description: "Transform your raw data into trusted, tested models"
     - name: "Data Governance"
       description: "Establish the processes that keep your data trustworthy"
+    - name: "Databricks & Cloud Adoption"
+      description: "Migrating to or optimizing Databricks, BigQuery, or Snowflake. We specialize in open-source, cloud-native architectures on GCP and AWS."
 
 process:
   title: "How It Works"

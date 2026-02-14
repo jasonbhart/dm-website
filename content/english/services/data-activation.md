@@ -8,7 +8,7 @@ layout: "pillar"
 hero:
   tagline: "Data Activation"
   title: "Turn Data Into Action"
-  content: "For teams ready to activate their data warehouse and put insights to work in the tools where decisions happen."
+  content: "For product and growth teams ready to ship, not wait. We start with an MVP — one high-impact activation — and prove value before expanding. From predictive scoring and automated audience building to churn reduction workflows, we use AI and automation to make your data warehouse work harder in the tools where decisions happen."
   image: "/images/service-3.png"
   button:
     label: "Book a Discovery Call"
