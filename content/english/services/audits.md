@@ -22,6 +22,14 @@ outcome:
     - "Fast turnaround: most audits complete in 1-2 weeks"
     - "Clear next steps, whether you work with us or not"
 
+for_you:
+  title: "This is for you if..."
+  items:
+    - "You know something's off with your data but don't know where to start"
+    - "You need expert eyes on a specific problem — not a six-month engagement"
+    - "Your team is stuck on a broken pipeline, dashboard, or attribution gap"
+    - "You want honest, actionable advice — whether you hire us or not"
+
 projects:
   title: "How We Can Help"
   items:

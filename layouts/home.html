@@ -185,7 +185,12 @@
                               fill="currentColor" />
                           </svg>
                         </div>
-                        <blockquote class="mt-8">
+                        {{ with .title }}
+                          <p class="mt-8 mb-2 font-semibold text-dark dark:text-white text-sm">
+                            {{ . | markdownify }}
+                          </p>
+                        {{ end }}
+                        <blockquote class="{{ if not .title }}mt-8{{ end }}">
                           {{ .content | markdownify }}
                         </blockquote>
                         <div class="mt-11 flex items-center">

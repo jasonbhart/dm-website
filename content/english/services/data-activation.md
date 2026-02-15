@@ -23,6 +23,14 @@ outcome:
     - "Use your warehouse as a customer data platform without vendor lock-in"
     - "Embed analytics into daily decisions and operational workflows"
 
+for_you:
+  title: "This is for you if..."
+  items:
+    - "You have rich data in your warehouse but no way to act on it"
+    - "You want to prove that data can reduce churn or drive expansion this quarter"
+    - "You're paying for a CDP you've outgrown and want a warehouse-native alternative"
+    - "Your product team needs an MVP approach — ship fast, prove value, then expand"
+
 # Types of Projects (optional)
 projects:
   title: "How We Help"
@@ -64,6 +72,13 @@ pricing:
   description: "Every engagement is scoped with clear deliverables and fixed pricing. Most activation projects range from $7,500-$30,000. Discovery engagements start at $5,000."
   button: "Book a Discovery Call"
   link: "/contact-us"
+
+go_deeper:
+  title: "Go Deeper"
+  description: "Read our data activation playbook — from reverse ETL to AI-powered workflows, built for mid-size SaaS and ecommerce teams."
+  link:
+    url: "/blog/data-activation-playbook"
+    label: "Read the Activation Playbook"
 
 # Final CTA (optional - has defaults)
 cta:

@@ -25,6 +25,14 @@ outcome:
     - "Tested, documented data models that the entire organization can trust"
     - "Clear governance processes that keep data quality high as you scale"
 
+for_you:
+  title: "This is for you if..."
+  items:
+    - "Your team spends more time fixing pipelines than delivering insights"
+    - "You need a partner who understands business context — not just SQL"
+    - "Nobody trusts the numbers because every tool shows something different"
+    - "You're scaling fast and your data infrastructure can't keep up"
+
 # Types of Projects (optional)
 projects:
   title: "How We Help"
@@ -68,6 +76,13 @@ pricing:
   description: "Engagements are scoped and priced upfront based on complexity and business impact. Most projects range from $10,000-$50,000. Discovery engagements start at $5,000."
   button: "Book a Discovery Call"
   link: "/contact-us"
+
+go_deeper:
+  title: "Go Deeper"
+  description: "Read our practical guide to building a modern data foundation with dbt — architecture decisions, migration strategies, and governance that actually works."
+  link:
+    url: "/blog/modern-data-foundation-dbt-guide"
+    label: "Read the dbt Foundation Guide"
 
 # Final CTA (optional - has defaults)
 cta:

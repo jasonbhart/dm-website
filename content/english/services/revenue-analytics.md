@@ -26,6 +26,14 @@ outcome:
     - "Visibility into which marketing dollars are actually working"
     - "Connect marketing activities to financial outcomes with confidence"
 
+for_you:
+  title: "This is for you if..."
+  items:
+    - "You're spending on ads but can't prove which channels drive pipeline"
+    - "Marketing and finance show different revenue numbers in every meeting"
+    - "You've outgrown Google Analytics but don't know what comes next"
+    - "Your board wants predictable ROAS and you're tired of guessing"
+
 # Types of Projects (optional)
 projects:
   title: "How We Help"
@@ -36,8 +44,8 @@ projects:
       description: "Build the dashboards and reports your revenue team needs"
     - name: "Ad Spend Optimization"
       description: "Know exactly where your marketing dollars are working"
-    - name: "Finance-Adjacent Reporting"
-      description: "Connect marketing metrics to financial outcomes"
+    - name: "Cross-Channel Performance Analytics"
+      description: "Unified view of campaign performance across every channel and platform"
 
 process:
   title: "How It Works"
@@ -78,6 +86,13 @@ pricing:
   description: "Scope and pricing confirmed after discovery call. Most projects range from $5,000-$25,000 depending on complexity."
   button: "Book a Discovery Call"
   link: "/contact-us"
+
+go_deeper:
+  title: "Go Deeper"
+  description: "Read our complete guide to marketing attribution for SaaS — why it breaks, how to fix it, and the 80/20 approach that works."
+  link:
+    url: "/blog/marketing-attribution-complete-guide"
+    label: "Read the Attribution Guide"
 
 # Final CTA (optional - has defaults)
 cta:

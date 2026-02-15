@@ -25,7 +25,7 @@ features:
     bulletpoints:
       - "Marketing analytics and attribution"
       - "Revenue operations metrics"
-      - "Finance-adjacent reporting"
+      - "Cross-channel performance analytics"
       - "Ad spend optimization"
     button:
       enable: true
@@ -64,7 +64,7 @@ founder:
   name: "Jason B. Hart"
   role: "Founder & Principal Consultant"
   image: "/images/jason-hart.png"
-  content: "I help mid-size SaaS and ecommerce companies build analytics they can trust and data systems they can actually use. If your team is drowning in dashboards nobody believes, let's talk."
+  content: "Most teams I talk to have the same problem: they don't know who to trust and what to do next with the budget they have. I help mid-size SaaS and ecommerce companies cut through that uncertainty — build analytics they can trust and data systems they can actually use. If your team is drowning in dashboards nobody believes, let's talk."
   linkedin: "https://www.linkedin.com/in/jasonbhart/"
 
 # Why Domain Methods
