@@ -65,3 +65,7 @@ dbt is a tool. Its value is measured not by how clean your DAG looks, but by whe
 If your data team has implemented dbt but your stakeholders still don't trust the numbers, the problem isn't dbt — it's the implementation. [A data audit can help you find the gaps.](/services/audits)
 
 If you're about to start a dbt implementation and want to get it right the first time, [let's talk about your data foundation.](/services/data-foundation)
+
+---
+
+**Go deeper:** This post covers the most common pitfalls. For a full guide to building a modern data foundation — from architecture to dbt to governance — read [The Complete Guide to Building a Modern Data Foundation](/blog/modern-data-foundation-dbt-guide/).

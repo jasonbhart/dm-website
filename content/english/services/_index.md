@@ -27,7 +27,7 @@ For data leaders who need more than technical capacity — a partner who underst
 
 ## Data Activation — "Turn Data Into Action"
 
-For product and growth teams ready to ship, not wait. We implement reverse ETL, AI-powered workflows, warehouse-as-CDP solutions, and operational analytics — closing the gap between insight and action.
+For product and growth teams ready to ship, not wait. We implement reverse ETL, AI-powered predictions and scoring, warehouse-as-CDP solutions, and automated activation workflows — closing the gap between insight and action with practical AI that delivers results in weeks, not quarters.
 
 [Learn more →](/services/data-activation)
 
@@ -38,6 +38,17 @@ For product and growth teams ready to ship, not wait. We implement reverse ETL, 
 Not every challenge requires a six-month project. We deliver focused audits, pipeline reviews, revenue operations diagnostics, and break-fix work. Most audits complete in 1–2 weeks with clear, actionable findings.
 
 [Learn more →](/services/audits)
+
+---
+
+## Not sure which service fits?
+
+| Your Role | Your Challenge | Start Here |
+|-----------|---------------|------------|
+| VP/Director of Growth | Unclear ROAS, conflicting attribution | [Revenue Analytics →](/services/revenue-analytics) |
+| Head of Data | Need a partner who gets the business, not just SQL | [Data Foundation →](/services/data-foundation) |
+| VP/Director of RevOps | Finance and marketing don't trust the same numbers | [Revenue Analytics →](/services/revenue-analytics) |
+| Head of Product/Analytics | Need fast, MVP-driven wins that reduce churn | [Data Activation →](/services/data-activation) |
 
 ---
 

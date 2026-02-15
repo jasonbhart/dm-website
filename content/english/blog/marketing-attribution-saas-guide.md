@@ -72,3 +72,7 @@ If your team has been debating attribution models for more than a quarter withou
 If your marketing and finance teams are using different numbers and nobody knows which ones are right, you have a trust problem.
 
 Both are fixable. [We do this all the time.](/services/revenue-analytics)
+
+---
+
+**Go deeper:** This post covers the fundamentals. For a comprehensive walkthrough — from choosing models to building pipelines to getting finance sign-off — read [The Complete Guide to Marketing Attribution for SaaS](/blog/marketing-attribution-complete-guide/).

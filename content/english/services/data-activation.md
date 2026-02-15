@@ -31,6 +31,12 @@ for_you:
     - "You're paying for a CDP you've outgrown and want a warehouse-native alternative"
     - "Your product team needs an MVP approach — ship fast, prove value, then expand"
 
+not_for:
+  items:
+    - "You need a custom-built CDP from scratch — we activate your existing warehouse"
+    - "You want someone to manage data syncs and workflows long-term"
+    - "You don't have a data warehouse yet — [start with a data foundation](/services/data-foundation)"
+
 # Types of Projects (optional)
 projects:
   title: "How We Help"
@@ -68,8 +74,8 @@ clients:
 
 # Pricing (optional)
 pricing:
-  headline: "Project-based pricing. No hourly billing."
-  description: "Every engagement is scoped with clear deliverables and fixed pricing. Most activation projects range from $7,500-$30,000. Discovery engagements start at $5,000."
+  headline: "Engagements start at $5,000"
+  description: "Scoped with clear deliverables and fixed pricing. No hourly billing. Most activation projects range from $7,500-$30,000."
   button: "Book a Discovery Call"
   link: "/contact-us"
 

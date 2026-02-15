@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <section class="section-sm">
+    <div class="container">
+      <h1 class="mb-12 text-center">{{ .Title }}</h1>
+      <div class="row">
+        {{ $paginator := .Paginate .RegularPages }}
+        {{ range $paginator.Pages }}
+          <div class="md:col-6 lg:col-4 mb-14">
+            {{ partial "components/blog-card" . }}
+          </div>
+        {{ end }}
+      </div>
+      {{ partial "components/pagination.html" . }}
+    </div>
+  </section>
+{{ end }}

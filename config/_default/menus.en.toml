@@ -2,8 +2,13 @@
 
 # main menu
 [[main]]
-name = "Services"
+name = "Home"
+url = "/"
 weight = 1
+
+[[main]]
+name = "Services"
+weight = 2
 hasChildren = true
 
 [[main]]
@@ -33,12 +38,12 @@ weight = 4
 [[main]]
 name = "About"
 url = "/about"
-weight = 2
+weight = 3
 
 [[main]]
 name = "Blog"
 url = "/blog"
-weight = 3
+weight = 4
 
 
 # footer menu
@@ -58,7 +63,7 @@ url = "/blog"
 weight = 3
 
 [[footer]]
-name = "Contact Us"
+name = "Book a Call"
 url = "/contact-us"
 weight = 4
 

@@ -34,6 +34,12 @@ for_you:
     - "You've outgrown Google Analytics but don't know what comes next"
     - "Your board wants predictable ROAS and you're tired of guessing"
 
+not_for:
+  items:
+    - "You need someone to manage dashboards or reports on an ongoing basis"
+    - "You're looking for a BI implementation from scratch without existing data infrastructure"
+    - "You want vanity metrics — we focus on numbers tied to revenue"
+
 # Types of Projects (optional)
 projects:
   title: "How We Help"

@@ -69,7 +69,9 @@ founder:
 
     My approach is simple — I solve the hard problems (architecture, strategy, proof-of-concept), then hand off to your team or our trusted network of specialists for execution and long-term support. You get senior-level thinking on day one, without paying for a full team when you don't need one.
 
-    Domain Methods isn't a traditional agency. We're a small, flat team of experienced practitioners who've worked together across multiple engagements. No junior staff learning on your dime. No layers of account management. Just direct access to people who know the stack and understand your business.
+    Domain Methods isn't a traditional agency. We're a small, flat team of experienced practitioners backed by a trusted network of specialists we've worked with across multiple engagements. When a project needs specific expertise — whether that's Databricks migration, advanced dbt modeling, or activation engineering — we bring in people we've already vetted and collaborated with. No junior staff learning on your dime. No layers of account management. Just direct access to people who know the stack and understand your business.
+
+    I regularly share practical insights on marketing data, attribution, and analytics engineering — [follow me on LinkedIn](https://www.linkedin.com/in/jasonbhart/) to stay in the loop.
   linkedin: "https://www.linkedin.com/in/jasonbhart/"
 
 fit:
@@ -94,7 +96,7 @@ fit:
 
 cta:
   title: "Ready to talk?"
-  description: "Discovery calls are 30 minutes. We'll assess fit, scope the problem, and tell you honestly if we can help. If there's a match, we propose a paid discovery engagement with clear deliverables."
+  description: "Discovery calls are short and focused. We'll assess fit, scope the problem, and tell you honestly if we can help. If there's a match, we propose a paid discovery engagement with clear deliverables."
   button: "Book a Discovery Call"
   link: "/contact-us"
 ---

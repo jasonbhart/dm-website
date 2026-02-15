@@ -47,16 +47,47 @@ features:
 
   - title: "Turn Data Into Action"
     image: "/images/service-3.png"
-    content: "For product and growth teams ready to activate their data warehouse with AI and automation."
+    content: "For product and growth teams ready to activate their data warehouse with AI-powered workflows and automation."
     bulletpoints:
       - "Reverse ETL implementation"
-      - "AI and predictive workflows"
+      - "AI-powered predictions and scoring"
       - "Warehouse-as-CDP solutions"
-      - "Operational analytics"
+      - "Automated activation workflows"
     button:
       enable: true
       label: "Learn More"
       link: "/services/data-activation"
+
+# Personas
+personas:
+  enable: true
+  title: "Who We Help"
+  subtitle: "We work with specific roles facing specific problems. Find your situation below."
+  cards:
+    - label: "Growth & Marketing Leaders"
+      role: "VP/Director of Growth"
+      pain: "Need predictable ROAS and clear attribution"
+      link: "/services/revenue-analytics"
+      link_label: "Revenue Analytics"
+    - label: "Data Leaders"
+      role: "Head of Data"
+      pain: "Need a partner who understands business context, not just SQL"
+      link: "/services/data-foundation"
+      link_label: "Data Foundation"
+    - label: "Revenue Operations"
+      role: "VP/Director of RevOps"
+      pain: "Need one source of truth that finance and marketing both trust"
+      link: "/services/revenue-analytics"
+      link_label: "Revenue Analytics"
+    - label: "Product & Growth (PLG)"
+      role: "Head of Product/Analytics"
+      pain: "Need fast, MVP-driven wins that reduce churn"
+      link: "/services/data-activation"
+      link_label: "Data Activation"
+  fallback:
+    text: "Not sure where to start?"
+    link: "/services/audits"
+    link_label: "Begin with an audit"
 
 # Founder
 founder:
@@ -64,7 +95,7 @@ founder:
   name: "Jason B. Hart"
   role: "Founder & Principal Consultant"
   image: "/images/jason-hart.png"
-  content: "Most teams I talk to have the same problem: they don't know who to trust and what to do next with the budget they have. I help mid-size SaaS and ecommerce companies cut through that uncertainty — build analytics they can trust and data systems they can actually use. If your team is drowning in dashboards nobody believes, let's talk."
+  content: "Most teams I talk to have the same problem: they don't know who to trust and what to do next with the budget they have. I help mid-size SaaS and ecommerce companies cut through that uncertainty — build analytics they can trust and data systems they can actually use. If your team is drowning in dashboards nobody believes, let's talk. I share practical takes on marketing data, attribution, and analytics engineering on LinkedIn — follow along."
   linkedin: "https://www.linkedin.com/in/jasonbhart/"
 
 # Why Domain Methods
@@ -91,8 +122,8 @@ why:
 # Newsletter
 newsletter:
   enable: true
-  title: "Get data insights that matter"
-  description: "Practical takes on marketing analytics, data strategy, and revenue operations. No fluff, no spam — just the stuff we wish someone had told us."
+  title: "Practical data insights, monthly"
+  description: "One email per month with actionable takes on attribution, data foundations, and AI-powered activation — drawn from real client work. No fluff, no spam."
   placeholder: "Your email address"
   button: "Subscribe"
 ---

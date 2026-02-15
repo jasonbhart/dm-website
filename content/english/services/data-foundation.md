@@ -33,6 +33,12 @@ for_you:
     - "Nobody trusts the numbers because every tool shows something different"
     - "You're scaling fast and your data infrastructure can't keep up"
 
+not_for:
+  items:
+    - "You need ongoing database administration or managed services"
+    - "You're looking for full business system design and integration (ERP, CRM buildouts)"
+    - "You need a large embedded team for 6+ months"
+
 # Types of Projects (optional)
 projects:
   title: "How We Help"
@@ -72,8 +78,8 @@ clients:
 
 # Pricing (optional)
 pricing:
-  headline: "Project-based pricing. No hourly billing."
-  description: "Engagements are scoped and priced upfront based on complexity and business impact. Most projects range from $10,000-$50,000. Discovery engagements start at $5,000."
+  headline: "Engagements start at $5,000"
+  description: "Scoped and priced upfront based on complexity and business impact. No hourly billing. Most projects range from $10,000-$50,000."
   button: "Book a Discovery Call"
   link: "/contact-us"
 

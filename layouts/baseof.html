@@ -44,6 +44,15 @@
       {{ block "main" . }}{{ end }}
     </main>
 
+    <!-- mobile sticky CTA — hidden on desktop and on the contact page -->
+    {{ if ne .RelPermalink "/contact-us/" }}
+      <div class="fixed bottom-0 left-0 right-0 z-50 bg-body border-t border-border p-3 lg:hidden">
+        <a href="/contact-us/" class="btn btn-primary w-full text-center">
+          Book a Discovery Call
+        </a>
+      </div>
+    {{ end }}
+
     <!-- footer -->
     {{ partial "essentials/footer.html" . }}
 

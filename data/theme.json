@@ -10,9 +10,9 @@
         "dark": "#111827"
       },
       "text_color": {
-        "text": "#4b5563",
+        "text": "#374151",
         "text_dark": "#111827",
-        "text_light": "#6b7280"
+        "text_light": "#4b5563"
       }
     },
     "darkmode": {
@@ -35,8 +35,8 @@
     "font_family": {
       "primary": "Inter:wght@400;500;600;700",
       "primary_type": "sans-serif",
-      "secondary": "Inter:wght@500;600;700",
-      "secondary_type": "sans-serif"
+      "secondary": "Source+Serif+4:wght@500;600;700",
+      "secondary_type": "serif"
     },
     "font_size": {
       "base": "16",

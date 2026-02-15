@@ -93,6 +93,30 @@
   {{ end }}
   <!-- /This Is For You -->
 
+  <!-- Not For You Section -->
+  {{ with .Params.not_for }}
+    <section class="section-sm">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="lg:col-8 md:col-10">
+            <h2 class="mb-6 text-center">{{ .title | default "This isn't the right service if..." }}</h2>
+            {{ with .items }}
+              <ul class="max-w-2xl mx-auto">
+                {{ range . }}
+                  <li class="relative mb-4 pl-6">
+                    <i class="fa fa-times absolute left-0 top-1.5 text-text-light"></i>
+                    {{ . | markdownify }}
+                  </li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+  <!-- /Not For You -->
+
   <!-- Types of Projects Section -->
   {{ with .Params.projects }}
     {{ if .items }}
@@ -151,6 +175,33 @@
   </section>
   {{ end }}
   <!-- /Process -->
+
+  <!-- Pricing Section -->
+  {{ with .Params.pricing }}
+    <section class="section-sm bg-theme-light">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="lg:col-8 text-center">
+            {{ with .headline }}
+              <h2 class="mb-4">
+                {{ . | markdownify }}
+              </h2>
+            {{ end }}
+            {{ with .description }}
+              <p class="mb-8 text-lg text-text">
+                {{ . | markdownify }}
+              </p>
+            {{ end }}
+            <a href="{{ .link | default "/contact-us" | absURL }}" class="btn btn-primary">
+              {{ .button | default "Book a Discovery Call" }}
+              <i class="fa fa-arrow-right pl-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+  <!-- /Pricing -->
 
   <!-- Client Outcomes Section -->
   {{ with .Params.clients }}
@@ -288,33 +339,6 @@
     </section>
   {{ end }}
   <!-- /Go Deeper -->
-
-  <!-- Pricing Section -->
-  {{ with .Params.pricing }}
-    <section class="section-sm">
-      <div class="container">
-        <div class="row justify-center">
-          <div class="lg:col-8 text-center">
-            {{ with .headline }}
-              <h2 class="mb-4">
-                {{ . | markdownify }}
-              </h2>
-            {{ end }}
-            {{ with .description }}
-              <p class="mb-8 text-lg text-text-light dark:text-darkmode-text-light">
-                {{ . | markdownify }}
-              </p>
-            {{ end }}
-            <a href="{{ .link | default "/contact-us" | absURL }}" class="btn btn-primary">
-              {{ .button | default "Book a Discovery Call" }}
-              <i class="fa fa-arrow-right pl-2"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  {{ end }}
-  <!-- /Pricing -->
 
   <!-- Final CTA Section -->
   <section class="section-sm bg-gradient">
