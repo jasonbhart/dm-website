@@ -3,7 +3,7 @@ title: "Marketing Attribution for SaaS: The Complete Guide"
 meta_title: "Marketing Attribution for SaaS: The Complete Guide | Domain Methods"
 description: "A practical guide to marketing attribution for mid-size SaaS companies. Learn why attribution breaks, how to fix it, and the 80/20 approach to connecting marketing spend to revenue."
 date: 2026-02-14T00:00:00Z
-image: "/images/blog/attribution-guide.png"
+image: "/images/service-1.png"
 categories: ["Marketing Analytics"]
 author: "Jason B. Hart"
 tags: ["attribution", "marketing analytics", "SaaS", "ROAS"]

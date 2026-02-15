@@ -3,7 +3,7 @@ title: "Building a Modern Data Foundation with dbt: A Practical Guide"
 meta_title: "Building a Modern Data Foundation with dbt | Domain Methods"
 description: "How to build a trusted data foundation using dbt, open-source tools, and modern cloud warehouses on GCP and AWS. Architecture decisions, migration strategies, and governance for mid-size SaaS."
 date: 2026-02-12T00:00:00Z
-image: "/images/blog/dbt-foundation-guide.png"
+image: "/images/service-2.png"
 categories: ["Data Engineering"]
 author: "Jason B. Hart"
 tags: ["dbt", "data foundation", "BigQuery", "Snowflake", "Databricks", "data governance"]

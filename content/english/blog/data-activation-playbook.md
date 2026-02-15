@@ -3,7 +3,7 @@ title: "Data Activation Playbook: From Warehouse to Revenue"
 meta_title: "Data Activation Playbook: From Warehouse to Revenue | Domain Methods"
 description: "A practical playbook for activating your data warehouse with reverse ETL, AI-powered workflows, and warehouse-as-CDP strategies. Built for mid-size SaaS and ecommerce teams."
 date: 2026-02-10T00:00:00Z
-image: "/images/blog/data-activation-playbook.png"
+image: "/images/service-3.png"
 categories: ["Data Activation"]
 author: "Jason B. Hart"
 tags: ["reverse ETL", "data activation", "warehouse-as-CDP", "AI", "automation"]
