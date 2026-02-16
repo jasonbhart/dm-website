@@ -4,7 +4,6 @@ description: "Turn messy data into decisions that drive revenue. Marketing analy
 
 # Banner
 banner:
-  tagline: "Marketing Data & Analytics for SaaS & Ecommerce"
   title: "Turn messy data into decisions that drive revenue"
   content: "You know your data should be driving decisions — but conflicting metrics, broken pipelines, and tools nobody trusts are getting in the way. We help growth, product, data, and RevOps teams at mid-size SaaS and ecommerce companies ($10M+ ARR or venture-funded) build trusted analytics and AI-powered workflows they can actually rely on."
   image: "/images/banner.png"
