@@ -1,10 +1,22 @@
 {{ define "main" }}
   {{/* Accent color per service page for visual differentiation */}}
   {{ $accent := .Params.accent | default "blue" }}
-  {{ $taglineBg := "bg-blue-50 text-blue-800" }}
-  {{ if eq $accent "indigo" }}{{ $taglineBg = "bg-indigo-50 text-indigo-700" }}
-  {{ else if eq $accent "amber" }}{{ $taglineBg = "bg-amber-50 text-amber-800" }}
-  {{ else if eq $accent "rose" }}{{ $taglineBg = "bg-rose-50 text-rose-700" }}{{ end }}
+  {{ $taglineBg := "bg-blue-100 text-blue-800" }}
+  {{ $accentText := "text-blue-600" }}
+  {{ $accentBg := "bg-blue-700" }}
+  {{ if eq $accent "teal" }}
+    {{ $taglineBg = "bg-teal-100 text-teal-800" }}
+    {{ $accentText = "text-teal-600" }}
+    {{ $accentBg = "bg-teal-700" }}
+  {{ else if eq $accent "amber" }}
+    {{ $taglineBg = "bg-amber-100 text-amber-800" }}
+    {{ $accentText = "text-amber-600" }}
+    {{ $accentBg = "bg-amber-700" }}
+  {{ else if eq $accent "rose" }}
+    {{ $taglineBg = "bg-rose-100 text-rose-700" }}
+    {{ $accentText = "text-rose-600" }}
+    {{ $accentBg = "bg-rose-700" }}
+  {{ end }}
 
   <!-- Hero Section -->
   {{ with .Params.hero }}
@@ -63,7 +75,7 @@
               <ul class="max-w-2xl mx-auto">
                 {{ range . }}
                   <li class="relative mb-4 pl-6">
-                    <i class="fa fa-check absolute left-0 top-1.5 text-primary"></i>
+                    <i class="fa fa-check absolute left-0 top-1.5 {{ $accentText }}"></i>
                     {{ . | markdownify }}
                   </li>
                 {{ end }}
@@ -91,7 +103,7 @@
                 <ul class="max-w-2xl mx-auto">
                   {{ range . }}
                     <li class="relative mb-4 pl-6">
-                      <i class="fa fa-arrow-right absolute left-0 top-1.5 text-primary"></i>
+                      <i class="fa fa-arrow-right absolute left-0 top-1.5 {{ $accentText }}"></i>
                       {{ . | markdownify }}
                     </li>
                   {{ end }}
@@ -179,7 +191,7 @@
         {{ range $index, $step := .steps }}
         <div class="md:col-6 lg:col-3 mb-8">
           <div class="text-center">
-            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white text-lg font-bold">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full {{ $accentBg }} text-white text-lg font-bold">
               {{ add $index 1 }}
             </div>
             <h3 class="h5 mb-2">{{ $step.title }}</h3>
