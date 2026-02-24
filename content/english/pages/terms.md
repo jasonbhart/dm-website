@@ -5,8 +5,6 @@ description: "Terms of service for Domain Methods consulting services."
 draft: false
 ---
 
-## Terms of Service
-
 *Last updated: December 2025*
 
 These terms govern your use of the Domain Methods website and services.
