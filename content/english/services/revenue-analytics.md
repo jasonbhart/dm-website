@@ -72,8 +72,8 @@ clients:
       outcome: "From conflicting dashboards to a single source of truth for ROAS"
       summary: "A 300-person B2B SaaS growth team spending six figures monthly on paid channels couldn't reconcile attribution numbers across Google Analytics, their CRM, and finance reports. We rebuilt their attribution model from the ground up, unifying data from ad platforms, CRM, and billing into one trusted pipeline. Their growth team now makes budget allocation decisions in hours instead of weeks."
     - client: "Mid-Market SaaS Company"
-      outcome: "Connected marketing spend to closed revenue with 95% confidence"
-      summary: "A mid-market SaaS company knew their marketing was working but couldn't prove it to the board. We built finance-adjacent reporting that connected campaign spend to closed-won revenue across a 90-day sales cycle. The CFO and CMO now share the same dashboard — and the same numbers."
+      outcome: "Closed the attribution gap — from ~60% to 95% spend-to-revenue coverage"
+      summary: "A mid-market SaaS company knew their marketing was working but couldn't prove it to the board. We built finance-adjacent reporting that connected campaign spend to closed-won revenue across a 90-day sales cycle — covering 95% of ad spend to pipeline attribution where previously only ~60% could be traced. The CFO and CMO now share the same dashboard — and the same numbers."
 
 # Industries (optional)
 industries:
