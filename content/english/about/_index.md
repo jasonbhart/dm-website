@@ -100,18 +100,3 @@ cta:
   button: "Book a Discovery Call"
   link: "/contact-us"
 ---
-
-## Our Approach
-
-We are obsessed with truth and UX. That means we build analytics that are not just accurate, but actually get used. We follow the 80/20 rule — focusing on the 20% of work that delivers 80% of the value.
-
-## How We Work
-
-We start with understanding your specific challenges, not selling a pre-packaged solution. If we are not the right fit, we will tell you.
-
-For the right projects, we bring deep expertise in:
-
-- **Marketing analytics and attribution** — Understand which campaigns and channels drive results
-- **Revenue operations and metrics** — Build dashboards and reports your team can trust
-- **Modern data stack** — dbt, cloud warehouses, and best-in-class tooling
-- **Data activation and reverse ETL** — Put your warehouse data to work
