@@ -13,9 +13,26 @@
             <h1 class="mb-4 text-h3 lg:text-h1">
               {{ .title | markdownify }}
             </h1>
-            <p class="mb-8">
-              {{ .content | markdownify }}
-            </p>
+            {{ with .content }}
+              <p class="mb-4 text-lg">
+                {{ . | markdownify }}
+              </p>
+            {{ end }}
+            {{ with .bulletpoints }}
+              <ul class="text-left max-w-md mx-auto mb-4">
+                {{ range . }}
+                  <li class="relative mb-3 pl-6">
+                    <i class="fa fa-check absolute left-0 top-1.5 text-primary"></i>
+                    {{ . | markdownify }}
+                  </li>
+                {{ end }}
+              </ul>
+            {{ end }}
+            {{ with .qualifier }}
+              <p class="mb-8 text-sm text-text-light">
+                {{ . | markdownify }}
+              </p>
+            {{ end }}
             <div class="flex flex-col items-center gap-4">
               {{ with .button }}
                 {{ if .enable }}
