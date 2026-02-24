@@ -273,7 +273,7 @@
                           <h3 class="h5 mb-2">{{ . }}</h3>
                         {{ end }}
                         {{ with .outcome }}
-                          <h4 class="h6 mb-3 text-primary">{{ . | markdownify }}</h4>
+                          <h4 class="h6 mb-3 {{ $accentText }}">{{ . | markdownify }}</h4>
                         {{ end }}
                         {{ with .summary }}
                           <p class="text-text-light dark:text-darkmode-text-light mb-4">
@@ -281,7 +281,7 @@
                           </p>
                         {{ end }}
                         {{ with .link }}
-                          <a href="{{ . | absURL }}" class="text-primary hover:underline font-medium">
+                          <a href="{{ . | absURL }}" class="{{ $accentText }} hover:underline font-medium">
                             Read case study
                             <i class="fa fa-arrow-right pl-1"></i>
                           </a>
@@ -317,18 +317,18 @@
                 {{ range .items }}
                   <div class="md:col-6 lg:col-3 mb-8">
                     {{ if .link }}
-                      <a href="{{ .link | absURL }}" class="block text-center hover:text-primary transition-colors group">
+                      <a href="{{ .link | absURL }}" class="block text-center hover:opacity-80 transition-colors group">
                         {{ with .icon }}
-                          <div class="mb-4 text-primary">
+                          <div class="mb-4 {{ $accentText }}">
                             <i class="fa {{ . }} text-4xl"></i>
                           </div>
                         {{ end }}
-                        <h3 class="h5 group-hover:text-primary">{{ .name }}</h3>
+                        <h3 class="h5 group-hover:opacity-80">{{ .name }}</h3>
                       </a>
                     {{ else }}
                       <div class="text-center">
                         {{ with .icon }}
-                          <div class="mb-4 text-primary">
+                          <div class="mb-4 {{ $accentText }}">
                             <i class="fa {{ . }} text-4xl"></i>
                           </div>
                         {{ end }}
