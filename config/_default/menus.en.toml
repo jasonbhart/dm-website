@@ -13,7 +13,7 @@ hasChildren = true
 
 [[main]]
 parent = "Services"
-name = "Audits & Quick Engagements"
+name = "Diagnostic Audits"
 url = "/services/audits"
 weight = 1
 
