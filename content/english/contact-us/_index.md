@@ -27,6 +27,9 @@ We don't do hourly billing. All engagements are scoped and priced upfront so you
 - [ ] Your current tools and tech stack (warehouse, BI, CRM, etc.)
 - [ ] Your timeline — is this urgent or exploratory?
 
+**Prefer to schedule directly?**
+[Book on Google Calendar](https://calendar.google.com/calendar/appointments/schedules/AcZssZ2wFL1wjvOWwuAPgQEZuJ_0-USR8gaJaYxOL_bLGYFvM1MrseM0t7pTjU6yVgWVyHROGBFJQdae?gv=true) or email us at **hello@domainmethods.com**
+
 <!-- Google Calendar Appointment Scheduling begin -->
 <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2wFL1wjvOWwuAPgQEZuJ_0-USR8gaJaYxOL_bLGYFvM1MrseM0t7pTjU6yVgWVyHROGBFJQdae?gv=true" style="border: 0; overflow: hidden;" width="100%" height="1250" frameborder="0" scrolling="no"></iframe>
 <noscript><p>Calendar requires JavaScript. <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2wFL1wjvOWwuAPgQEZuJ_0-USR8gaJaYxOL_bLGYFvM1MrseM0t7pTjU6yVgWVyHROGBFJQdae?gv=true">Book directly on Google Calendar</a> or email us at <strong>hello@domainmethods.com</strong>.</p></noscript>
