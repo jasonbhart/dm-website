@@ -5,7 +5,12 @@ description: "Turn messy data into decisions that drive revenue. Marketing analy
 # Banner
 banner:
   title: "Turn messy data into decisions that drive revenue"
-  content: "You know your data should be driving decisions — but conflicting metrics, broken pipelines, and tools nobody trusts are getting in the way. We help growth, product, data, and RevOps teams at mid-size SaaS and ecommerce companies ($10M+ ARR or venture-funded) build trusted analytics and AI-powered workflows they can actually rely on."
+  content: "Your data should be driving decisions — but conflicting metrics, broken pipelines, and tools nobody trusts are getting in the way."
+  bulletpoints:
+    - "Marketing analytics and attribution you can defend"
+    - "Trusted data foundations your team actually uses"
+    - "AI-powered activation that moves the needle"
+  qualifier: "For mid-size SaaS and ecommerce teams ($10M+ ARR or venture-funded)."
   image: "/images/banner.png"
   button:
     enable: true

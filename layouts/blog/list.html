@@ -1,11 +1,32 @@
 {{ define "main" }}
   <section class="section-sm">
     <div class="container">
-      <h1 class="mb-12 text-center">{{ .Title }}</h1>
-      <div class="row">
+      <h1 class="mb-8 text-center">{{ .Title }}</h1>
+
+      <!-- Category Filter Tabs -->
+      {{ $categories := site.Taxonomies.categories }}
+      {{ if $categories }}
+        <div class="flex flex-wrap justify-center gap-2 mb-12">
+          <button
+            class="blog-filter-btn rounded-lg px-4 py-2 text-sm font-medium transition-colors bg-primary text-white"
+            data-category="all">
+            All
+          </button>
+          {{ range $name, $taxonomy := $categories }}
+            <button
+              class="blog-filter-btn rounded-lg px-4 py-2 text-sm font-medium transition-colors bg-light text-text hover:bg-primary hover:text-white"
+              data-category="{{ $name | urlize }}">
+              {{ $name | humanize }}
+            </button>
+          {{ end }}
+        </div>
+      {{ end }}
+
+      <div class="row" id="blog-posts">
         {{ $paginator := .Paginate .RegularPages }}
         {{ range $paginator.Pages }}
-          <div class="md:col-6 lg:col-4 mb-14">
+          <div class="md:col-6 lg:col-4 mb-14 blog-post"
+               data-categories="{{ range .Params.categories }}{{ . | urlize }} {{ end }}">
             {{ partial "components/blog-card" . }}
           </div>
         {{ end }}
@@ -13,4 +34,34 @@
       {{ partial "components/pagination.html" . }}
     </div>
   </section>
+
+  <script>
+    (function() {
+      var buttons = document.querySelectorAll('.blog-filter-btn');
+      var posts = document.querySelectorAll('.blog-post');
+
+      buttons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var category = this.getAttribute('data-category');
+
+          // Update active button styles
+          buttons.forEach(function(b) {
+            b.classList.remove('bg-primary', 'text-white');
+            b.classList.add('bg-light', 'text-text', 'hover:bg-primary', 'hover:text-white');
+          });
+          this.classList.remove('bg-light', 'text-text', 'hover:bg-primary', 'hover:text-white');
+          this.classList.add('bg-primary', 'text-white');
+
+          // Filter posts
+          posts.forEach(function(post) {
+            if (category === 'all' || post.getAttribute('data-categories').indexOf(category) !== -1) {
+              post.style.display = '';
+            } else {
+              post.style.display = 'none';
+            }
+          });
+        });
+      });
+    })();
+  </script>
 {{ end }}

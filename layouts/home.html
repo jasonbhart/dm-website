@@ -13,9 +13,26 @@
             <h1 class="mb-4 text-h3 lg:text-h1">
               {{ .title | markdownify }}
             </h1>
-            <p class="mb-8">
-              {{ .content | markdownify }}
-            </p>
+            {{ with .content }}
+              <p class="mb-4 text-lg">
+                {{ . | markdownify }}
+              </p>
+            {{ end }}
+            {{ with .bulletpoints }}
+              <ul class="text-left max-w-md mx-auto mb-4">
+                {{ range . }}
+                  <li class="relative mb-3 pl-6">
+                    <i class="fa fa-check absolute left-0 top-1.5 text-primary"></i>
+                    {{ . | markdownify }}
+                  </li>
+                {{ end }}
+              </ul>
+            {{ end }}
+            {{ with .qualifier }}
+              <p class="mb-8 text-sm text-text-light">
+                {{ . | markdownify }}
+              </p>
+            {{ end }}
             <div class="flex flex-col items-center gap-4">
               {{ with .button }}
                 {{ if .enable }}
@@ -44,7 +61,7 @@
           </div>
           <div class="col-12">
             {{/* image modules comes from https://github.com/gethugothemes/hugo-modules/tree/master/images */}}
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto w-full max-h-[350px] object-cover object-center rounded-lg" "DisplayXL" "1200x" ) }}
+            {{ partial "image" (dict "Src" .image "Alt" (printf "%s — %s" site.Title .title) "Loading" "eager" "Class" "mx-auto w-full max-h-[350px] object-cover object-center rounded-lg" "DisplayXL" "1200x" ) }}
           </div>
         </div>
       </div>
@@ -61,7 +78,7 @@
             class="mb:md-0 {{ if not (modBool $i 2) }}
               md:order-2
             {{ end }} md:col-5 mb-6">
-            {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+            {{ partial "image" (dict "Src" .image "Alt" .title "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
           </div>
           <div
             class="{{ if not (modBool $i 2) }}
@@ -140,22 +157,26 @@
   <!-- Founder Callout -->
   {{ with .Params.founder }}
   {{ if .enable }}
-  <section class="section-sm">
+  <section class="section-sm bg-theme-light">
     <div class="container">
-      <div class="row items-center justify-center">
-        <div class="md:col-2 lg:col-2 mb-6 md:mb-0 text-center">
-          {{ partial "image" (dict "Src" .image "Alt" .name "Class" "rounded-full mx-auto" "Size" "150x150") }}
-        </div>
-        <div class="md:col-6 lg:col-5">
-          <p class="text-lg mb-2">{{ .content }}</p>
-          <div class="flex items-center gap-4">
-            <strong>{{ .name }}</strong>
-            <span class="text-text-light">{{ .role }}</span>
-            {{ with .linkedin }}
-            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark">
-              <i class="fab fa-linkedin text-xl"></i>
-            </a>
-            {{ end }}
+      <div class="row justify-center">
+        <div class="lg:col-8 md:col-10">
+          <div class="flex items-start gap-5">
+            <div class="shrink-0">
+              {{ partial "image" (dict "Src" .image "Alt" .name "Class" "rounded-full" "Size" "80x80") }}
+            </div>
+            <div>
+              <p class="text-text mb-3">{{ .content }}</p>
+              <div class="flex items-center gap-3">
+                <strong class="text-sm">{{ .name }}</strong>
+                <span class="text-sm text-text-light">{{ .role }}</span>
+                {{ with .linkedin }}
+                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark">
+                  <i class="fab fa-linkedin text-lg"></i>
+                </a>
+                {{ end }}
+              </div>
+            </div>
           </div>
         </div>
       </div>

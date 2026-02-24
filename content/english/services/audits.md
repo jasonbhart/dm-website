@@ -50,7 +50,7 @@ process:
     - title: "Diagnose"
       description: "We dig into your data, tools, and processes. We document what's working, what's broken, and what's missing."
     - title: "Recommend"
-      description: "You get a clear, prioritized action plan — not a 50-page report. Specific fixes with expected impact."
+      description: "A clear, prioritized action plan with specific fixes and expected impact — ready for your team to execute."
     - title: "Debrief"
       description: "We walk through findings together, answer questions, and help your team shift how they use data to make decisions — not just what tools they use."
 
