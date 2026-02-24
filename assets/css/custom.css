@@ -12,3 +12,27 @@
     padding-bottom: 4rem;
   }
 }
+
+/* Pillar page disclosure: collapsible on mobile, always open on desktop */
+.pillar-disclosure > summary {
+  list-style: none;
+}
+.pillar-disclosure > summary::-webkit-details-marker,
+.pillar-disclosure > summary::marker {
+  display: none;
+  content: "";
+}
+.pillar-disclosure-icon {
+  transition: transform 0.2s ease;
+}
+.pillar-disclosure[open] .pillar-disclosure-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 1024px) {
+  .pillar-disclosure > summary {
+    pointer-events: none;
+  }
+  .pillar-disclosure-icon {
+    display: none;
+  }
+}

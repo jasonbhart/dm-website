@@ -3,6 +3,7 @@ title: "Build a Trusted Data Foundation"
 meta_title: "Data Foundation | Domain Methods"
 description: "Data strategy, pipeline development, and dbt implementation for data and RevOps teams."
 layout: "pillar"
+accent: "indigo"
 aliases:
   - /services/custom-integrations/
 

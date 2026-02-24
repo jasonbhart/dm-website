@@ -3,6 +3,7 @@ title: "Turn Data Into Action"
 meta_title: "Data Activation | Domain Methods"
 description: "Reverse ETL, AI-powered data activation, and operational analytics for SaaS and ecommerce teams ready to use their data warehouse."
 layout: "pillar"
+accent: "amber"
 
 # Hero (required)
 hero:

@@ -1,4 +1,11 @@
 {{ define "main" }}
+  {{/* Accent color per service page for visual differentiation */}}
+  {{ $accent := .Params.accent | default "blue" }}
+  {{ $taglineBg := "bg-blue-50 text-blue-800" }}
+  {{ if eq $accent "indigo" }}{{ $taglineBg = "bg-indigo-50 text-indigo-700" }}
+  {{ else if eq $accent "amber" }}{{ $taglineBg = "bg-amber-50 text-amber-800" }}
+  {{ else if eq $accent "rose" }}{{ $taglineBg = "bg-rose-50 text-rose-700" }}{{ end }}
+
   <!-- Hero Section -->
   {{ with .Params.hero }}
     <section class="section pt-14">
@@ -6,9 +13,9 @@
         <div class="row justify-center">
           <div class="lg:col-7 md:col-9 mb-8 text-center">
             {{ with .tagline }}
-              <p class="mb-4 text-sm font-semibold uppercase tracking-wider text-primary">
+              <span class="mb-4 inline-block rounded-full px-4 py-1.5 text-sm font-semibold uppercase tracking-wider {{ $taglineBg }}">
                 {{ . | markdownify }}
-              </p>
+              </span>
             {{ end }}
             <h1 class="mb-4 text-h3 lg:text-h1">
               {{ .title | markdownify }}
@@ -75,17 +82,22 @@
       <div class="container">
         <div class="row justify-center">
           <div class="lg:col-8 md:col-10">
-            <h2 class="mb-6 text-center">{{ .title | default "This is for you if..." }}</h2>
-            {{ with .items }}
-              <ul class="max-w-2xl mx-auto">
-                {{ range . }}
-                  <li class="relative mb-4 pl-6">
-                    <i class="fa fa-arrow-right absolute left-0 top-1.5 text-primary"></i>
-                    {{ . | markdownify }}
-                  </li>
-                {{ end }}
-              </ul>
-            {{ end }}
+            <details class="pillar-disclosure" open>
+              <summary class="mb-6 text-center list-none cursor-pointer lg:cursor-default">
+                <h2 class="inline">{{ .title | default "This is for you if..." }}</h2>
+                <i class="fa fa-chevron-down ml-2 text-sm text-text-light lg:hidden pillar-disclosure-icon"></i>
+              </summary>
+              {{ with .items }}
+                <ul class="max-w-2xl mx-auto">
+                  {{ range . }}
+                    <li class="relative mb-4 pl-6">
+                      <i class="fa fa-arrow-right absolute left-0 top-1.5 text-primary"></i>
+                      {{ . | markdownify }}
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </details>
           </div>
         </div>
       </div>
@@ -99,17 +111,22 @@
       <div class="container">
         <div class="row justify-center">
           <div class="lg:col-8 md:col-10">
-            <h2 class="mb-6 text-center">{{ .title | default "This isn't the right service if..." }}</h2>
-            {{ with .items }}
-              <ul class="max-w-2xl mx-auto">
-                {{ range . }}
-                  <li class="relative mb-4 pl-6">
-                    <i class="fa fa-times absolute left-0 top-1.5 text-text-light"></i>
-                    {{ . | markdownify }}
-                  </li>
-                {{ end }}
-              </ul>
-            {{ end }}
+            <details class="pillar-disclosure" open>
+              <summary class="mb-6 text-center list-none cursor-pointer lg:cursor-default">
+                <h2 class="inline">{{ .title | default "This isn't the right service if..." }}</h2>
+                <i class="fa fa-chevron-down ml-2 text-sm text-text-light lg:hidden pillar-disclosure-icon"></i>
+              </summary>
+              {{ with .items }}
+                <ul class="max-w-2xl mx-auto">
+                  {{ range . }}
+                    <li class="relative mb-4 pl-6">
+                      <i class="fa fa-times absolute left-0 top-1.5 text-text-light"></i>
+                      {{ . | markdownify }}
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </details>
           </div>
         </div>
       </div>
@@ -188,7 +205,7 @@
               </h2>
             {{ end }}
             {{ with .description }}
-              <p class="mb-8 text-lg text-text">
+              <p class="mb-8 text-lg text-text max-w-prose mx-auto">
                 {{ . | markdownify }}
               </p>
             {{ end }}
@@ -325,7 +342,7 @@
           <div class="lg:col-8 text-center">
             <h2 class="mb-4">{{ .title | default "Go Deeper" }}</h2>
             {{ with .description }}
-              <p class="mb-6 text-lg text-text-light dark:text-darkmode-text-light">{{ . | markdownify }}</p>
+              <p class="mb-6 text-lg text-text-light dark:text-darkmode-text-light max-w-prose mx-auto">{{ . | markdownify }}</p>
             {{ end }}
             {{ with .link }}
               <a href="{{ .url | absURL }}" class="btn btn-outline-primary">
