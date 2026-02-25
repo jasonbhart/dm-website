@@ -1,6 +1,6 @@
 ---
-title: "Marketing Attribution for SaaS: What Most Teams Get Wrong"
-meta_title: "Marketing Attribution for SaaS — A Practical Guide | Domain Methods"
+title: "Why Your Attribution Model Is Lying to You"
+meta_title: "Why Your Attribution Model Is Lying to You | Domain Methods"
 description: "Most SaaS teams are making attribution harder than it needs to be. Here's what actually matters for connecting marketing spend to revenue."
 date: 2026-02-14T00:00:00Z
 image: "/images/service-1.png"
