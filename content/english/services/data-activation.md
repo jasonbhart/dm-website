@@ -9,7 +9,7 @@ accent: "amber"
 hero:
   tagline: "Data Activation"
   title: "Turn Data Into Action"
-  content: "For product and growth teams ready to ship, not wait. We build activation workflows — reverse ETL, predictive scoring, and automated audiences — that make your data warehouse work harder. AI accelerates where it helps, not because it's trendy. We start with one high-impact MVP and prove value before expanding."
+  content: "You have rich data sitting in your warehouse and no way to act on it. We ship activation workflows — reverse ETL, predictive scoring, automated audiences — that prove value in weeks. AI where it helps, not because it's trendy."
   image: "/images/service-3.png"
   button:
     label: "Book a Discovery Call"

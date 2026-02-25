@@ -11,7 +11,7 @@ aliases:
 hero:
   tagline: "Data Foundation"
   title: "Build a Trusted Data Foundation"
-  content: "For data leaders who need more than technical capacity — you need a partner who understands your business context. We build trusted data foundations using dbt, open-source tools, and modern cloud warehouses like BigQuery, Snowflake, and Databricks on GCP and AWS. Fast to start, built to govern, and designed so your team owns it from day one."
+  content: "Your team spends half its time fixing pipelines instead of delivering insights. Every tool shows a different number. Nobody trusts the dashboards. We build data foundations that tell the truth — using dbt, open-source tools, and modern warehouses on GCP and AWS."
   image: "/images/service-2.png"
   button:
     label: "Book a Discovery Call"

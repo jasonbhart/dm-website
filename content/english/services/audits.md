@@ -9,7 +9,7 @@ draft: false
 hero:
   tagline: "Start Small. Learn Fast."
   title: "Audits & Quick Engagements"
-  content: "Not every data challenge requires a six-month project. Sometimes you need a focused expert to diagnose the problem, validate your approach, or fix the thing that's been broken for months. That's what we do here."
+  content: "Something's broken and you know it, but you don't know where to start — or who to trust with the diagnosis. We give you honest answers in days, not months. Whether you hire us after or not."
   image: "/images/service-1.png"
   button:
     label: "Book a Discovery Call"

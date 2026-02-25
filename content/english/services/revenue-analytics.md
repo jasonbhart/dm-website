@@ -12,7 +12,7 @@ aliases:
 hero:
   tagline: "Revenue Analytics"
   title: "Know What is Driving Revenue"
-  content: "For growth leaders who need predictable ROAS and RevOps teams tired of defending numbers that don't match. We build a single source of truth for revenue metrics — so you can stop second-guessing your data and start making confident decisions about where to invest."
+  content: "You're spending six figures on ads and can't tell the board which channels actually work. Marketing says one thing, finance says another, and your attribution model changes depending on who's presenting. We end that."
   image: "/images/service-1.png"
   button:
     label: "Book a Discovery Call"
