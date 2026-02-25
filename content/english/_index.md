@@ -5,7 +5,7 @@ description: "Turn messy data into decisions that drive revenue. Marketing analy
 # Banner
 banner:
   title: "Turn messy data into decisions that drive revenue"
-  content: "Your data should be driving decisions — but conflicting metrics, broken pipelines, and tools nobody trusts are getting in the way."
+  content: "Your data should be driving decisions — but conflicting metrics, broken pipelines, and tools nobody trusts are getting in the way. We fix that."
   bulletpoints:
     - "Marketing analytics and attribution you can defend"
     - "Trusted data foundations your team actually uses"
@@ -23,9 +23,9 @@ banner:
 
 # Features (Pillars)
 features:
-  - title: "Know What is Driving Revenue"
+  - title: "Stop Guessing Which Channels Drive Revenue"
     image: "/images/service-1.png"
-    content: "For growth and RevOps teams tired of conflicting metrics and unclear attribution."
+    content: "For the VP of Growth who can't prove ROAS to the board — and the RevOps team tired of defending numbers that don't match."
     bulletpoints:
       - "Marketing analytics and attribution"
       - "Revenue operations metrics"
@@ -36,9 +36,9 @@ features:
       label: "Learn More"
       link: "/services/revenue-analytics"
 
-  - title: "Build a Trusted Data Foundation"
+  - title: "Your Dashboards Are Lying. Fix the Foundation."
     image: "/images/service-2.png"
-    content: "For data and RevOps leaders who need a single source of truth they can rely on."
+    content: "For data leaders who need more than a SQL jockey — you need a partner who understands why the data matters, not just how to query it."
     bulletpoints:
       - "Data strategy and architecture"
       - "Pipeline development"
@@ -49,9 +49,9 @@ features:
       label: "Learn More"
       link: "/services/data-foundation"
 
-  - title: "Turn Data Into Action"
+  - title: "Data Sitting in Your Warehouse Isn't Working"
     image: "/images/service-3.png"
-    content: "For product and growth teams ready to activate their data warehouse with AI-powered workflows and automation."
+    content: "For product and growth teams tired of rich data gathering dust. We ship activation workflows — reverse ETL, scoring, automated audiences — that prove value in weeks, not quarters."
     bulletpoints:
       - "Reverse ETL implementation"
       - "AI-powered predictions and scoring"
@@ -66,7 +66,7 @@ features:
 personas:
   enable: true
   title: "Who We Help"
-  subtitle: "We work with specific roles facing specific problems. Find your situation below."
+  subtitle: "Every engagement starts with a specific person facing a specific problem. Which one sounds like yours?"
   cards:
     - label: "Growth & Marketing Leaders"
       role: "VP/Director of Growth"
@@ -104,7 +104,7 @@ founder:
 
 # Why Domain Methods
 why:
-  title: "Obsessed with truth and UX"
+  title: "Why Teams Choose Domain Methods"
   subtitle: "We translate messy business data into usable insight that powers decisive, measurable outcomes."
   points:
     - icon: "fa-bullseye"
