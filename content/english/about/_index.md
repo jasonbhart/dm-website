@@ -10,6 +10,24 @@ intro: |
 
   We specialize in marketing data, revenue analytics, and analytics engineering for SaaS and ecommerce companies. Our clients are typically mid-size companies (100-1000 employees) who know they need better data but are not sure who to trust or what to do next.
 
+team:
+  enable: true
+  title: "How We're Built"
+  description: "Domain Methods is a boutique consultancy built around a senior practitioner network. We assemble the right specialists for each engagement — no junior staff, no learning on your dime."
+  specialties:
+    - title: "Analytics Engineers"
+      description: "Attribution models, marketing analytics, dbt transformations"
+      tags: ["dbt", "SQL", "Python"]
+    - title: "Data Architects"
+      description: "Warehouse design, migration, governance frameworks"
+      tags: ["Snowflake", "BigQuery", "Databricks"]
+    - title: "Marketing Analysts"
+      description: "Channel attribution, media mix modeling, ad platform integration"
+      tags: ["Attribution", "MMM", "Ad Platforms"]
+    - title: "Revenue Operations"
+      description: "CRM data flows, pipeline analytics, metric alignment"
+      tags: ["CRM", "Pipeline Analytics", "Forecasting"]
+
 values:
   title: "What We Believe"
   items:
@@ -67,11 +85,7 @@ founder:
   bio: |
     I started Domain Methods because I kept seeing the same problem: smart teams with messy data making decisions on gut feel instead of evidence. After years leading analytics and data engineering for SaaS and ecommerce companies, I got tired of watching organizations drown in dashboards nobody trusts.
 
-    My approach is simple — I solve the hard problems (architecture, strategy, proof-of-concept), then hand off to your team or our trusted network of specialists for execution and long-term support. You get senior-level thinking on day one, without paying for a full team when you don't need one.
-
-    Domain Methods isn't a traditional agency. We're a small, flat team of experienced practitioners backed by a trusted network of specialists we've worked with across multiple engagements. When a project needs specific expertise — whether that's Databricks migration, advanced dbt modeling, or activation engineering — we bring in people we've already vetted and collaborated with. No junior staff learning on your dime. No layers of account management. Just direct access to people who know the stack and understand your business.
-
-    I regularly share practical insights on marketing data, attribution, and analytics engineering — [follow me on LinkedIn](https://www.linkedin.com/in/jasonbhart/) to stay in the loop.
+    Domain Methods isn't a traditional agency. I solve the hard problems — architecture, strategy, proof-of-concept — and our network of vetted specialists handles execution and long-term support. You get senior-level thinking on day one, direct access with no layers of account management, and systems your team can own independently.
   linkedin: "https://www.linkedin.com/in/jasonbhart/"
 
 fit:
