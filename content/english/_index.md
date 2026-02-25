@@ -62,6 +62,28 @@ features:
       label: "Learn More"
       link: "/services/data-activation"
 
+# Tools
+tools:
+  enable: true
+  title: "Built on tools you already know"
+  logos:
+    - name: "dbt"
+      image: "/images/tools/dbt.svg"
+    - name: "Snowflake"
+      image: "/images/tools/snowflake.svg"
+    - name: "BigQuery"
+      image: "/images/tools/bigquery.svg"
+    - name: "Databricks"
+      image: "/images/tools/databricks.svg"
+    - name: "Fivetran"
+      image: "/images/tools/fivetran.svg"
+    - name: "Census"
+      image: "/images/tools/census.svg"
+    - name: "AWS"
+      image: "/images/tools/aws.svg"
+    - name: "GCP"
+      image: "/images/tools/gcp.svg"
+
 # Personas
 personas:
   enable: true
