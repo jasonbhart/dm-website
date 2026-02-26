@@ -34,7 +34,7 @@ for_you:
 not_for:
   items:
     - "You need a long-term managed services engagement"
-    - "You're looking for someone to implement the recommendations — [that's a separate conversation](/contact-us)"
+    - "You already know what's broken and just need hands on keyboards"
     - "You want a rubber stamp, not an honest assessment"
 
 projects:

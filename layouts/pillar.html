@@ -99,7 +99,7 @@
               <div class="row">
                 {{ with $.Params.for_you }}
                 <div class="md:col-6 mb-8">
-                  <h2 class="h4 mb-4 text-primary">{{ .title | default "This is for you if..." }}</h2>
+                  <h2 class="h4 mb-4 text-dark">{{ .title | default "This is for you if..." }}</h2>
                   {{ with .items }}
                   <ul class="space-y-3">
                     {{ range . }}
@@ -137,7 +137,7 @@
                   <i class="fa fa-chevron-down ml-2 text-sm text-text-light pillar-disclosure-icon"></i>
                 </summary>
                 {{ with $.Params.for_you }}
-                <h3 class="h5 mb-3 text-primary">{{ .title | default "This is for you if..." }}</h3>
+                <h3 class="h5 mb-3 text-dark">{{ .title | default "This is for you if..." }}</h3>
                 {{ with .items }}
                 <ul class="mb-6 space-y-3">
                   {{ range . }}
