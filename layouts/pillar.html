@@ -88,63 +88,88 @@
   {{ end }}
   <!-- /Major Outcome -->
 
-  <!-- This Is For You Section -->
-  {{ with .Params.for_you }}
+  <!-- Fit Section (merged for_you + not_for) -->
+  {{ if or .Params.for_you .Params.not_for }}
     <section class="section-sm bg-theme-light">
       <div class="container">
         <div class="row justify-center">
-          <div class="lg:col-8 md:col-10">
-            <details class="pillar-disclosure" open>
-              <summary class="mb-6 text-center list-none cursor-pointer lg:cursor-default">
-                <h2 class="inline">{{ .title | default "This is for you if..." }}</h2>
-                <i class="fa fa-chevron-down ml-2 text-sm text-text-light lg:hidden pillar-disclosure-icon"></i>
-              </summary>
-              {{ with .items }}
-                <ul class="max-w-2xl mx-auto">
-                  {{ range . }}
-                    <li class="relative mb-4 pl-6">
-                      <i class="fa fa-arrow-right absolute left-0 top-1.5 {{ $accentText }}"></i>
-                      {{ . | markdownify }}
+          <div class="lg:col-10 md:col-12">
+            {{/* Desktop: side-by-side columns */}}
+            <div class="hidden md:block">
+              <div class="row">
+                {{ with $.Params.for_you }}
+                <div class="md:col-6 mb-8">
+                  <h2 class="h4 mb-4 text-primary">{{ .title | default "This is for you if..." }}</h2>
+                  {{ with .items }}
+                  <ul class="space-y-3">
+                    {{ range . }}
+                    <li class="flex items-start">
+                      <i class="fa fa-check {{ $accentText }} mr-3 mt-1 shrink-0"></i>
+                      <span>{{ . | markdownify }}</span>
                     </li>
+                    {{ end }}
+                  </ul>
+                  {{ end }}
+                </div>
+                {{ end }}
+                {{ with $.Params.not_for }}
+                <div class="md:col-6 mb-8">
+                  <h2 class="h4 mb-4 text-dark">{{ .title | default "This isn't the right service if..." }}</h2>
+                  {{ with .items }}
+                  <ul class="space-y-3">
+                    {{ range . }}
+                    <li class="flex items-start">
+                      <i class="fa fa-times text-text-light mr-3 mt-1 shrink-0"></i>
+                      <span>{{ . | markdownify }}</span>
+                    </li>
+                    {{ end }}
+                  </ul>
+                  {{ end }}
+                </div>
+                {{ end }}
+              </div>
+            </div>
+            {{/* Mobile: collapsible */}}
+            <div class="md:hidden">
+              <details class="pillar-disclosure" open>
+                <summary class="mb-6 text-center list-none cursor-pointer">
+                  <h2 class="inline">Is this right for you?</h2>
+                  <i class="fa fa-chevron-down ml-2 text-sm text-text-light pillar-disclosure-icon"></i>
+                </summary>
+                {{ with $.Params.for_you }}
+                <h3 class="h5 mb-3 text-primary">{{ .title | default "This is for you if..." }}</h3>
+                {{ with .items }}
+                <ul class="mb-6 space-y-3">
+                  {{ range . }}
+                  <li class="flex items-start">
+                    <i class="fa fa-check {{ $accentText }} mr-3 mt-1 shrink-0"></i>
+                    <span>{{ . | markdownify }}</span>
+                  </li>
                   {{ end }}
                 </ul>
-              {{ end }}
-            </details>
+                {{ end }}
+                {{ end }}
+                {{ with $.Params.not_for }}
+                <h3 class="h5 mb-3 text-dark">{{ .title | default "This isn't the right service if..." }}</h3>
+                {{ with .items }}
+                <ul class="space-y-3">
+                  {{ range . }}
+                  <li class="flex items-start">
+                    <i class="fa fa-times text-text-light mr-3 mt-1 shrink-0"></i>
+                    <span>{{ . | markdownify }}</span>
+                  </li>
+                  {{ end }}
+                </ul>
+                {{ end }}
+                {{ end }}
+              </details>
+            </div>
           </div>
         </div>
       </div>
     </section>
   {{ end }}
-  <!-- /This Is For You -->
-
-  <!-- Not For You Section -->
-  {{ with .Params.not_for }}
-    <section class="section-sm">
-      <div class="container">
-        <div class="row justify-center">
-          <div class="lg:col-8 md:col-10">
-            <details class="pillar-disclosure" open>
-              <summary class="mb-6 text-center list-none cursor-pointer lg:cursor-default">
-                <h2 class="inline">{{ .title | default "This isn't the right service if..." }}</h2>
-                <i class="fa fa-chevron-down ml-2 text-sm text-text-light lg:hidden pillar-disclosure-icon"></i>
-              </summary>
-              {{ with .items }}
-                <ul class="max-w-2xl mx-auto">
-                  {{ range . }}
-                    <li class="relative mb-4 pl-6">
-                      <i class="fa fa-times absolute left-0 top-1.5 text-text-light"></i>
-                      {{ . | markdownify }}
-                    </li>
-                  {{ end }}
-                </ul>
-              {{ end }}
-            </details>
-          </div>
-        </div>
-      </div>
-    </section>
-  {{ end }}
-  <!-- /Not For You -->
+  <!-- /Fit Section -->
 
   <!-- Types of Projects Section -->
   {{ with .Params.projects }}
@@ -299,77 +324,8 @@
   {{ end }}
   <!-- /Client Outcomes -->
 
-  <!-- Industries Section -->
-  {{ with .Params.industries }}
-    {{ if .items }}
-      <section class="section-sm bg-gradient">
-        <div class="container">
-          <div class="row justify-center">
-            <div class="col-12">
-              {{ with .title }}
-                <h2 class="mb-12 text-center">
-                  {{ . | markdownify }}
-                </h2>
-              {{ else }}
-                <h2 class="mb-12 text-center">Industries We Serve</h2>
-              {{ end }}
-              <div class="row">
-                {{ range .items }}
-                  <div class="md:col-6 lg:col-3 mb-8">
-                    {{ if .link }}
-                      <a href="{{ .link | absURL }}" class="block text-center hover:opacity-80 transition-colors group">
-                        {{ with .icon }}
-                          <div class="mb-4 {{ $accentText }}">
-                            <i class="fa {{ . }} text-4xl"></i>
-                          </div>
-                        {{ end }}
-                        <h3 class="h5 group-hover:opacity-80">{{ .name }}</h3>
-                      </a>
-                    {{ else }}
-                      <div class="text-center">
-                        {{ with .icon }}
-                          <div class="mb-4 {{ $accentText }}">
-                            <i class="fa {{ . }} text-4xl"></i>
-                          </div>
-                        {{ end }}
-                        <h3 class="h5">{{ .name }}</h3>
-                      </div>
-                    {{ end }}
-                  </div>
-                {{ end }}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-  <!-- /Industries -->
 
-  <!-- Go Deeper Section -->
-  {{ with .Params.go_deeper }}
-    <section class="section-sm">
-      <div class="container">
-        <div class="row justify-center">
-          <div class="lg:col-8 text-center">
-            <h2 class="mb-4">{{ .title | default "Go Deeper" }}</h2>
-            {{ with .description }}
-              <p class="mb-6 text-lg text-text-light dark:text-darkmode-text-light max-w-prose mx-auto">{{ . | markdownify }}</p>
-            {{ end }}
-            {{ with .link }}
-              <a href="{{ .url | absURL }}" class="btn btn-outline-primary">
-                {{ .label | default "Read the guide" }}
-                <i class="fa fa-arrow-right pl-2"></i>
-              </a>
-            {{ end }}
-          </div>
-        </div>
-      </div>
-    </section>
-  {{ end }}
-  <!-- /Go Deeper -->
-
-  <!-- Final CTA Section -->
+  <!-- Closing Section (CTA + optional Go Deeper link) -->
   <section class="section-sm bg-gradient">
     <div class="container">
       <div class="row justify-center">
@@ -382,9 +338,18 @@
             {{ .Params.cta.button | default "Book a Discovery Call" }}
             <i class="fa fa-arrow-right pl-2"></i>
           </a>
+          {{ with .Params.go_deeper }}
+            {{ with .link }}
+              <p class="mt-6">
+                <a href="{{ .url | absURL }}" class="text-primary hover:underline font-medium">
+                  {{ .label | default "Or read the guide" }} <i class="fa fa-arrow-right pl-1"></i>
+                </a>
+              </p>
+            {{ end }}
+          {{ end }}
         </div>
       </div>
     </div>
   </section>
-  <!-- /Final CTA -->
+  <!-- /Closing -->
 {{ end }}

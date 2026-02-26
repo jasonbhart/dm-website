@@ -50,6 +50,31 @@
         <div class="lg:col-10">
           <h2 class="text-center mb-4">{{ .title }}</h2>
           <p class="text-center text-lg text-text-light mb-12 max-w-2xl mx-auto">{{ .description }}</p>
+          {{/* Team member portraits — only rendered when at least one member has an image */}}
+          {{ $hasMembers := false }}
+          {{ range .members }}
+            {{ if .image }}
+              {{ $hasMembers = true }}
+            {{ end }}
+          {{ end }}
+          {{ if $hasMembers }}
+          <div class="row justify-center mb-12">
+            {{ range .members }}
+              {{ if .image }}
+              <div class="md:col-6 lg:col-4 mb-8">
+                <div class="text-center">
+                  {{ partial "image" (dict "Src" .image "Alt" .name "Class" "rounded-full mx-auto mb-4" "Size" "160x160") }}
+                  <h3 class="h5 mb-1">{{ .name }}</h3>
+                  <p class="text-sm text-primary font-medium mb-2">{{ .role }}</p>
+                  {{ with .description }}
+                    <p class="text-text-light text-sm">{{ . }}</p>
+                  {{ end }}
+                </div>
+              </div>
+              {{ end }}
+            {{ end }}
+          </div>
+          {{ end }}
           <div class="row justify-center">
             {{ range .specialties }}
             <div class="md:col-6 lg:col-3 mb-8">

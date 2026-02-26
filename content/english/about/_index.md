@@ -14,6 +14,15 @@ team:
   enable: true
   title: "How We're Built"
   description: "Domain Methods is a boutique consultancy built around a senior practitioner network. We assemble the right specialists for each engagement — no junior staff, no learning on your dime."
+  members:
+    - name: ""
+      role: ""
+      image: ""
+      description: ""
+    - name: ""
+      role: ""
+      image: ""
+      description: ""
   specialties:
     - title: "Analytics Engineers"
       description: "Attribution models, marketing analytics, dbt transformations"

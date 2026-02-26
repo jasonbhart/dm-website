@@ -76,17 +76,6 @@ clients:
       outcome: "Closed the attribution gap — from ~60% to 95% spend-to-revenue coverage"
       summary: "A mid-market SaaS company knew their marketing was working but couldn't prove it to the board. We built finance-adjacent reporting that connected campaign spend to closed-won revenue across a 90-day sales cycle — covering 95% of ad spend to pipeline attribution where previously only ~60% could be traced. The CFO and CMO now share the same dashboard — and the same numbers."
 
-# Industries (optional)
-industries:
-  title: "Industries We Serve"
-  items:
-    - name: "SaaS"
-      icon: "fa-cloud"
-    - name: "Ecommerce"
-      icon: "fa-shopping-cart"
-    - name: "B2B Tech"
-      icon: "fa-building"
-
 # Pricing (optional)
 pricing:
   headline: "Engagements start at $5,000"
