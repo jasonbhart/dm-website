@@ -31,6 +31,12 @@ for_you:
     - "Your team is stuck on a broken pipeline, dashboard, or attribution gap"
     - "You want honest, actionable advice — whether you hire us or not"
 
+not_for:
+  items:
+    - "You need a long-term managed services engagement"
+    - "You're looking for someone to implement the recommendations — [that's a separate conversation](/contact-us)"
+    - "You want a rubber stamp, not an honest assessment"
+
 projects:
   title: "How We Can Help"
   items:
