@@ -41,25 +41,6 @@ team:
       description: "CRM data flows, pipeline analytics, metric alignment"
       tags: ["CRM", "Pipeline Analytics", "Forecasting"]
 
-values:
-  title: "What We Believe"
-  items:
-    - title: "Truth Over Comfort"
-      description: "Data should drive decisions, not just fill dashboards"
-      icon: "fa-compass"
-    - title: "Practical Elegance"
-      description: "Simple solutions that work beat complex ones that do not"
-      icon: "fa-gem"
-    - title: "Earned Trust"
-      description: "Clarity and results build confidence over time"
-      icon: "fa-handshake"
-    - title: "Built to Be Used"
-      description: "The best analytics are the ones people actually use"
-      icon: "fa-users"
-    - title: "Accessible by Default"
-      description: "Just a call away — senior help without the red tape"
-      icon: "fa-phone"
-
 methodology:
   enable: true
   title: "How We Work"
@@ -79,27 +60,6 @@ methodology:
       - title: "Deliverables"
         icon: "fas fa-check-circle"
         description: "Clear, scoped outputs that your team can own and maintain. No black boxes. No consultant dependency."
-  process:
-    title: "Three Focus Areas"
-    items:
-      - title: "Outcomes"
-        description: "What will be achieved. We define success criteria upfront so there's no ambiguity about what 'done' looks like."
-      - title: "Preparation"
-        description: "Chemistry and fit. We invest in understanding your team, your tools, and your culture before writing a single line of SQL."
-      - title: "Execution"
-        description: "Solving for the unknown. We show, not tell — working alongside your team through interactive sessions rather than handing off slide decks."
-
-founder:
-  enable: true
-  title: "Meet the Founder"
-  name: "Jason B. Hart"
-  role: "Founder & Principal Consultant"
-  image: "/images/jason-hart.png"
-  bio: |
-    I started Domain Methods because I kept seeing the same problem: smart teams with messy data making decisions on gut feel instead of evidence. After years leading analytics and data engineering for SaaS and ecommerce companies, I got tired of watching organizations drown in dashboards nobody trusts.
-
-    Domain Methods isn't a traditional agency. I solve the hard problems — architecture, strategy, proof-of-concept — and our network of vetted specialists handles execution and long-term support. You get senior-level thinking on day one, direct access with no layers of account management, and systems your team can own independently.
-  linkedin: "https://www.linkedin.com/in/jasonbhart/"
 
 fit:
   enable: true

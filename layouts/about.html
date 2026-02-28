@@ -5,7 +5,7 @@
       <div class="row justify-center">
         <div class="lg:col-10 text-center">
           <h1 class="mb-4 text-h2 lg:text-h1">{{ .Title }}</h1>
-          <p class="text-lg text-text-light mb-8">{{ .Description }}</p>
+          <p class="text-lg text-text-light">{{ .Description }}</p>
         </div>
       </div>
     </div>
@@ -101,32 +101,6 @@
   {{ end }}
   {{ end }}
 
-  <!-- Values Section -->
-  {{ with .Params.values }}
-  <section class="section-sm bg-gradient">
-    <div class="container">
-      <div class="row justify-center">
-        <div class="lg:col-10">
-          <h2 class="text-center mb-12">{{ .title }}</h2>
-          <div class="row justify-center">
-            {{ range .items }}
-            <div class="md:col-6 lg:col-3 mb-8">
-              <div class="text-center">
-                <div class="mb-4 text-primary">
-                  <i class="fa {{ .icon }} text-4xl"></i>
-                </div>
-                <h3 class="h5 mb-2">{{ .title }}</h3>
-                <p class="text-text-light">{{ .description }}</p>
-              </div>
-            </div>
-            {{ end }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {{ end }}
-
   {{ with .Params.methodology }}
   {{ if .enable }}
   <!-- Methodology Section -->
@@ -155,57 +129,6 @@
       </div>
       {{ end }}
 
-      <!-- Three Focus Areas -->
-      {{ with .process }}
-      <h3 class="h4 text-center mb-8">{{ .title }}</h3>
-      <div class="row justify-center">
-        {{ range .items }}
-        <div class="md:col-4 mb-8">
-          <div class="rounded-lg bg-body p-6 shadow">
-            <h4 class="h5 mb-2">{{ .title }}</h4>
-            <p class="text-sm text-text">{{ .description }}</p>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-      {{ end }}
-    </div>
-  </section>
-  {{ end }}
-  {{ end }}
-
-  {{ with .Params.founder }}
-  {{ if .enable }}
-  <!-- Founder Section -->
-  <section class="section">
-    <div class="container">
-      <div class="row items-center justify-center">
-        <div class="lg:col-4 md:col-5 mb-8 md:mb-0">
-          {{ if .image }}
-          {{/* TODO: Replace with real photo of Jason B. Hart */}}
-          <img
-            src="{{ .image }}"
-            alt="{{ .name }}"
-            class="rounded-lg w-full"
-            width="400"
-            height="400"
-          />
-          {{ end }}
-        </div>
-        <div class="lg:col-6 md:col-7">
-          <h2 class="mb-4">{{ .title }}</h2>
-          <h3 class="h5 text-primary mb-2">{{ .name }}</h3>
-          <p class="text-sm text-text mb-4">{{ .role }}</p>
-          <div class="content">
-            {{ .bio | markdownify }}
-          </div>
-          {{ with .linkedin }}
-          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark inline-flex items-center mt-4">
-            <i class="fab fa-linkedin mr-2"></i> Connect on LinkedIn
-          </a>
-          {{ end }}
-        </div>
-      </div>
     </div>
   </section>
   {{ end }}
