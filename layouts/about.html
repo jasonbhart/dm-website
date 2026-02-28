@@ -78,10 +78,10 @@
           <div class="row justify-center">
             {{ range .specialties }}
             <div class="md:col-6 lg:col-3 mb-8">
-              <div class="rounded-lg bg-light p-6 h-full">
+              <div class="rounded-lg bg-light p-6 h-full text-center flex flex-col">
                 <h3 class="h5 mb-2">{{ .title }}</h3>
-                <p class="text-sm text-text-light mb-4">{{ .description }}</p>
-                <div class="flex flex-wrap gap-2">
+                <p class="text-sm text-text-light mb-4 flex-1">{{ .description }}</p>
+                <div class="flex flex-wrap justify-center gap-2">
                   {{ range .tags }}
                   <span class="inline-block rounded-full bg-theme-light px-3 py-1 text-xs font-medium text-primary">{{ . }}</span>
                   {{ end }}
