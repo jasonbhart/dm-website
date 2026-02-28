@@ -12,6 +12,7 @@
   </section>
 
   <!-- Main Content Section -->
+  {{ if or .Params.image (strings.TrimSpace .RawContent) }}
   <section class="section-sm">
     <div class="container">
       <div class="row justify-center">
@@ -33,13 +34,16 @@
           {{ end }}
 
           <!-- Main Content -->
+          {{ with strings.TrimSpace .RawContent }}
           <div class="content prose prose-lg max-w-none">
-            {{ .Content }}
+            {{ $.Content }}
           </div>
+          {{ end }}
         </div>
       </div>
     </div>
   </section>
+  {{ end }}
 
   <!-- Team Model Section -->
   {{ with .Params.team }}
