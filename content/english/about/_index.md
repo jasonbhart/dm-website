@@ -31,7 +31,7 @@ team:
     - title: "Analytics Engineers"
       description: "Attribution models, marketing analytics, dbt transformations"
       tags: ["dbt", "dlt", "SQL", "Python"]
-    - title: "Data Architects"
+    - title: "Business Data Architects"
       description: "Warehouse design, migration, governance frameworks"
       tags: ["Snowflake", "BigQuery", "Databricks"]
     - title: "Marketing Analysts"
