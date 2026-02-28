@@ -335,19 +335,7 @@
         <div class="lg:col-6 text-center">
           <h2 class="mb-4">{{ .title }}</h2>
           <p class="mb-6 text-text">{{ .description }}</p>
-          <form name="newsletter" method="POST" data-netlify="true" class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
-            <input type="hidden" name="form-name" value="newsletter" />
-            <input
-              type="email"
-              name="email"
-              placeholder="{{ .placeholder }}"
-              required
-              class="form-input flex-1 rounded-lg border border-border px-4 py-3.5 text-text focus:border-primary focus:ring-primary"
-            />
-            <button type="submit" class="btn btn-primary whitespace-nowrap">
-              {{ .button }}
-            </button>
-          </form>
+          {{ partial "kit-newsletter-form" (dict "formId" site.Params.kit.form_id) }}
         </div>
       </div>
     </div>

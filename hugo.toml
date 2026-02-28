@@ -10,7 +10,7 @@ timeZone = "America/New_York"
 # Enable custom robots.txt generation from layouts/robots.txt
 enableRobotsTXT = true
 # post excerpt
-summaryLength = 10 # see https://gohugo.io/content-management/summaries/#automatic-summary
+summaryLength = 70 # see https://gohugo.io/content-management/summaries/#automatic-summary
 # disable language
 disableLanguages = [
 ] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/

@@ -21,7 +21,7 @@ team:
       description: "Former Director of Data & Analytics at Springboard and startup co-founder. Specializes in marketing measurement, attribution, and analytics engineering on modern cloud platforms."
     - name: "Jennifer Edwards"
       role: "CFO / COO"
-      image: "/images/avatar.png"
+      image: "/images/jennifer-edwards.png"
       description: "Former HP executive with deep expertise in finance, risk management, cybersecurity, and fraud prevention. Oversees operations and financial strategy at Domain Methods."
     - name: "Anmol Parimoo"
       role: "Senior Analytics Engineering Consultant"

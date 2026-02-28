@@ -88,6 +88,14 @@
               {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" .Title "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false "Reddit" false) }}
             </div>
           </div>
+          <!-- Newsletter CTA -->
+          {{ with site.Params.kit.form_id }}
+          <div class="mt-10 rounded-lg bg-light p-6 md:p-8 text-center">
+            <h3 class="h5 mb-2">Get posts like this in your inbox</h3>
+            <p class="text-text-light mb-4">Subscribe for practical analytics insights — no spam, unsubscribe anytime.</p>
+            {{ partial "kit-newsletter-form" (dict "formId" .) }}
+          </div>
+          {{ end }}
           <!-- comments -->
           {{ if site.Config.Services.Disqus.Shortname }}
             <div class="mt-20">
