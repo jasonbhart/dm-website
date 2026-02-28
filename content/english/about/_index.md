@@ -30,7 +30,7 @@ team:
   specialties:
     - title: "Analytics Engineers"
       description: "Attribution models, marketing analytics, dbt transformations"
-      tags: ["dbt", "SQL", "Python"]
+      tags: ["dbt", "dlt", "SQL", "Python"]
     - title: "Data Architects"
       description: "Warehouse design, migration, governance frameworks"
       tags: ["Snowflake", "BigQuery", "Databricks"]
