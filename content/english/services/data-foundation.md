@@ -73,9 +73,15 @@ clients:
     - client: "Mid-Market SaaS Data Team"
       outcome: "Pipeline reliability from constant firefighting to 99%+ uptime"
       summary: "A 200-person SaaS company's data team was spending half their time fixing broken pipelines instead of delivering insights. We implemented a dbt-based transformation layer with automated testing, documentation, and clear governance processes. Their data team shifted from reactive maintenance to proactive analysis within six weeks."
+      link: "/case-studies/saas-pipeline-reliability"
     - client: "Venture-Funded B2B Platform"
       outcome: "Migrated from legacy ETL to modern cloud warehouse in 8 weeks"
       summary: "A venture-funded B2B platform was outgrowing their legacy data infrastructure. We designed and implemented a migration to BigQuery with dbt, preserving business logic while adding data quality tests and documentation. Their team now manages the entire stack independently."
+      link: "/case-studies/b2b-platform-warehouse-migration"
+    - client: "Fast-Growing Fintech Startup"
+      outcome: "Unified 12 data sources into a single trusted warehouse in 6 weeks"
+      summary: "A Series A fintech startup had customer data scattered across 12 SaaS tools with no central source of truth. Finance, product, and ops teams each maintained their own spreadsheets. We designed and built a BigQuery warehouse with dbt, consolidating all sources into tested, documented models. The CEO now opens one dashboard instead of reconciling four spreadsheets — and the data team spends their time on analysis, not data wrangling."
+      link: "/case-studies/fintech-data-unification"
 
 # Pricing (optional)
 pricing:
@@ -89,12 +95,5 @@ go_deeper:
   description: "Read our practical guide to building a modern data foundation with dbt — architecture decisions, migration strategies, and governance that actually works."
   link:
     url: "/blog/modern-data-foundation-dbt-guide"
-    label: "Read the dbt Foundation Guide"
-
-# Final CTA (optional - has defaults)
-cta:
-  title: "Ready to build a data foundation you can trust?"
-  description: "Book a discovery call to discuss your data challenges and goals."
-  button: "Book a Discovery Call"
-  link: "/contact-us"
+    label: "Download the dbt Foundation Guide"
 ---

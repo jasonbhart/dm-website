@@ -97,110 +97,14 @@ Stored procedures are impossible to test systematically, difficult to version co
 
 dbt isn't perfect. But for 90% of analytics transformations — staging, cleaning, joining, aggregating, building business logic — it's the best tool available. The 10% where it doesn't fit (streaming, real-time, heavy ML feature engineering) is a topic for another post.
 
-## Architecture Patterns That Scale (and Ones That Don't)
+## Get the Complete Guide
 
-### The Medallion Architecture: Bronze, Silver, Gold
+The full guide covers everything above plus the detailed playbook: architecture patterns that scale (and ones that don't), the medallion approach for mid-size teams, data governance that people actually follow, a step-by-step migration playbook for legacy ETL, and when to build vs. when to call for help.
 
-The most reliable architecture pattern I've seen for mid-size teams is the medallion (or multi-layer) approach:
+{{< lead-magnet title="Download the Full dbt Foundation Guide (PDF)" description="The complete playbook for building a trusted data foundation — including warehouse selection, dbt architecture patterns, governance frameworks, and the migration playbook. Enter your email and we'll send it over." image="/images/dbt-foundation-guide-cover.png" pdf="/downloads/data-foundation-dbt-guide-domain-methods.pdf" >}}
 
-- **Bronze (staging):** Raw data from sources, minimally transformed. Renamed columns, cast data types, deduplicated. This is your safety net — you can always rebuild everything downstream from here.
-- **Silver (intermediate):** Cleaned, joined, business logic applied. This is where you resolve entities, apply business rules, and create the building blocks for analysis.
-- **Gold (marts):** Business-ready tables organized by domain — finance, marketing, product, sales. These are what your analysts and BI tools hit directly.
+---
 
-This isn't the only pattern that works, but it's the one that works most consistently for teams between 2 and 15 data people. It's simple enough to understand, structured enough to govern, and flexible enough to evolve.
-
-### What Doesn't Scale
-
-**Over-normalization.** If your silver layer looks like a relational database with 47 tables and a diagram that requires a poster-sized printout, you've over-engineered it. Denormalize for readability. Your analysts will thank you.
-
-**Premature optimization.** Don't build incremental models until you have a performance problem. Don't partition tables until scan costs are actually high. Don't implement complex caching strategies for a warehouse that processes 10GB. Build the simplest thing that works and optimize when the data tells you to.
-
-**Building for scale you don't have.** If you're processing 50 million rows, don't architect for 50 billion. You'll add complexity, slow down development, and solve problems you don't have yet — while ignoring problems you do have.
-
-The 80/20 rule applies to architecture: get the fundamentals right (clean staging, clear business logic, well-organized marts) and you'll handle 80% of what the business needs. Optimize the remaining 20% when it actually becomes a bottleneck.
-
-## Data Governance That People Actually Follow
-
-Most governance programs fail because they're designed by compliance teams who've never built a pipeline. The result is 50-page policy documents that nobody reads, access controls that block legitimate work, and a governance "committee" that meets quarterly to discuss why nobody follows the governance framework.
-
-Here's what actually works.
-
-### Clear Ownership
-
-Every model in your dbt project should have an owner. Not a team — a person. Someone who is responsible for its accuracy, its documentation, and its maintenance. Put it in your `schema.yml`. Make it visible.
-
-When something breaks, "the data team owns it" means nobody owns it. "Sarah owns the revenue mart" means Sarah gets paged, Sarah fixes it, and Sarah has the authority to make decisions about how it evolves.
-
-### Automated Testing Over Manual Review
-
-Manual data quality reviews don't scale and they don't stick. Automated tests that run on every dbt build do both.
-
-At minimum, every model should have: primary key uniqueness, not-null constraints on critical fields, and at least one business logic assertion (e.g., revenue should never be negative, dates should be within a reasonable range). This takes 15 minutes per model to set up and saves hours of debugging later.
-
-### Sensible Naming Conventions
-
-Pick a convention and enforce it. I prefer: `stg_` for staging, `int_` for intermediate, `fct_` for fact tables, `dim_` for dimensions. But the specific convention matters less than consistency. If half your models use `stg_` and the other half use `staging_` and a few use `raw_`, you don't have a convention — you have chaos.
-
-Document the convention in your project's README. Enforce it in code review. That's it. No 50-page naming standard required.
-
-### Documentation That Earns Trust
-
-Good documentation answers the question a stakeholder is actually asking: "What does this number mean, and can I trust it?"
-
-For every gold-layer model, document: what it measures, what it includes and excludes, where the source data comes from, when it refreshes, and who owns it. That's five things. It takes 10 minutes. And it's the difference between a stakeholder who trusts the dashboard and one who opens a Slack thread asking "is this number right?"
-
-## The Migration Playbook: Legacy ETL to Modern Stack
-
-If you're currently running Informatica, Talend, SSIS, or hand-rolled Python ETL scripts, migrating to a modern stack is one of the highest-ROI projects you can do. It's also one of the easiest to botch. Here's the playbook.
-
-### Step 1: Audit What You Have
-
-Before you migrate anything, document what exists. Every pipeline, every schedule, every dependency. You'll be surprised — most legacy ETL environments have pipelines that nobody remembers building, data flows that feed reports nobody reads, and critical dependencies that aren't documented anywhere.
-
-Map source systems, transformation logic, output targets, and consumers. If you can't explain what a pipeline does and who uses its output, flag it for investigation before migration.
-
-### Step 2: Map Business-Critical Pipelines
-
-Not all pipelines are created equal. Identify the ones that feed revenue reporting, board decks, operational dashboards, and regulatory requirements. These are your priority-one migrations. Everything else can wait.
-
-I typically sort pipelines into three tiers: must-migrate (business-critical, actively used), should-migrate (useful but not urgent), and investigate (unclear value, possibly unused). Start with tier one.
-
-### Step 3: Migrate in Phases
-
-Don't try to migrate everything at once. Pick one business-critical pipeline, rebuild it in dbt, validate the output against the legacy system, and put it in production. Then do the next one.
-
-Run legacy and modern pipelines in parallel during the transition. Compare outputs daily. When the modern pipeline has produced consistent, validated results for two to four weeks, you can start routing consumers to the new source.
-
-### Step 4: Test Relentlessly
-
-Every migrated pipeline needs automated tests that verify it produces the same results as the legacy system — or better results with documented reasons for any differences.
-
-"The new numbers are different" is the fastest way to kill stakeholder trust in a migration. When the numbers are different, you need to explain why, and ideally show that the new numbers are more correct (e.g., "the legacy pipeline was double-counting refunds").
-
-### Step 5: Sunset Legacy Systems Deliberately
-
-This is where most migrations stall. The new stack is running, but nobody turns off the old one because "what if we need it?" Six months later, you're maintaining two systems.
-
-Set a sunset date for each legacy pipeline before you start the migration. Communicate it. Stick to it. If consumers haven't transitioned by the sunset date, escalate — don't extend.
-
-## When to Build vs. When to Call for Help
-
-Most data teams can build a solid dbt-based data foundation themselves. But there are situations where bringing in outside expertise saves time, money, and a lot of frustration.
-
-### Signs You Need Help
-
-**Your team is underwater with maintenance.** If your data engineers are spending more than half their time fixing broken pipelines instead of building new capabilities, they don't have capacity to design and execute a foundation overhaul. You need someone to come in, build the foundation, and hand it back.
-
-**You're evaluating platforms for the first time.** The difference between a good warehouse choice and a bad one is measured in years of productivity. If nobody on your team has built on BigQuery, Snowflake, and Databricks before, you're making a high-stakes decision with limited information.
-
-**You need to move fast.** A 6-month learning curve for dbt best practices, warehouse optimization, and governance frameworks is reasonable for a team learning on the job. If you need results in 6 weeks, not 6 months, experience compresses that timeline dramatically.
-
-**Your stakeholders have already lost trust.** Rebuilding trust is harder than building it the first time. An outside perspective can help identify what broke, fix it credibly, and re-establish confidence in a way that an internal team — the same team associated with the broken numbers — sometimes can't.
-
-### What We Do
-
-We build data foundations using dbt, open-source tools, and modern cloud warehouses on GCP and AWS. We scope it, build it, test it, document it, and hand it off so your team owns it completely. No ongoing dependency, no retainer lock-in.
-
-If any of this resonated — if you're staring at a legacy ETL system, evaluating warehouses, or trying to figure out why your team built a modern stack that nobody trusts — we should talk.
+If any of this resonated — if you're staring at a legacy ETL system, evaluating warehouses, or trying to figure out why your team built a modern stack that nobody trusts — you don't have to solve it alone.
 
 {{< button label="Talk to Us About Your Data Foundation" link="/services/data-foundation" >}}

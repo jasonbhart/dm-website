@@ -91,129 +91,14 @@ After your first workflow proves value, add the next one. Then the next. Build y
 
 This is the MVP mindset applied to data infrastructure, and it works every time.
 
-## Warehouse-as-CDP: Replace Six-Figure Vendor Tools
+## Get the Complete Playbook
 
-Here's the contrarian take that CDP vendors don't want you to hear: if you already have a modern data warehouse with clean, modeled data, you have 80% of what a CDP does. Maybe more.
+The full playbook covers everything above plus: warehouse-as-CDP strategies (and the math on replacing six-figure vendor tools), AI-powered workflows for churn scoring, lead scoring, and automated audience building, activation use cases broken down by team, and a readiness assessment framework.
 
-### What a CDP Actually Does
+{{< lead-magnet title="Download the Full Activation Playbook (PDF)" description="The complete playbook for activating your data warehouse — including reverse ETL architecture, AI-powered workflows, warehouse-as-CDP strategies, and team-by-team use cases. Enter your email and we'll send it over." image="/images/data-activation-playbook-cover.png" pdf="/downloads/data-activation-playbook-domain-methods.pdf" >}}
 
-Strip away the marketing, and a CDP does four things:
+---
 
-1. **Collects data** from multiple sources (your warehouse already does this)
-2. **Resolves identities** across those sources (your dbt models can do this)
-3. **Creates audience segments** based on that data (that's just SQL)
-4. **Syncs those segments** to destination tools (that's reverse ETL)
-
-You've already built steps one through three. The only missing piece is step four — and a reverse ETL tool handles that for $10-20K per year, not $100-150K per year.
-
-### The Math
-
-I've helped companies do this math, and it's not subtle. A typical mid-market CDP contract runs $80-150K annually. A reverse ETL tool plus the warehouse compute to support activation syncs runs $15-30K annually. And you get more flexibility, more control over your data, and no vendor lock-in.
-
-The warehouse-as-CDP approach also means your data team owns the logic. They're not debugging a vendor's black-box identity resolution. They're not waiting on a vendor's product roadmap to get a feature they need. They control the SQL, the models, and the sync schedules.
-
-### When a CDP Still Makes Sense
-
-I'm not dogmatic about this. If you don't have a data warehouse, or if your warehouse is a mess, or if you need real-time event streaming at massive scale — a CDP might still be the right call. But for most SaaS companies in the $5M-$50M ARR range with a functioning warehouse, the warehouse-native approach is cheaper, more flexible, and faster to implement.
-
-## AI-Powered Workflows: Churn Scoring, Lead Scoring, and Beyond
-
-This is where things get interesting. AI isn't just a buzzword we slap on our marketing — it's a practical capability that transforms what's possible with data activation.
-
-The key insight: you don't need a data science team or a massive ML infrastructure to deploy AI-powered workflows. You need clean data, a clear use case, and someone who knows how to ship a model that actually gets used.
-
-### Churn Prediction That Drives Action
-
-A churn model sitting in a notebook is academic. A churn model that scores every account daily and triggers automated outreach when risk exceeds a threshold — that's activation.
-
-Here's what a practical implementation looks like:
-
-- **Inputs:** Product usage trends (declining logins, feature abandonment), support ticket velocity, billing signals (failed payments, downgrade inquiries), engagement scores
-- **Model:** Gradient-boosted classifier trained on your historical churn data. Nothing exotic. XGBoost or LightGBM, deployed as a scheduled job.
-- **Output:** A score synced to your CRM daily via reverse ETL, with automated Slack alerts for high-risk accounts and triggered email sequences for at-risk segments
-
-We've deployed this pattern in three weeks for SaaS companies with 18% churn reduction in the first quarter. Not because the model was brilliant — because the activation loop was tight.
-
-### Lead Scoring Based on Product Signals
-
-Traditional lead scoring uses firmographic data and marketing engagement. That's fine, but it misses the most predictive signal for PLG companies: what the user actually did in the product.
-
-A product-qualified lead score combines:
-
-- **Activation milestones** (completed onboarding, invited a teammate, used a core feature)
-- **Usage depth** (session frequency, feature breadth, data volume)
-- **Expansion signals** (hitting plan limits, exploring premium features, adding seats)
-
-Sync this score to your CRM, and your sales team calls the right people at the right time. It's not magic. It's just using the data you already have.
-
-### Automated Audience Building
-
-Instead of manually defining ad audiences, let your models identify the patterns. Train a lookalike model on your best customers, score your prospect universe, and sync the high-propensity segments directly to Google, Meta, and LinkedIn.
-
-Your audiences update automatically as your model learns. Your ad spend goes to the people most likely to convert. And nobody has to upload a CSV.
-
-### Lifecycle Stage Detection
-
-Most lifecycle definitions are static rules: "If they signed up more than 7 days ago and haven't converted, they're in the nurture stage." That's a start, but it misses nuance.
-
-AI-driven lifecycle detection uses behavioral clustering to identify where users actually are in their journey — not where your arbitrary time-based rules say they are. Some users need a nudge after two days. Others need three weeks. A model can tell the difference. An arbitrary rule can't.
-
-## Common Activation Use Cases by Team
-
-Data activation isn't a single initiative — it's a capability that benefits every team differently. Here's what I've seen work across the companies we partner with.
-
-### Product Teams
-
-- **Feature adoption tracking:** Identify which users have and haven't adopted key features, then trigger in-app messaging or guided walkthroughs for those who haven't
-- **Onboarding optimization:** Score how "activated" each user is and trigger interventions for those falling behind the ideal path
-- **Usage-based expansion signals:** Detect when accounts are approaching plan limits or using features that indicate readiness for a higher tier
-
-### Growth Teams
-
-- **High-intent audience targeting:** Sync warehouse-defined audience segments to ad platforms daily, replacing manual CSV uploads
-- **Lookalike modeling:** Use your best customer profiles as seed audiences for prospecting campaigns
-- **Campaign automation:** Trigger multi-channel sequences based on product behavior, not just email opens
-- **Experimentation velocity:** Push experiment cohort data to tools for faster A/B testing across channels
-
-### Marketing Teams
-
-- **Lifecycle email triggers:** Move beyond time-based drips to behavior-driven sequences that respond to what users actually do
-- **Ad audience suppression:** Automatically suppress converted users from acquisition campaigns (stop paying to acquire people you already have)
-- **Content personalization:** Sync user segments to your CMS or email platform for dynamic content based on product usage patterns
-
-### Sales Teams
-
-- **Product-qualified lead scoring:** Rank inbound leads by actual product engagement, not just firmographic fit
-- **Account health signals:** Give AMs and CSMs real-time visibility into account usage trends directly in the CRM
-- **Expansion triggers:** Alert reps when accounts hit usage thresholds that historically correlate with upsell readiness
-- **Competitive intelligence:** Flag accounts that show behavioral patterns consistent with evaluation of alternatives
-
-## How to Evaluate If You're Ready for Data Activation
-
-Not every company is ready for data activation. Shipping activation workflows on top of broken data just automates bad decisions faster. Here's how to know where you stand.
-
-### You're Ready If...
-
-**You have a warehouse with reasonably clean data.** It doesn't have to be perfect. But you need modeled tables you trust — customer dimensions, event data, revenue metrics. If your dbt project is in decent shape and your analysts trust the numbers, you're ready.
-
-**You have business processes that would benefit from automation.** Someone on your team is manually exporting data, uploading lists, or copy-pasting between tools. Those manual workflows are your first activation candidates.
-
-**Your team is tired of "insights" that don't lead to action.** You have dashboards that show what's happening, but nobody's changing what they do because of them. That's the activation gap.
-
-### You're NOT Ready If...
-
-**You don't trust your data yet.** If your stakeholders question the numbers, if your models have known quality issues, if your sources aren't reliable — fix the foundation first. Activating bad data is worse than not activating at all. We can help with that too — [start with a data audit](/services/audits).
-
-**You don't have a warehouse.** If your data lives in spreadsheets, disconnected SaaS tools, and someone's local machine, you need a data foundation before you need activation. [That's a different conversation.](/services/data-foundation)
-
-**You don't have a clear use case.** "We should activate our data" isn't a use case. "We want to reduce churn by identifying at-risk accounts and triggering automated outreach" is a use case. Start with the business problem.
-
-### The Readiness Spectrum
-
-Most companies I talk to are somewhere in the middle. They have decent data but haven't modeled it for activation. They have manual processes that could be automated but haven't prioritized it. They know there's value in their warehouse but can't articulate exactly where.
-
-That's fine. That's actually the ideal starting point — good enough to move fast, early enough to get it right.
-
-If that sounds like you, the next step is a conversation about where your highest-impact activation opportunity is. We'll map your data, your tools, and your team's workflows, then scope an MVP you can ship in weeks — not months.
+If any of this resonated — if you have rich data sitting in your warehouse and no way to act on it — you don't have to figure it out alone.
 
 {{< button label="Talk to Us About Data Activation" link="/services/data-activation" >}}

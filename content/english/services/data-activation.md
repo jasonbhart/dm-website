@@ -69,9 +69,15 @@ clients:
     - client: "PLG SaaS Product Team"
       outcome: "First reverse ETL workflow shipped in 3 weeks, reduced churn by 18%"
       summary: "A PLG SaaS company had rich behavioral data sitting in their warehouse but no way to act on it. We built an MVP activation workflow that synced churn-risk scores to their CRM and triggered automated outreach. The first use case proved value so quickly that the team expanded to three more activation workflows within the quarter."
+      link: "/case-studies/plg-saas-churn-activation"
     - client: "Mid-Market Ecommerce SaaS"
       outcome: "Warehouse-as-CDP replaced a $120K/year vendor tool"
       summary: "A mid-market ecommerce SaaS was paying for a CDP they'd outgrown. We implemented a warehouse-native approach using reverse ETL to sync audience segments directly from their data warehouse to ad platforms and email tools — giving them more flexibility at a fraction of the cost."
+      link: "/case-studies/ecommerce-warehouse-cdp"
+    - client: "B2B SaaS Sales Team"
+      outcome: "AI lead scoring increased sales efficiency 40% by surfacing product-qualified leads"
+      summary: "A B2B SaaS company with a PLG motion had sales reps manually reviewing trial accounts to decide who to call. We built a product-qualified lead scoring model using warehouse behavioral data — activation milestones, feature adoption depth, and usage frequency — and synced scores to their CRM via reverse ETL. Reps started calling the right people at the right time, and qualified pipeline from inbound trials increased 40% in the first quarter."
+      link: "/case-studies/b2b-saas-lead-scoring"
 
 # Pricing (optional)
 pricing:
@@ -85,12 +91,5 @@ go_deeper:
   description: "Read our data activation playbook — from reverse ETL to AI-powered workflows, built for mid-size SaaS and ecommerce teams."
   link:
     url: "/blog/data-activation-playbook"
-    label: "Read the Activation Playbook"
-
-# Final CTA (optional - has defaults)
-cta:
-  title: "Ready to put your data to work?"
-  description: "Book a discovery call to discuss your data activation needs."
-  button: "Book a Discovery Call"
-  link: "/contact-us"
+    label: "Download the Activation Playbook"
 ---
