@@ -8,27 +8,7 @@ draft: false
 
 ## Book a Discovery Call
 
-A discovery call is a short, focused conversation where we learn about your data challenges and determine if we can help.
-
-**What to expect:**
-
-- A focused conversation about your specific situation
-- An honest assessment of whether we're the right fit
-- If there's a match, we'll outline a **paid discovery engagement** — a scoped, short-term project where we dig deep into your data, diagnose the real issues, and deliver a clear action plan
-
-**No pitch. No obligation. Just clarity.**
-
-We don't do hourly billing. All engagements are scoped and priced upfront so you know exactly what you're getting.
-
-**To make the most of our time together, have these ready:**
-
-- [ ] Your company size and stage (ARR or funding status)
-- [ ] The primary data or analytics challenge you're facing
-- [ ] Your current tools and tech stack (warehouse, BI, CRM, etc.)
-- [ ] Your timeline — is this urgent or exploratory?
-
-**Prefer to schedule directly?**
-[Book on Google Calendar](https://calendar.google.com/calendar/appointments/schedules/AcZssZ2wFL1wjvOWwuAPgQEZuJ_0-USR8gaJaYxOL_bLGYFvM1MrseM0t7pTjU6yVgWVyHROGBFJQdae?gv=true) or email us at **hello@domainmethods.com**
+A short, focused conversation to understand your data challenges and determine if we can help. No pitch, no obligation.
 
 <!-- Google Calendar Appointment Scheduling begin -->
 <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2wFL1wjvOWwuAPgQEZuJ_0-USR8gaJaYxOL_bLGYFvM1MrseM0t7pTjU6yVgWVyHROGBFJQdae?gv=true" style="border: 0; overflow: hidden;" width="100%" height="1250" frameborder="0" scrolling="no"></iframe>

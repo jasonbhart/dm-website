@@ -1,10 +1,10 @@
 ---
-meta_title: "Domain Methods | Marketing Data & Analytics for SaaS & Ecommerce"
+meta_title: "Domain Methods"
 description: "Turn messy data into decisions that drive revenue. Marketing analytics, data foundations, and AI-powered activation for mid-size SaaS and ecommerce companies."
 
 # Banner
 banner:
-  title: "Turn messy data into decisions that drive revenue"
+  title: "Turn Messy Marketing Data into Decisions that Drive Revenue"
   content: "Your data should be driving decisions — but conflicting metrics, broken pipelines, and tools nobody trusts are getting in the way. We fix that."
   bulletpoints:
     - "Marketing analytics and attribution you can defend"

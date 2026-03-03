@@ -70,37 +70,30 @@
   <!-- /Banner -->
 
   <!-- Features -->
-  {{ range $i, $e:= .Params.features }}
-    <section {{ if eq $i 0 }}id="features"{{ end }} class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">
-      <div class="container">
-        <div class="row items-center justify-between">
-          <div
-            class="mb:md-0 {{ if not (modBool $i 2) }}
-              md:order-2
-            {{ end }} md:col-5 mb-6">
-            {{ partial "image" (dict "Src" .image "Alt" .title "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
-          </div>
-          <div
-            class="{{ if not (modBool $i 2) }}
-              md:order-1
-            {{ end }} md:col-7 lg:col-6">
-            <h2 class="mb-4">
+  {{ with .Params.features }}
+  <section id="features" class="section">
+    <div class="container">
+      <div class="row">
+        {{ range . }}
+        <div class="col-12 lg:col-4 mb-8 lg:mb-0">
+          <div class="rounded-lg bg-light p-6 h-full flex flex-col">
+            <h2 class="h4 mb-3">
               {{ .title | markdownify }}
             </h2>
-            <p class="mb-8 text-lg">
+            <p class="mb-6 text-text">
               {{ .content | markdownify }}
             </p>
-            <ul>
+            <ul class="flex-1 mb-6">
               {{ range .bulletpoints }}
-                <li class="relative mb-4 pl-6">
-                  <i class="fa fa-check absolute left-0 top-1.5"></i>
+                <li class="relative mb-3 pl-6">
+                  <i class="fa fa-check absolute left-0 top-1.5 text-primary"></i>
                   {{ . | markdownify }}
                 </li>
               {{ end }}
             </ul>
             {{ with .button }}
               {{ if .enable }}
-                <a class="btn btn-outline-primary mt-6" href="{{ .link | absURL }}">
+                <a class="btn btn-outline-primary w-full text-center" href="{{ .link | absURL }}">
                   {{ .label }}
                   <i class="fa fa-arrow-right pl-2"></i>
                 </a>
@@ -108,8 +101,21 @@
             {{ end }}
           </div>
         </div>
+        {{ end }}
       </div>
-    </section>
+
+      {{/* "Not sure where to start?" CTA */}}
+      {{ with $.Params.personas.fallback }}
+      <div class="text-center mt-12">
+        <p class="text-lg mb-4">{{ .text }}</p>
+        <a class="btn btn-outline-primary" href="{{ .link | absURL }}">
+          {{ .link_label }}
+          <i class="fa fa-arrow-right pl-2"></i>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </section>
   {{ end }}
   <!-- /Features -->
 
@@ -148,12 +154,12 @@
         </div>
       </div>
 
-      {{/* Desktop: grid (hidden on mobile) */}}
-      <div class="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {{/* Desktop: 2x2 grid (hidden on mobile) */}}
+      <div class="hidden md:grid md:grid-cols-2 gap-8">
         {{ range .cards }}
         <div class="rounded-lg bg-light dark:bg-darkmode-light p-6 h-full flex flex-col">
-          <h3 class="h5 mb-2">{{ .label }}</h3>
-          <p class="text-sm text-primary font-medium mb-3">{{ .role }}</p>
+          <h3 class="h5 mb-1">{{ .role }}</h3>
+          <p class="text-sm text-primary font-medium mb-3">{{ .label }}</p>
           <p class="text-text mb-6 flex-1">"{{ .pain }}"</p>
           <a class="text-primary hover:underline font-medium" href="{{ .link | absURL }}">
             {{ .link_label }} <i class="fa fa-arrow-right pl-1"></i>
@@ -168,8 +174,8 @@
         <details class="rounded-lg bg-light dark:bg-darkmode-light overflow-hidden">
           <summary class="px-5 py-4 cursor-pointer flex items-center justify-between">
             <div>
-              <span class="font-semibold text-dark">{{ .label }}</span>
-              <span class="text-sm text-primary font-medium ml-2">{{ .role }}</span>
+              <span class="font-semibold text-dark">{{ .role }}</span>
+              <span class="text-sm text-primary font-medium ml-2">{{ .label }}</span>
             </div>
             <i class="fa fa-chevron-down text-xs text-text-light transition-transform"></i>
           </summary>
@@ -182,17 +188,6 @@
         </details>
         {{ end }}
       </div>
-
-      {{ with $.Params.personas.fallback }}
-      <div class="text-center mt-8">
-        <p class="text-lg">
-          {{ .text }}
-          <a class="text-primary hover:underline font-medium" href="{{ .link | absURL }}">
-            {{ .link_label }} <i class="fa fa-arrow-right pl-1"></i>
-          </a>
-        </p>
-      </div>
-      {{ end }}
     </div>
   </section>
   {{ end }}
@@ -205,7 +200,7 @@
   <section class="section-sm bg-theme-light">
     <div class="container">
       <div class="row justify-center">
-        <div class="lg:col-8 md:col-10">
+        <div class="lg:col-10 md:col-11">
           <div class="flex items-start gap-5">
             <div class="shrink-0">
               {{ partial "image" (dict "Src" .image "Alt" .name "Class" "rounded-full" "Size" "80x80") }}
