@@ -112,3 +112,7 @@ enable = false
 # Kit (formerly ConvertKit) newsletter integration
 [kit]
 form_id = "7a7b1ba907"
+# Create a separate Kit form for the attribution guide lead magnet.
+# The form should deliver the PDF as an incentive email.
+# Until configured, this falls back to the newsletter form.
+guide_form_id = "7a7b1ba907"

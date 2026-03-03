@@ -72,9 +72,15 @@ clients:
     - client: "B2B SaaS Growth Team"
       outcome: "From conflicting dashboards to a single source of truth for ROAS"
       summary: "A 300-person B2B SaaS growth team spending six figures monthly on paid channels couldn't reconcile attribution numbers across Google Analytics, their CRM, and finance reports. We rebuilt their attribution model from the ground up, unifying data from ad platforms, CRM, and billing into one trusted pipeline. Their growth team now makes budget allocation decisions in hours instead of weeks."
+      link: "/case-studies/b2b-saas-attribution"
     - client: "Mid-Market SaaS Company"
       outcome: "Closed the attribution gap — from ~60% to 95% spend-to-revenue coverage"
       summary: "A mid-market SaaS company knew their marketing was working but couldn't prove it to the board. We built finance-adjacent reporting that connected campaign spend to closed-won revenue across a 90-day sales cycle — covering 95% of ad spend to pipeline attribution where previously only ~60% could be traced. The CFO and CMO now share the same dashboard — and the same numbers."
+      link: "/case-studies/mid-market-saas-attribution"
+    - client: "DTC Ecommerce Brand"
+      outcome: "Cut wasted ad spend 35% by identifying true channel-level ROAS"
+      summary: "A venture-backed DTC brand spending $120K/month across Meta, Google, and TikTok had no way to compare true ROAS across channels — each platform claimed credit for every conversion. We built a unified attribution pipeline from ad platforms through Shopify to their warehouse. Within a month they reallocated budget from underperforming channels and scaled winners, cutting blended CAC by over a third."
+      link: "/case-studies/dtc-ecommerce-attribution"
 
 # Pricing (optional)
 pricing:
@@ -85,15 +91,8 @@ pricing:
 
 go_deeper:
   title: "Go Deeper"
-  description: "Read our complete guide to marketing attribution for SaaS — why it breaks, how to fix it, and the 80/20 approach that works."
+  description: "Get the complete attribution playbook — why it breaks, how to fix it, and the 80/20 approach that works."
   link:
     url: "/blog/marketing-attribution-complete-guide"
-    label: "Read the Attribution Guide"
-
-# Final CTA (optional - has defaults)
-cta:
-  title: "Ready to get clarity on your revenue drivers?"
-  description: "Book a discovery call to discuss your specific challenges."
-  button: "Book a Discovery Call"
-  link: "/contact-us"
+    label: "Download the Attribution Guide"
 ---

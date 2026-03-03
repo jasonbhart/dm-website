@@ -119,14 +119,14 @@
   {{ end }}
   <!-- /Process -->
 
-  <!-- Outcome + Fit Section (side-by-side) -->
+  <!-- Outcome + Fit Section (3-column side-by-side) -->
   {{ if or .Params.outcome (or .Params.for_you .Params.not_for) }}
     <section class="section-sm">
       <div class="container">
-        <div class="row justify-center">
-          {{/* Left column: Outcome */}}
+        <div class="row">
+          {{/* Column 1: Outcome */}}
           {{ with $.Params.outcome }}
-          <div class="md:col-6 mb-8 md:mb-0">
+          <div class="md:col-6 lg:col-4 mb-8 lg:mb-0">
             {{ with .headline }}
               <h2 class="h4 mb-6">
                 {{ . | markdownify }}
@@ -144,13 +144,12 @@
             {{ end }}
           </div>
           {{ end }}
-          {{/* Right column: Fit (for_you + not_for) */}}
-          {{ if or $.Params.for_you $.Params.not_for }}
-          <div class="md:col-6">
-            {{ with $.Params.for_you }}
-            <h2 class="h4 mb-4">{{ .title | default "This is for you if..." }}</h2>
+          {{/* Column 2: For You */}}
+          {{ with $.Params.for_you }}
+          <div class="md:col-6 lg:col-4 mb-8 lg:mb-0">
+            <h2 class="h4 mb-6">{{ .title | default "This is for you if..." }}</h2>
             {{ with .items }}
-            <ul class="space-y-3 mb-6">
+            <ul class="space-y-3">
               {{ range . }}
               <li class="flex items-start">
                 <i class="fa fa-check {{ $accentText }} mr-3 mt-1 shrink-0"></i>
@@ -159,9 +158,12 @@
               {{ end }}
             </ul>
             {{ end }}
-            {{ end }}
-            {{ with $.Params.not_for }}
-            <h3 class="h5 mb-3 text-dark">{{ .title | default "This isn't the right service if..." }}</h3>
+          </div>
+          {{ end }}
+          {{/* Column 3: Not For */}}
+          {{ with $.Params.not_for }}
+          <div class="md:col-12 lg:col-4">
+            <h2 class="h4 mb-6">{{ .title | default "This isn't the right service if..." }}</h2>
             {{ with .items }}
             <ul class="space-y-3">
               {{ range . }}
@@ -171,7 +173,6 @@
               </li>
               {{ end }}
             </ul>
-            {{ end }}
             {{ end }}
           </div>
           {{ end }}
