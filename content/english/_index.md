@@ -22,6 +22,7 @@ banner:
     link: "#features"
 
 # Features (Pillars)
+features_title: "What We Do"
 features:
   - title: "Stop Guessing Which Channels Drive Revenue"
     image: "/images/service-1.png"

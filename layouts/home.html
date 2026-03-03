@@ -19,7 +19,7 @@
               </p>
             {{ end }}
             {{ with .bulletpoints }}
-              <ul class="text-left max-w-md mx-auto mb-4">
+              <ul class="inline-block text-left mb-4">
                 {{ range . }}
                   <li class="relative mb-3 pl-6">
                     <i class="fa fa-check absolute left-0 top-1.5 text-primary"></i>
@@ -73,6 +73,9 @@
   {{ with .Params.features }}
   <section id="features" class="section">
     <div class="container">
+      {{ with $.Params.features_title }}
+      <h2 class="text-center mb-10">{{ . }}</h2>
+      {{ end }}
       <div class="row">
         {{ range . }}
         <div class="col-12 lg:col-4 mb-8 lg:mb-0">
@@ -324,8 +327,10 @@
                     </div>
                   {{ end }}
                 </div>
+                {{ if gt (len .Params.testimonials) 3 }}
                 <div
                   class="testimonial-slider-pagination mt-9 flex items-center justify-center text-center"></div>
+                {{ end }}
               </div>
             </div>
           </div>

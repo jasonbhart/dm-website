@@ -37,7 +37,12 @@
                   <h3 class="h5 mb-1">{{ .name }}</h3>
                   <p class="text-sm text-primary font-medium mb-2">{{ .role }}</p>
                   {{ with .description }}
-                    <p class="text-text-light text-sm">{{ . }}</p>
+                    <p class="text-text-light text-sm mb-2">{{ . }}</p>
+                  {{ end }}
+                  {{ with .linkedin }}
+                  <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-dark">
+                    <i class="fab fa-linkedin text-lg"></i>
+                  </a>
                   {{ end }}
                 </div>
               </div>

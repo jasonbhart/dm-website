@@ -277,7 +277,32 @@
   <!-- /Client Outcomes -->
 
 
-  <!-- Closing Section (CTA + optional Go Deeper link) -->
+  <!-- Go Deeper Section -->
+  {{ with .Params.go_deeper }}
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-8 text-center">
+          {{ with .title }}
+          <h2 class="mb-4">{{ . }}</h2>
+          {{ end }}
+          {{ with .description }}
+          <p class="mb-6 text-lg text-text">{{ . }}</p>
+          {{ end }}
+          {{ with .link }}
+          <a href="{{ .url | absURL }}" class="btn btn-outline-primary">
+            {{ .label | default "Read the Guide" }}
+            <i class="fa fa-arrow-right pl-2"></i>
+          </a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  <!-- /Go Deeper -->
+
+  <!-- Closing CTA Section -->
   {{ with .Params.cta }}
   <section class="section-sm bg-gradient">
     <div class="container">
@@ -291,15 +316,6 @@
             {{ .button | default "Book a Discovery Call" }}
             <i class="fa fa-arrow-right pl-2"></i>
           </a>
-          {{ with $.Params.go_deeper }}
-            {{ with .link }}
-              <p class="mt-6">
-                <a href="{{ .url | absURL }}" class="text-primary hover:underline font-medium">
-                  {{ .label | default "Or read the guide" }} <i class="fa fa-arrow-right pl-1"></i>
-                </a>
-              </p>
-            {{ end }}
-          {{ end }}
         </div>
       </div>
     </div>

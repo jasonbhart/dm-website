@@ -52,8 +52,6 @@ projects:
       description: "Transform your raw data into trusted, tested models"
     - name: "Data Governance"
       description: "Establish the processes that keep your data trustworthy at scale"
-    - name: "Databricks Adoption & Migration"
-      description: "Evaluate, migrate to, or optimize Databricks — from lakehouse architecture to Unity Catalog governance"
 
 process:
   title: "How It Works"
