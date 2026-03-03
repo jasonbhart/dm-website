@@ -41,26 +41,6 @@ team:
       description: "CRM data flows, pipeline analytics, metric alignment"
       tags: ["CRM", "Pipeline Analytics", "Forecasting"]
 
-methodology:
-  enable: true
-  title: "How We Work"
-  description: "Every engagement follows a structured approach designed to create lasting change — not just deliverables."
-  ingredients:
-    title: "The Four Ingredients"
-    items:
-      - title: "Purpose"
-        icon: "fas fa-compass"
-        description: "We start by defining the 'why.' If we can't articulate why this project matters to your business, we're not ready to start."
-      - title: "Audience Buy-In"
-        icon: "fas fa-users"
-        description: "Analytics that nobody uses are a waste. We ensure stakeholders are aligned and invested before we build anything."
-      - title: "Behavior Change"
-        icon: "fas fa-sync-alt"
-        description: "The goal isn't a dashboard — it's changing how your team makes decisions. We design for adoption, not just delivery."
-      - title: "Deliverables"
-        icon: "fas fa-check-circle"
-        description: "Clear, scoped outputs that your team can own and maintain. No black boxes. No consultant dependency."
-
 why:
   enable: true
   title: "Why Teams Choose Domain Methods"
@@ -82,25 +62,13 @@ why:
       title: "Just a Call Away"
       description: "Senior practitioners who pick up the phone. No ticket queues, no layers of account management."
 
-fit:
+framework_cta:
   enable: true
-  title: "Is This Right for You?"
-  good_fit:
-    title: "We're a great fit if..."
-    items:
-      - "You're a mid-size SaaS company ($10M+ ARR or venture-funded)"
-      - "Your analytics maturity is low to mid — you know the data isn't where it needs to be"
-      - "You have a data warehouse (or are ready to set one up)"
-      - "You want to own the solution long-term, not rent a consultant forever"
-      - "You value clarity over complexity and truth over comfort"
-      - "You prefer open-source tools and modern cloud platforms (GCP, AWS, Databricks)"
-  bad_fit:
-    title: "We're probably not the right fit if..."
-    items:
-      - "You need someone to manage your dashboards on an ongoing basis"
-      - "You're looking for full business system design and integration"
-      - "You need a large team embedded for 6+ months"
-      - "You're not ready to invest in your data infrastructure"
+  title: "Get Our Engagement Framework"
+  description: "The structured approach we use on every engagement — from defining purpose and securing stakeholder buy-in, to designing for behavior change and delivering systems your team can own. Download the framework we use to turn messy data into trusted decisions."
+  image: "/images/engagement-framework-cover.png"
+  pdf: "/downloads/domain-methods-engagement-framework.pdf"
+  form_id: "7a7b1ba907"
 
 cta:
   title: "Ready to talk?"

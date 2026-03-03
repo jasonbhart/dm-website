@@ -124,26 +124,17 @@ founder:
   content: "Most teams I talk to have the same problem: they don't know who to trust and what to do next with the budget they have. I help mid-size SaaS and ecommerce companies cut through that uncertainty — build analytics they can trust and data systems they can actually use. If your team is drowning in dashboards nobody believes, let's talk. I share practical takes on marketing data, attribution, and analytics engineering on LinkedIn — follow along."
   linkedin: "https://www.linkedin.com/in/jasonbhart/"
 
-# Fit
-fit:
+# Pain Points
+pain_points:
   enable: true
-  title: "Is This Right for You?"
-  good_fit:
-    title: "We're a great fit if..."
-    items:
-      - "You're a mid-size SaaS company ($10M+ ARR or venture-funded)"
-      - "Your analytics maturity is low to mid — you know the data isn't where it needs to be"
-      - "You have a data warehouse (or are ready to set one up)"
-      - "You want to own the solution long-term, not rent a consultant forever"
-      - "You value clarity over complexity and truth over comfort"
-      - "You prefer open-source tools and modern cloud platforms (GCP, AWS, Databricks)"
-  bad_fit:
-    title: "We're probably not the right fit if..."
-    items:
-      - "You need someone to manage your dashboards on an ongoing basis"
-      - "You're looking for full business system design and integration"
-      - "You need a large team embedded for 6+ months"
-      - "You're not ready to invest in your data infrastructure"
+  title: "Sound Familiar?"
+  items:
+    - "Marketing says one thing about revenue, finance says another — and every board meeting turns into a debate about which numbers are real"
+    - "You're spending six figures on ads but can't prove which channels actually drive pipeline"
+    - "Your data team spends more time fixing broken pipelines than delivering the insights the business needs"
+    - "Rich data is sitting in your warehouse but nobody outside the data team can act on it"
+    - "Every tool shows a different number and nobody trusts the dashboards anymore"
+    - "You've outgrown your analytics stack but don't know what comes next — or who to trust to help"
 
 # Newsletter
 newsletter:

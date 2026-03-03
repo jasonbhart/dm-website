@@ -226,45 +226,37 @@
   {{ end }}
   <!-- /Founder Callout -->
 
-  <!-- Fit Section -->
-  {{ with .Params.fit }}
+  <!-- Pain Points Section -->
+  {{ with .Params.pain_points }}
   {{ if .enable }}
   <section class="section bg-theme-light">
     <div class="container">
-      <h2 class="text-center mb-10">{{ .title }}</h2>
       <div class="row justify-center">
-        <div class="md:col-6 mb-8">
-          <div class="rounded-lg bg-white p-6 h-full">
-            <h3 class="h4 mb-4 text-primary">{{ .good_fit.title }}</h3>
-            <ul class="space-y-3">
-              {{ range .good_fit.items }}
-              <li class="flex items-start">
-                <i class="fa fa-check text-primary mr-3 mt-1 shrink-0"></i>
-                <span>{{ . }}</span>
-              </li>
-              {{ end }}
-            </ul>
+        <div class="lg:col-8 text-center mb-10">
+          <h2>{{ .title }}</h2>
+        </div>
+      </div>
+      <div class="row justify-center">
+        {{ range .items }}
+        <div class="md:col-6 mb-6">
+          <div class="flex items-start">
+            <i class="fa fa-arrow-right text-primary mr-3 mt-1.5 shrink-0"></i>
+            <p class="text-text">{{ . }}</p>
           </div>
         </div>
-        <div class="md:col-6 mb-8">
-          <div class="rounded-lg bg-white p-6 h-full">
-            <h3 class="h4 mb-4 text-dark">{{ .bad_fit.title }}</h3>
-            <ul class="space-y-3">
-              {{ range .bad_fit.items }}
-              <li class="flex items-start">
-                <i class="fa fa-times text-secondary mr-3 mt-1 shrink-0"></i>
-                <span>{{ . }}</span>
-              </li>
-              {{ end }}
-            </ul>
-          </div>
-        </div>
+        {{ end }}
+      </div>
+      <div class="text-center mt-8">
+        <a class="btn btn-primary" href="/contact-us">
+          Let's Fix It
+          <i class="fa fa-arrow-right pl-2"></i>
+        </a>
       </div>
     </div>
   </section>
   {{ end }}
   {{ end }}
-  <!-- /Fit Section -->
+  <!-- /Pain Points Section -->
 
   <!-- Testimonials -->
   {{ with site.GetPage "sections/testimonial" }}
