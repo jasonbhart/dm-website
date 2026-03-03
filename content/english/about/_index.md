@@ -61,6 +61,27 @@ methodology:
         icon: "fas fa-check-circle"
         description: "Clear, scoped outputs that your team can own and maintain. No black boxes. No consultant dependency."
 
+why:
+  enable: true
+  title: "Why Teams Choose Domain Methods"
+  subtitle: "We translate messy business data into usable insight that powers decisive, measurable outcomes."
+  points:
+    - icon: "fa-bullseye"
+      title: "80/20 Focus"
+      description: "We focus on the 20% of work that delivers 80% of the value. No over-engineering."
+    - icon: "fa-handshake"
+      title: "No Consultant Dependency"
+      description: "We build systems your team can own and maintain. Then we get out of the way."
+    - icon: "fa-dollar-sign"
+      title: "Project-Based Pricing"
+      description: "Fixed scope, fixed price. No hourly billing, no surprises."
+    - icon: "fa-bolt"
+      title: "Fast to Start"
+      description: "Senior practitioners from day one. No ramp-up period, no junior staff learning on your dime."
+    - icon: "fa-phone"
+      title: "Just a Call Away"
+      description: "Senior practitioners who pick up the phone. No ticket queues, no layers of account management."
+
 fit:
   enable: true
   title: "Is This Right for You?"

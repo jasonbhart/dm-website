@@ -134,6 +134,36 @@
   {{ end }}
   {{ end }}
 
+  <!-- Why Section -->
+  {{ with .Params.why }}
+  {{ if .enable }}
+  <section class="section">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-8 text-center mb-12">
+          <h2 class="mb-4">{{ .title }}</h2>
+          <p class="text-lg text-text">{{ .subtitle }}</p>
+        </div>
+      </div>
+      <div class="row justify-center">
+        {{ range .points }}
+        <div class="md:col-6 lg:col-3 mb-8">
+          <div class="text-center">
+            <div class="mb-4 text-primary">
+              <i class="fa {{ .icon }} text-3xl"></i>
+            </div>
+            <h3 class="h5 mb-2">{{ .title }}</h3>
+            <p class="text-text">{{ .description }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+  <!-- /Why Section -->
+
   {{ with .Params.fit }}
   {{ if .enable }}
   <!-- Fit Section -->

@@ -226,33 +226,45 @@
   {{ end }}
   <!-- /Founder Callout -->
 
-  <!-- Why Section -->
-  {{ with .Params.why }}
+  <!-- Fit Section -->
+  {{ with .Params.fit }}
+  {{ if .enable }}
   <section class="section bg-theme-light">
     <div class="container">
+      <h2 class="text-center mb-10">{{ .title }}</h2>
       <div class="row justify-center">
-        <div class="lg:col-8 text-center mb-12">
-          <h2 class="mb-4">{{ .title }}</h2>
-          <p class="text-lg text-text">{{ .subtitle }}</p>
-        </div>
-      </div>
-      <div class="row justify-center">
-        {{ range .points }}
-        <div class="md:col-6 lg:col-3 mb-8">
-          <div class="text-center">
-            <div class="mb-4 text-primary">
-              <i class="fa {{ .icon }} text-3xl"></i>
-            </div>
-            <h3 class="h5 mb-2">{{ .title }}</h3>
-            <p class="text-text">{{ .description }}</p>
+        <div class="md:col-6 mb-8">
+          <div class="rounded-lg bg-white p-6 h-full">
+            <h3 class="h4 mb-4 text-primary">{{ .good_fit.title }}</h3>
+            <ul class="space-y-3">
+              {{ range .good_fit.items }}
+              <li class="flex items-start">
+                <i class="fa fa-check text-primary mr-3 mt-1 shrink-0"></i>
+                <span>{{ . }}</span>
+              </li>
+              {{ end }}
+            </ul>
           </div>
         </div>
-        {{ end }}
+        <div class="md:col-6 mb-8">
+          <div class="rounded-lg bg-white p-6 h-full">
+            <h3 class="h4 mb-4 text-dark">{{ .bad_fit.title }}</h3>
+            <ul class="space-y-3">
+              {{ range .bad_fit.items }}
+              <li class="flex items-start">
+                <i class="fa fa-times text-secondary mr-3 mt-1 shrink-0"></i>
+                <span>{{ . }}</span>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   {{ end }}
-  <!-- /Why Section -->
+  {{ end }}
+  <!-- /Fit Section -->
 
   <!-- Testimonials -->
   {{ with site.GetPage "sections/testimonial" }}
