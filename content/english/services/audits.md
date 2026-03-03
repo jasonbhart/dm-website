@@ -10,7 +10,7 @@ hero:
   tagline: "Start Small. Learn Fast."
   title: "Audits & Quick Engagements"
   content: "Something's broken and you know it, but you don't know where to start — or who to trust with the diagnosis. We give you honest answers in days, not months. Whether you hire us after or not."
-  image: "/images/service-1.png"
+  image: "/images/banner.png"
   button:
     label: "Book a Discovery Call"
     link: "/contact-us"
@@ -64,12 +64,6 @@ process:
 pricing:
   headline: "Engagements start at $2,500"
   description: "Most audits run $2,500-$7,500 depending on scope. Break-fix work is scoped on a per-issue basis. No hourly billing — you'll know the cost before we start."
-  button: "Book a Discovery Call"
-  link: "/contact-us"
-
-cta:
-  title: "Not sure what you need?"
-  description: "That's fine. Book a discovery call and we'll figure it out together. No pitch, no obligation — just an honest conversation about your data."
   button: "Book a Discovery Call"
   link: "/contact-us"
 ---
