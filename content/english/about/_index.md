@@ -33,16 +33,16 @@ team:
   specialties:
     - title: "Analytics Engineers"
       description: "Attribution models, marketing analytics, dbt transformations"
-      tags: ["dbt", "dlt", "SQL", "Python"]
+      tags: ["Attribution Models", "Pipeline Automation", "Data Quality"]
     - title: "Business Data Architects"
       description: "Warehouse design, migration, governance frameworks"
-      tags: ["Snowflake", "BigQuery", "Databricks"]
+      tags: ["Cloud Warehouses", "Migration", "Governance"]
     - title: "Marketing Analysts"
       description: "Channel attribution, media mix modeling, ad platform integration"
-      tags: ["Attribution", "MMM", "Ad Platforms"]
+      tags: ["Channel ROAS", "Media Mix", "Campaign Analytics"]
     - title: "Revenue Operations"
       description: "CRM data flows, pipeline analytics, metric alignment"
-      tags: ["CRM", "Pipeline Analytics", "Forecasting"]
+      tags: ["CRM Integration", "Revenue Metrics", "Forecasting"]
 
 why:
   enable: true
