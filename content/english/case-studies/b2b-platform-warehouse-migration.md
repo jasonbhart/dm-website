@@ -50,4 +50,4 @@ The CEO wanted the data team to support a new product analytics initiative, but 
 
 ---
 
-{{< button label="Talk to Us About Your Data Foundation" link="/services/data-foundation" >}}
+{{< button label="Talk to Us About Your Data Foundation" link="/contact-us" >}}

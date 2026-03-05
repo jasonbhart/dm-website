@@ -54,4 +54,4 @@ The Series B fundraise was six months out. Investors would ask detailed question
 
 ---
 
-{{< button label="Talk to Us About Your Data Foundation" link="/services/data-foundation" >}}
+{{< button label="Talk to Us About Your Data Foundation" link="/contact-us" >}}

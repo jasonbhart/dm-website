@@ -47,4 +47,4 @@ The VP of Data was spending her time apologizing for broken reports instead of d
 
 ---
 
-{{< button label="Talk to Us About Your Data Foundation" link="/services/data-foundation" >}}
+{{< button label="Talk to Us About Your Data Foundation" link="/contact-us" >}}

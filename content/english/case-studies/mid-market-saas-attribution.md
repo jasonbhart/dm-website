@@ -42,4 +42,4 @@ Compounding the issue, the sales cycle crossed multiple quarters. Campaigns laun
 
 ---
 
-{{< button label="Talk to Us About Attribution" link="/services/revenue-analytics" >}}
+{{< button label="Talk to Us About Attribution" link="/contact-us" >}}

@@ -51,4 +51,4 @@ The VP of Customer Success knew the data existed. She just couldn't get it into 
 
 ---
 
-{{< button label="Talk to Us About Data Activation" link="/services/data-activation" >}}
+{{< button label="Talk to Us About Data Activation" link="/contact-us" >}}
