@@ -32,15 +32,23 @@ team:
       linkedin: "https://www.linkedin.com/in/anmol01/"
   specialties:
     - title: "Analytics Engineers"
+      icon: "fa-code"
+      color: "blue"
       description: "Attribution models, marketing analytics, dbt transformations"
       tags: ["Attribution Models", "Pipeline Automation", "Data Quality"]
     - title: "Business Data Architects"
+      icon: "fa-database"
+      color: "teal"
       description: "Warehouse design, migration, governance frameworks"
       tags: ["Cloud Warehouses", "Migration", "Governance"]
     - title: "Marketing Analysts"
+      icon: "fa-chart-line"
+      color: "amber"
       description: "Channel attribution, media mix modeling, ad platform integration"
       tags: ["Channel ROAS", "Media Mix", "Campaign Analytics"]
     - title: "Revenue Operations"
+      icon: "fa-cogs"
+      color: "purple"
       description: "CRM data flows, pipeline analytics, metric alignment"
       tags: ["CRM Integration", "Revenue Metrics", "Forecasting"]
 

@@ -58,13 +58,32 @@
           <hr class="mx-auto max-w-xs border-border mb-12">
           <div class="row justify-center">
             {{ range .specialties }}
+              {{ $iconColor := "text-blue-600" }}
+              {{ $tagBg := "bg-blue-100" }}
+              {{ $tagText := "text-blue-800" }}
+              {{ if eq .color "teal" }}
+                {{ $iconColor = "text-teal-600" }}
+                {{ $tagBg = "bg-teal-100" }}
+                {{ $tagText = "text-teal-800" }}
+              {{ else if eq .color "amber" }}
+                {{ $iconColor = "text-amber-600" }}
+                {{ $tagBg = "bg-amber-100" }}
+                {{ $tagText = "text-amber-800" }}
+              {{ else if eq .color "purple" }}
+                {{ $iconColor = "text-purple-600" }}
+                {{ $tagBg = "bg-purple-100" }}
+                {{ $tagText = "text-purple-800" }}
+              {{ end }}
             <div class="md:col-6 lg:col-3 mb-8">
               <div class="rounded-lg bg-light p-6 h-full text-center flex flex-col">
+                <div class="mb-3">
+                  <i class="fa {{ .icon }} text-3xl {{ $iconColor }}"></i>
+                </div>
                 <h3 class="h5 mb-2">{{ .title }}</h3>
                 <p class="text-sm text-text-light mb-4 flex-1">{{ .description }}</p>
                 <div class="flex flex-wrap justify-center gap-2">
                   {{ range .tags }}
-                  <span class="inline-block rounded-full bg-theme-light px-3 py-1 text-xs font-medium text-primary">{{ . }}</span>
+                  <span class="inline-block rounded-full {{ $tagBg }} {{ $tagText }} px-3 py-1 text-xs font-medium">{{ . }}</span>
                   {{ end }}
                 </div>
               </div>
