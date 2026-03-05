@@ -21,6 +21,11 @@
   height: auto;
 }
 
+/* Case study: center the CTA button at the bottom */
+.case-study-content > p:last-child {
+  text-align: center;
+}
+
 /* Pillar page disclosure: collapsible on mobile, always open on desktop */
 .pillar-disclosure > summary {
   list-style: none;
