@@ -243,7 +243,7 @@
                 <div class="swiper-wrapper">
                   {{ range .Params.testimonials }}
                     <div class="swiper-slide">
-                      <div class="bg-light rounded-lg px-7 py-10 h-full">
+                      <div class="bg-light rounded-lg px-7 py-10 h-full flex flex-col">
                         <div class="text-text-dark">
                           <svg
                             width="33"
@@ -266,7 +266,7 @@
                             {{ .title | markdownify }}
                           </p>
                         {{ end }}
-                        <blockquote class="{{ if and (not .title) (not .metric) }}mt-8{{ end }}">
+                        <blockquote class="{{ if and (not .title) (not .metric) }}mt-8{{ end }} flex-1">
                           {{ .content | markdownify }}
                         </blockquote>
                         <div class="mt-11 flex items-center">

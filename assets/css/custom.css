@@ -13,6 +13,14 @@
   }
 }
 
+/* Testimonial carousel: equal-height slides */
+.testimonial-slider .swiper-wrapper {
+  align-items: stretch;
+}
+.testimonial-slider .swiper-slide {
+  height: auto;
+}
+
 /* Pillar page disclosure: collapsible on mobile, always open on desktop */
 .pillar-disclosure > summary {
   list-style: none;

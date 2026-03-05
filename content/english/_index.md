@@ -89,7 +89,7 @@ tools:
 personas:
   enable: true
   title: "Sound Familiar?"
-  subtitle: "Every engagement starts with a specific person facing a specific problem. Which one sounds like yours?"
+  subtitle: "Every engagement starts with a specific person facing a specific problem. Which one sounds like&nbsp;yours?"
   cards:
     - label: "Growth & Marketing Leaders"
       role: "VP/Director of Growth"
