@@ -22,7 +22,11 @@
 }
 
 /* Case study: center the CTA button at the bottom */
-.case-study-content > p:last-child {
+.case-study-content .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+.case-study-content > :last-child {
   text-align: center;
 }
 
