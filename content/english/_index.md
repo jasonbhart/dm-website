@@ -85,40 +85,6 @@ tools:
     - name: "GCP"
       image: "/images/tools/gcp.svg"
 
-# Personas
-personas:
-  enable: true
-  title: "Sound Familiar?"
-  subtitle: "Every engagement starts with a specific person facing a specific problem. Which one sounds like&nbsp;yours?"
-  cards:
-    - label: "Growth & Marketing Leaders"
-      role: "VP/Director of Growth"
-      headline: "You're spending six figures on ads but can't prove which channels actually drive pipeline"
-      supporting: "Marketing says one thing about revenue, finance says another — and every board meeting turns into a debate about which numbers are real."
-      link: "/services/revenue-analytics"
-      link_label: "Revenue Analytics"
-    - label: "Data Leaders"
-      role: "Head of Data"
-      headline: "Your data team spends more time fixing broken pipelines than delivering insights"
-      supporting: "You've outgrown your analytics stack but don't know what comes next — or who to trust to help."
-      link: "/services/data-foundation"
-      link_label: "Data Foundation"
-    - label: "Revenue Operations"
-      role: "VP/Director of RevOps"
-      headline: "Every tool shows a different number and nobody trusts the dashboards anymore"
-      supporting: "You need one source of truth that finance and marketing both trust — not five dashboards telling five different stories."
-      link: "/services/revenue-analytics"
-      link_label: "Revenue Analytics"
-    - label: "Product & Growth (PLG)"
-      role: "Head of Product/Analytics"
-      headline: "Rich data is sitting in your warehouse but nobody outside the data team can act on it"
-      supporting: "You need fast, MVP-driven wins that reduce churn — not a six-month roadmap."
-      link: "/services/data-activation"
-      link_label: "Data Activation"
-  fallback:
-    text: "Not sure where to start?"
-    link: "/services/audits"
-    link_label: "Begin with an audit"
 
 # Founder
 founder:

@@ -145,47 +145,6 @@
   {{ end }}
   <!-- /Tools -->
 
-  <!-- Personas -->
-  {{ with .Params.personas }}
-  {{ if .enable }}
-  <section class="section">
-    <div class="container">
-      <div class="row justify-center">
-        <div class="lg:col-8 text-center mb-12">
-          <h2 class="mb-4">{{ .title }}</h2>
-          <p class="text-lg text-text">{{ .subtitle }}</p>
-        </div>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-8">
-        {{ range .cards }}
-        <div class="rounded-lg bg-light dark:bg-darkmode-light p-6 h-full flex flex-col">
-          <p class="text-sm text-primary font-semibold mb-3">{{ .label }}</p>
-          <h3 class="h5 mb-3">{{ .headline }}</h3>
-          <p class="text-text mb-6 flex-1">{{ .supporting }}</p>
-          <div class="flex items-center justify-between">
-            <span class="text-sm text-text-light">{{ .role }}</span>
-            <a class="text-primary hover:underline font-medium" href="{{ .link | absURL }}">
-              {{ .link_label }} <i class="fa fa-arrow-right pl-1"></i>
-            </a>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-      {{ with .fallback }}
-      <div class="text-center mt-10">
-        <p class="text-text">{{ .text }}
-          <a class="text-primary hover:underline font-medium" href="{{ .link | absURL }}">
-            {{ .link_label }} <i class="fa fa-arrow-right pl-1"></i>
-          </a>
-        </p>
-      </div>
-      {{ end }}
-    </div>
-  </section>
-  {{ end }}
-  {{ end }}
-  <!-- /Personas -->
 
   <!-- Founder Callout -->
   {{ with .Params.founder }}
