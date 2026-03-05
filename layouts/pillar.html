@@ -133,11 +133,10 @@
               </h2>
             {{ end }}
             {{ with .points }}
-              <ul class="space-y-3">
+              <ul class="space-y-3 list-disc list-outside pl-5">
                 {{ range . }}
-                  <li class="flex items-start">
-                    <i class="fa fa-check {{ $accentText }} mr-3 mt-1 shrink-0"></i>
-                    <span>{{ . | markdownify }}</span>
+                  <li>
+                    {{ . | markdownify }}
                   </li>
                 {{ end }}
               </ul>
