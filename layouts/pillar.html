@@ -128,7 +128,7 @@
           {{ with $.Params.outcome }}
           <div class="md:col-6 lg:col-4 mb-8 lg:mb-0">
             {{ with .headline }}
-              <h2 class="h4 mb-6">
+              <h2 class="h4 mb-6 lg:min-h-[3.5em]">
                 {{ . | markdownify }}
               </h2>
             {{ end }}
@@ -147,7 +147,7 @@
           {{/* Column 2: For You */}}
           {{ with $.Params.for_you }}
           <div class="md:col-6 lg:col-4 mb-8 lg:mb-0">
-            <h2 class="h4 mb-6">{{ .title | default "This is for you if..." }}</h2>
+            <h2 class="h4 mb-6 lg:min-h-[3.5em]">{{ .title | default "This is for you if..." }}</h2>
             {{ with .items }}
             <ul class="space-y-3">
               {{ range . }}
@@ -163,7 +163,7 @@
           {{/* Column 3: Not For */}}
           {{ with $.Params.not_for }}
           <div class="md:col-12 lg:col-4">
-            <h2 class="h4 mb-6">{{ .title | default "This isn't the right service if..." }}</h2>
+            <h2 class="h4 mb-6 lg:min-h-[3.5em]">{{ .title | default "This isn't the right service if..." }}</h2>
             {{ with .items }}
             <ul class="space-y-3">
               {{ range . }}
