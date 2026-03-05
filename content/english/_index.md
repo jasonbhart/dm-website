@@ -88,27 +88,31 @@ tools:
 # Personas
 personas:
   enable: true
-  title: "Who We Help"
+  title: "Sound Familiar?"
   subtitle: "Every engagement starts with a specific person facing a specific problem. Which one sounds like yours?"
   cards:
     - label: "Growth & Marketing Leaders"
       role: "VP/Director of Growth"
-      pain: "Need predictable ROAS and clear attribution"
+      headline: "You're spending six figures on ads but can't prove which channels actually drive pipeline"
+      supporting: "Marketing says one thing about revenue, finance says another — and every board meeting turns into a debate about which numbers are real."
       link: "/services/revenue-analytics"
       link_label: "Revenue Analytics"
     - label: "Data Leaders"
       role: "Head of Data"
-      pain: "Need a partner who understands business context, not just SQL"
+      headline: "Your data team spends more time fixing broken pipelines than delivering insights"
+      supporting: "You've outgrown your analytics stack but don't know what comes next — or who to trust to help."
       link: "/services/data-foundation"
       link_label: "Data Foundation"
     - label: "Revenue Operations"
       role: "VP/Director of RevOps"
-      pain: "Need one source of truth that finance and marketing both trust"
+      headline: "Every tool shows a different number and nobody trusts the dashboards anymore"
+      supporting: "You need one source of truth that finance and marketing both trust — not five dashboards telling five different stories."
       link: "/services/revenue-analytics"
       link_label: "Revenue Analytics"
     - label: "Product & Growth (PLG)"
       role: "Head of Product/Analytics"
-      pain: "Need fast, MVP-driven wins that reduce churn"
+      headline: "Rich data is sitting in your warehouse but nobody outside the data team can act on it"
+      supporting: "You need fast, MVP-driven wins that reduce churn — not a six-month roadmap."
       link: "/services/data-activation"
       link_label: "Data Activation"
   fallback:
@@ -124,18 +128,6 @@ founder:
   image: "/images/jason-hart.png"
   content: "Most teams I talk to have the same problem: they don't know who to trust and what to do next with the budget they have. I help mid-size SaaS and ecommerce companies cut through that uncertainty — build analytics they can trust and data systems they can actually use. If your team is drowning in dashboards nobody believes, let's talk. I share practical takes on marketing data, attribution, and analytics engineering on LinkedIn — follow along."
   linkedin: "https://www.linkedin.com/in/jasonbhart/"
-
-# Pain Points
-pain_points:
-  enable: true
-  title: "Sound Familiar?"
-  items:
-    - "Marketing says one thing about revenue, finance says another — and every board meeting turns into a debate about which numbers are real"
-    - "You're spending six figures on ads but can't prove which channels actually drive pipeline"
-    - "Your data team spends more time fixing broken pipelines than delivering the insights the business needs"
-    - "Rich data is sitting in your warehouse but nobody outside the data team can act on it"
-    - "Every tool shows a different number and nobody trusts the dashboards anymore"
-    - "You've outgrown your analytics stack but don't know what comes next — or who to trust to help"
 
 # Newsletter
 newsletter:
