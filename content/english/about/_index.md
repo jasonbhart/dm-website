@@ -8,7 +8,7 @@ draft: false
 intro: |
   Domain Methods was founded on a simple belief: data work should favor practical elegance and deliver measurable outcomes.
 
-  We specialize in marketing data, revenue analytics, and analytics engineering for SaaS and ecommerce companies. Our clients are typically mid-size companies (100-1000 employees) who know they need better data but are not sure who to trust or what to do next.
+  We specialize in marketing data, revenue analytics, and analytics engineering for SaaS and ecommerce companies. Our clients are typically mid-size companies who know they need better data but are not sure who to trust or what to do next.
 
 team:
   enable: true
