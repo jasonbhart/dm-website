@@ -50,6 +50,11 @@
             {{ end }}
           </div>
           {{ end }}
+          {{ with $.Params.intro }}
+          <div class="text-center text-lg text-text-light mb-12 max-w-2xl mx-auto content">
+            {{ . | markdownify }}
+          </div>
+          {{ end }}
           <div class="row justify-center">
             {{ range .specialties }}
             <div class="md:col-6 lg:col-3 mb-8">
@@ -72,20 +77,6 @@
   {{ end }}
   {{ end }}
 
-  <!-- Intro Section -->
-  {{ with .Params.intro }}
-  <section class="section-sm">
-    <div class="container">
-      <div class="row justify-center">
-        <div class="lg:col-8">
-          <div class="content text-lg text-center">
-            {{ . | markdownify }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {{ end }}
 
   <!-- Why Section -->
   {{ with .Params.why }}
