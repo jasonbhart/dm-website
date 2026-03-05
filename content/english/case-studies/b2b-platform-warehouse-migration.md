@@ -48,6 +48,4 @@ The CEO wanted the data team to support a new product analytics initiative, but 
 
 **The team now owns the stack independently.** Both data team members were trained on dbt, BigQuery, and the new pipeline architecture. They've since added three new data sources and built four new marts without any outside help.
 
----
-
 {{< button label="Talk to Us About Your Data Foundation" link="/contact-us" >}}

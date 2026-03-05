@@ -46,6 +46,4 @@ Budget decisions were made based on whichever platform's dashboard the growth le
 
 **The board got confident, defensible unit economics.** Investor reporting shifted from "platform-reported ROAS" to "warehouse-verified ROAS" — a more conservative but far more trustworthy number that strengthened the Series B narrative.
 
----
-
 {{< button label="Talk to Us About Attribution" link="/contact-us" >}}

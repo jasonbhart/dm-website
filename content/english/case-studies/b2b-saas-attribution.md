@@ -53,6 +53,4 @@ We started with last-touch attribution on closed-won deals, shipped it in week t
 
 The entire engagement took six weeks from kickoff to the team owning the system independently.
 
----
-
 {{< button label="Talk to Us About Attribution" link="/contact-us" >}}

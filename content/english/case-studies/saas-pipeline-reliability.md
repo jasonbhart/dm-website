@@ -45,6 +45,4 @@ The VP of Data was spending her time apologizing for broken reports instead of d
 
 **The VP of Data got her roadmap back.** With pipeline reliability no longer a crisis, the team shipped three new analytics initiatives in the quarter following our engagement — initiatives that had been stuck on the backlog for over a year.
 
----
-
 {{< button label="Talk to Us About Your Data Foundation" link="/contact-us" >}}

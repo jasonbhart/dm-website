@@ -45,6 +45,4 @@ Meanwhile, the company had invested heavily in their data warehouse over the pre
 
 **The team owns the full stack.** The data team maintains audience definitions, sync configurations, and monitoring independently. They've since added two new destinations (LinkedIn Ads and their in-app messaging platform) without any outside help.
 
----
-
 {{< button label="Talk to Us About Data Activation" link="/contact-us" >}}

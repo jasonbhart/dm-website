@@ -49,6 +49,4 @@ The VP of Customer Success knew the data existed. She just couldn't get it into 
 
 **The ROI was immediate and measurable.** The 18% churn reduction on a base of 15,000 accounts translated to significant ARR retention. The engagement paid for itself within the first month.
 
----
-
 {{< button label="Talk to Us About Data Activation" link="/contact-us" >}}

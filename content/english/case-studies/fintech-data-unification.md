@@ -52,6 +52,4 @@ The Series B fundraise was six months out. Investors would ask detailed question
 
 **The data foundation scales with them.** The team has since added two new data sources (a partner integration and a new payment processor) to the warehouse on their own, following the patterns and conventions we established. No outside help needed.
 
----
-
 {{< button label="Talk to Us About Your Data Foundation" link="/contact-us" >}}

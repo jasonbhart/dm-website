@@ -49,6 +49,4 @@ The VP of Sales was frustrated: "We know product usage matters, but we can't see
 
 **The model improves over time.** As more conversion data accumulates, the model retrains monthly with updated feature importance. The data team manages this independently — no ongoing dependency on our team.
 
----
-
 {{< button label="Talk to Us About Data Activation" link="/contact-us" >}}

@@ -40,6 +40,4 @@ Compounding the issue, the sales cycle crossed multiple quarters. Campaigns laun
 
 **Board reporting went from adversarial to strategic.** The conversation shifted from "are these numbers real?" to "where should we invest more?"
 
----
-
 {{< button label="Talk to Us About Attribution" link="/contact-us" >}}
