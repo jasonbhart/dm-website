@@ -22,12 +22,14 @@
 }
 
 /* Case study: center the CTA button at the bottom */
-.case-study-content .btn {
-  display: inline-block;
-  margin-top: 1.5rem;
+.case-study-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.case-study-content > :last-child {
-  text-align: center;
+.case-study-content > a.btn {
+  align-self: center;
+  margin-top: 2rem;
 }
 
 /* Pillar page disclosure: collapsible on mobile, always open on desktop */
