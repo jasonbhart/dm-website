@@ -108,7 +108,7 @@
       </div>
 
       {{/* "Not sure where to start?" CTA */}}
-      {{ with $.Params.personas.fallback }}
+      {{ with $.Params.audit_cta }}
       <div class="text-center mt-12">
         <p class="text-lg mb-4">{{ .text }}</p>
         <a class="btn btn-outline-primary" href="{{ .link | absURL }}">

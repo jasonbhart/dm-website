@@ -63,6 +63,12 @@ features:
       label: "Learn More"
       link: "/services/data-activation"
 
+# Audit CTA (below features)
+audit_cta:
+  text: "Not sure where to start?"
+  link: "/services/audits"
+  link_label: "Begin with an audit"
+
 # Tools
 tools:
   enable: true
