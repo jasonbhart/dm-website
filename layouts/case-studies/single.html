@@ -1,0 +1,21 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-10">
+          <div class="content">
+            {{ .Content }}
+          </div>
+          <div class="text-center mt-12">
+            <a class="btn btn-primary" href="{{ "contact-us" | absURL }}">
+              Book a Discovery Call
+              <i class="fa fa-arrow-right pl-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
