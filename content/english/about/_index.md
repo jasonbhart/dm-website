@@ -61,9 +61,6 @@ why:
     - icon: "fa-bolt"
       title: "Fast to Start"
       description: "Senior practitioners from day one. No ramp-up period, no junior staff learning on your dime."
-    - icon: "fa-phone"
-      title: "Just a Call Away"
-      description: "Senior practitioners who pick up the phone. No ticket queues, no layers of account management."
 
 framework_cta:
   enable: true
