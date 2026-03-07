@@ -64,7 +64,7 @@ content = ""
 [metadata]
 author = "Domain Methods"
 image = "images/og-image.png"
-description = "Domain Methods helps mid-size SaaS companies build trusted marketing analytics, data foundations, and activation pipelines that drive revenue. Obsessed with truth and UX."
+description = "Domain Methods helps mid-size SaaS companies build trusted marketing analytics, AI-ready data foundations, and activation pipelines that drive revenue. Obsessed with truth and UX."
 keywords = ["Marketing Attribution", "Revenue Analytics", "dbt Consulting", "Data Strategy for SaaS", "Reverse ETL", "Data Activation", "Marketing Analytics Audit", "Databricks Consulting", "SaaS Analytics", "Revenue Operations"]
 
 

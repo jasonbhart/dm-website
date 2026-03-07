@@ -1,7 +1,7 @@
 ---
 title: "Build a Trusted Data Foundation"
 meta_title: "Data Foundation | Domain Methods"
-description: "Data strategy, pipeline development, and dbt implementation for data and RevOps teams."
+description: "Data strategy, pipeline development, dbt implementation, and governance that create an AI-ready foundation for data and RevOps teams."
 layout: "pillar"
 accent: "teal"
 aliases:
@@ -11,7 +11,7 @@ aliases:
 hero:
   tagline: "Data Foundation"
   title: "Build a Trusted Data Foundation"
-  content: "Your team spends half its time fixing pipelines instead of delivering insights. Every tool shows a different number. Nobody trusts the dashboards. We build data foundations that tell the truth — using dbt, open-source tools, and modern warehouses on GCP and AWS."
+  content: "Your team spends half its time fixing pipelines instead of delivering insights. Every tool shows a different number. Nobody trusts the dashboards. And when leadership asks about AI, you know messy data will only scale bad decisions. We build data foundations that tell the truth — using dbt, open-source tools, and modern warehouses on GCP and AWS — so analytics, automation, and AI all start from clean, governed data."
   image: "/images/service-2.png"
   button:
     label: "Book a Discovery Call"
@@ -19,12 +19,13 @@ hero:
 
 # Major Outcome (optional)
 outcome:
-  headline: "Stop questioning data and start using it"
+  headline: "Build a foundation your team can trust and AI can use"
   points:
     - "Reports that match across tools because data flows through one trusted source"
     - "Pipelines that run reliably so your team can focus on insights, not firefighting"
     - "Tested, documented data models that the entire organization can trust"
     - "Clear governance processes that keep data quality high as you scale"
+    - "Clean, well-defined data that makes AI scoring, automation, and copilots safer to roll out"
 
 for_you:
   title: "This is for you if..."
@@ -33,6 +34,7 @@ for_you:
     - "You need a partner who understands business context — not just SQL"
     - "Nobody trusts the numbers because every tool shows something different"
     - "You're scaling fast and your data infrastructure can't keep up"
+    - "Leadership wants AI use cases, but your data is inconsistent, undocumented, or unreliable"
 
 not_for:
   items:
@@ -45,13 +47,13 @@ projects:
   title: "How We Help"
   items:
     - name: "Data Strategy & Architecture"
-      description: "Design the right approach for your stage, stack, and goals — including Databricks, BigQuery, and Snowflake on GCP and AWS"
+      description: "Design the right approach for your stage, stack, goals, and near-term AI ambitions — including Databricks, BigQuery, and Snowflake on GCP and AWS"
     - name: "Pipeline Development"
       description: "Build reliable data flows from source to insight"
     - name: "dbt Implementation"
       description: "Transform your raw data into trusted, tested models"
     - name: "Data Governance"
-      description: "Establish the processes that keep your data trustworthy at scale"
+      description: "Establish definitions, testing, and operating processes that keep your data trustworthy at scale"
 
 process:
   title: "How It Works"
@@ -90,7 +92,7 @@ pricing:
 
 go_deeper:
   title: "Go Deeper"
-  description: "Read our practical guide to building a modern data foundation with dbt — architecture decisions, migration strategies, and governance that actually works."
+  description: "Read our practical guide to building a modern data foundation with dbt — architecture decisions, migration strategies, governance that actually works, and the groundwork for trustworthy AI."
   link:
     url: "/blog/modern-data-foundation-dbt-guide"
     label: "Download the dbt Foundation Guide"

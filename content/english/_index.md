@@ -1,15 +1,15 @@
 ---
 meta_title: "Domain Methods"
-description: "Turn messy data into decisions that drive revenue. Marketing analytics, data foundations, and AI-powered activation for mid-size SaaS and ecommerce companies."
+description: "Turn messy data into decisions that drive revenue. Marketing analytics, AI-ready data foundations, and practical activation for mid-size SaaS and ecommerce companies."
 
 # Banner
 banner:
   title: "Turn Messy Marketing Data into Decisions that Drive Revenue"
-  content: "Your data should be driving decisions — but conflicting metrics, broken pipelines, and tools nobody trusts are getting in the way. We fix that."
+  content: "Your data should be driving decisions — but conflicting metrics, broken pipelines, and tools nobody trusts are getting in the way. We fix that, and lay the groundwork for AI your team can actually trust."
   bulletpoints:
     - "Marketing analytics and attribution you can defend"
     - "Trusted data foundations your team actually uses"
-    - "AI-powered activation that moves the needle"
+    - "AI-powered activation built on clean data"
   qualifier: "For mid-size SaaS and ecommerce teams ($10M+ ARR or venture-funded)."
   image: "/images/banner.png"
   button:
@@ -39,12 +39,12 @@ features:
 
   - title: "Your Dashboards Are Lying. Fix the Foundation."
     image: "/images/service-2.png"
-    content: "For data leaders who need more than a SQL jockey — you need a partner who understands why the data matters, not just how to query it."
+    content: "For data leaders who need more than a SQL jockey — you need a partner who understands why the data matters, not just how to query it. We make the data trustworthy enough for dashboards, decisions, and AI workflows."
     bulletpoints:
       - "Data strategy and architecture"
       - "Pipeline development"
       - "dbt implementation"
-      - "Data governance"
+      - "Data governance and AI readiness"
     button:
       enable: true
       label: "Learn More"
@@ -65,9 +65,9 @@ features:
 
 # Audit CTA (below features)
 audit_cta:
-  text: "Not sure where to start?"
-  link: "/services/audits"
-  link_label: "Begin with an audit"
+  text: "Exploring AI but not sure your data is ready?"
+  link: "/services/ai-readiness-audit"
+  link_label: "Start with an AI readiness audit"
 
 # Tools
 tools:
@@ -90,7 +90,6 @@ tools:
       image: "/images/tools/aws.svg"
     - name: "GCP"
       image: "/images/tools/gcp.svg"
-
 
 # Founder
 founder:

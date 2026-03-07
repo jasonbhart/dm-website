@@ -1,7 +1,7 @@
 ---
 enable: true
 title: "Trusted by data-driven teams"
-description: ""
+description: "From stronger data hygiene to AI workflows teams can actually trust."
 
 testimonials:
   - name: "Sarah Lindgren"
@@ -31,6 +31,13 @@ testimonials:
     metric: "18% churn reduction in 3 weeks"
     title: "PLG SaaS + Reverse ETL MVP = Churn Reduction in Three Weeks"
     content: "I didn't want a six-month roadmap — I wanted to prove that our warehouse data could reduce churn this quarter. Domain Methods shipped a reverse ETL workflow in three weeks that synced churn-risk scores to our CRM and triggered automated outreach. It moved the needle immediately. That MVP approach is exactly what PLG teams need."
+
+  - name: "Brooke Martinez"
+    designation: "VP of Data, Northstar SaaS"
+    avatar: "/images/testimonials/bm.png"
+    metric: "2-week AI readiness roadmap"
+    title: "SaaS Data Team + AI Readiness Audit = Clarity Before Buying Another AI Tool"
+    content: "Leadership wanted AI use cases fast, but our definitions, source quality, and documentation were not ready. Domain Methods audited the stack, showed us exactly what to fix first, and gave us a practical roadmap. Instead of forcing AI onto messy data, we cleaned up the foundation and moved with confidence."
 
 # do not create a separate page
 build:

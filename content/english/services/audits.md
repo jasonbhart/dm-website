@@ -1,7 +1,7 @@
 ---
 title: "Audits & Quick Engagements"
 meta_title: "Data & Analytics Audits | Domain Methods"
-description: "Fast, focused audits and consultations for marketing analytics, data pipelines, and revenue operations. For SaaS and ecommerce teams. Get clarity in days, not months."
+description: "Fast, focused audits and consultations for marketing analytics, data pipelines, revenue operations, and AI readiness. For SaaS and ecommerce teams. Get clarity in days, not months."
 layout: "pillar"
 accent: "purple"
 draft: false
@@ -9,7 +9,7 @@ draft: false
 hero:
   tagline: "Start Small. Learn Fast."
   title: "Audits & Quick Engagements"
-  content: "Something's broken and you know it, but you don't know where to start — or who to trust with the diagnosis. We give you honest answers in days, not months. Whether you hire us after or not."
+  content: "Something's broken and you know it, but you don't know where to start — or who to trust with the diagnosis. We give you honest answers in days, not months. That includes a clear read on whether your data is ready for AI workflows or still needs foundation work first. Whether you hire us after or not."
   image: "/images/banner.png"
   button:
     label: "Book a Discovery Call"
@@ -22,6 +22,7 @@ outcome:
     - "Specific, actionable recommendations — not a 50-page deck"
     - "Fast turnaround: most audits complete in 1-2 weeks"
     - "Clear next steps, whether you work with us or not"
+    - "A practical read on data quality, governance, and AI readiness"
 
 for_you:
   title: "This is for you if..."
@@ -30,6 +31,7 @@ for_you:
     - "You need expert eyes on a specific problem — not a six-month engagement"
     - "Your team is stuck on a broken pipeline, dashboard, or attribution gap"
     - "You want honest, actionable advice — whether you hire us or not"
+    - "Leadership wants AI, but you're not convinced the underlying data is ready"
 
 not_for:
   items:
@@ -46,6 +48,8 @@ projects:
       description: "We assess your data infrastructure — sources, transformations, models, and delivery. Identify bottlenecks, reliability risks, and quick wins."
     - name: "Revenue Operations Diagnostic"
       description: "We map your revenue data flow from CRM to reporting. Find the gaps between what your team sees and what's actually happening."
+    - name: "AI Readiness Audit"
+      description: "We assess data quality, governance, source reliability, and operational fit before you invest in scoring, copilots, or AI automation. [See the full audit](/services/ai-readiness-audit)."
     - name: "Break-Fix & Pinch Hitting"
       description: "Something's broken and your team is stuck. We jump in, diagnose, and fix — whether it's a dbt model, a dashboard, or an attribution gap."
 
@@ -57,7 +61,7 @@ process:
     - title: "Diagnose"
       description: "We dig into your data, tools, and processes. We document what's working, what's broken, and what's missing."
     - title: "Recommend"
-      description: "A clear, prioritized action plan with specific fixes and expected impact — ready for your team to execute."
+      description: "A clear, prioritized action plan with specific fixes and expected impact — including what to fix before investing further in AI."
     - title: "Debrief"
       description: "We walk through findings together, answer questions, and help your team shift how they use data to make decisions — not just what tools they use."
 

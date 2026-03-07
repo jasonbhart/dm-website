@@ -1,11 +1,13 @@
 ---
 title: "Services"
 meta_title: "Services | Domain Methods"
-description: "Marketing data, revenue analytics, and data strategy services for SaaS and ecommerce companies."
+description: "Marketing data, revenue analytics, AI-ready data strategy, and activation services for SaaS and ecommerce companies."
 draft: false
 ---
 
 You know your data should be driving decisions — but you don't know who to trust or what to do next. Maybe your dashboards don't match, your attribution is a black box, or your team is drowning in pipeline fires instead of shipping insights. Domain Methods partners with growth, data, and RevOps teams to build trusted analytics that actually drive revenue.
+
+Before AI can do anything useful, the underlying data has to be clean, governed, and believable. We help teams get that foundation right first, then turn it into action.
 
 ---
 
@@ -19,9 +21,17 @@ For growth leaders who need predictable ROAS and RevOps teams tired of defending
 
 ## Data Foundation — "Build a Trusted Data Foundation"
 
-For data leaders who need more than technical capacity — a partner who understands business context. We deliver data strategy, pipeline development, dbt implementation, and governance on GCP and AWS — built to scale with your business.
+For data leaders who need more than technical capacity — a partner who understands business context. We deliver data strategy, pipeline development, dbt implementation, and governance on GCP and AWS — built to scale with your business and support reliable AI use cases.
 
 [Learn more →](/services/data-foundation)
+
+---
+
+## AI Readiness Audit — "Know What to Fix Before You Invest in AI"
+
+For teams under pressure to launch scoring, copilots, or automation — but not ready to trust the underlying inputs. We assess source reliability, data quality, governance, metric definitions, and workflow fit so you know where AI can help now and what foundation work comes first.
+
+[Learn more →](/services/ai-readiness-audit)
 
 ---
 
@@ -43,12 +53,13 @@ Not every challenge requires a six-month project. We deliver focused audits, pip
 
 ## Not sure which service fits?
 
-| Your Role | Your Challenge | Start Here |
-|-----------|---------------|------------|
-| VP/Director of Growth | Unclear ROAS, conflicting attribution | [Revenue Analytics →](/services/revenue-analytics) |
-| Head of Data | Need a partner who gets the business, not just SQL | [Data Foundation →](/services/data-foundation) |
-| VP/Director of RevOps | Finance and marketing don't trust the same numbers | [Revenue Analytics →](/services/revenue-analytics) |
-| Head of Product/Analytics | Need fast, MVP-driven wins that reduce churn | [Data Activation →](/services/data-activation) |
+| Your Role                 | Your Challenge                                                                       | Start Here                                           |
+| ------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| VP/Director of Growth     | Unclear ROAS, conflicting attribution                                                | [Revenue Analytics →](/services/revenue-analytics)   |
+| Head of Data              | Need a partner who gets the business, not just SQL — and can make the stack AI-ready | [Data Foundation →](/services/data-foundation)       |
+| CEO / COO / CTO           | Want to pursue AI without scaling bad data                                           | [AI Readiness Audit →](/services/ai-readiness-audit) |
+| VP/Director of RevOps     | Finance and marketing don't trust the same numbers                                   | [Revenue Analytics →](/services/revenue-analytics)   |
+| Head of Product/Analytics | Need fast, MVP-driven wins that reduce churn                                         | [Data Activation →](/services/data-activation)       |
 
 ---
 
