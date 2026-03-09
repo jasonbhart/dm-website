@@ -229,10 +229,12 @@
                           {{ .content | markdownify }}
                         </blockquote>
                         <div class="mt-11 flex items-center">
+                          {{ with .avatar }}
                           <div class="text-text-dark">
-                            {{ partial "image" (dict "Src" .avatar "Size" "50x50" "Class" "rounded-full" "Alt" .name) }}
+                            {{ partial "image" (dict "Src" . "Size" "50x50" "Class" "rounded-full" "Alt" $.name) }}
                           </div>
-                          <div class="ml-4">
+                          {{ end }}
+                          <div class="{{ if not .avatar }}ml-0{{ else }}ml-4{{ end }}">
                             <h3 class="h5 font-primary font-semibold">
                               {{ .name }}
                             </h3>
