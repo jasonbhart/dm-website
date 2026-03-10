@@ -26,9 +26,9 @@ team:
       description: "Former HP executive with deep expertise in finance, risk management, cybersecurity, and fraud prevention. Oversees operations and financial strategy at Domain Methods."
       linkedin: "https://www.linkedin.com/in/jennieredwards/"
     - name: "Anmol Parimoo"
-      role: "Senior Analytics Engineering Consultant"
+      role: "Senior Consultant — Revenue Analytics & AI"
       image: "/images/anmol-parimoo.png"
-      description: "Analytics engineer with a background in data science consulting at Accenture and BRIDGEi2i Analytics. Brings expertise in predictive modeling, BigQuery, Tableau, and generative AI."
+      description: "Analytics and AI consultant with a background in data science consulting at Accenture and BRIDGEi2i Analytics. Specializes in enterprise data transformation, revenue analytics, and applied AI for SaaS and ecommerce."
       linkedin: "https://www.linkedin.com/in/anmol01/"
   specialties:
     - title: "Analytics Engineers"
